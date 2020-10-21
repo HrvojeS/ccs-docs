@@ -1,0 +1,287 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Parser
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Parser
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.Parser">
+  <h1 id="CommonInterfaces_Parser" data-uid="CommonInterfaces.Parser">Class Parser
+  </h1>
+  <div class="markdown level0 summary"><p>Implements methods for parsing objects into <see cref="!:DynamicDictionary"></see>.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Parser</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_Parser_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class Parser : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Parser_ParseList_" data-uid="CommonInterfaces.Parser.ParseList*"></a>
+  
+  <h4 id="CommonInterfaces_Parser_ParseList_System_Object_" data-uid="CommonInterfaces.Parser.ParseList(System.Object)"><a href="#collapsible-CommonInterfaces_Parser_ParseList_System_Object_" class="expander" data-toggle="collapse">ParseList(Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Parser_ParseList_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; ParseList(dynamic list)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">list</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Parser_ParseObject_" data-uid="CommonInterfaces.Parser.ParseObject*"></a>
+  
+  <h4 id="CommonInterfaces_Parser_ParseObject_System_Object_" data-uid="CommonInterfaces.Parser.ParseObject(System.Object)"><a href="#collapsible-CommonInterfaces_Parser_ParseObject_System_Object_" class="expander" data-toggle="collapse">ParseObject(Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Parser_ParseObject_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Parses an object and all of its subobjects into a <see cref="!:DynamicDictionary"></see>.</p>
+<p>Used to standardize an object after <see cref="!:Newtonsoft"></see> deserialization.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicDictionary ParseObject(dynamic obj)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicDictionary</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Parser_ParseObjectByAttributeType_" data-uid="CommonInterfaces.Parser.ParseObjectByAttributeType*"></a>
+  
+  <h4 id="CommonInterfaces_Parser_ParseObjectByAttributeType_DynamicDictionary_IDictionary_System_String_CCSPluginAPI_Attribute__" data-uid="CommonInterfaces.Parser.ParseObjectByAttributeType(DynamicDictionary,IDictionary{System.String,CCSPluginAPI.Attribute})"><a href="#collapsible-CommonInterfaces_Parser_ParseObjectByAttributeType_DynamicDictionary_IDictionary_System_String_CCSPluginAPI_Attribute__" class="expander" data-toggle="collapse">ParseObjectByAttributeType(DynamicDictionary, IDictionary&lt;String, Attribute&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Parser_ParseObjectByAttributeType_DynamicDictionary_IDictionary_System_String_CCSPluginAPI_Attribute__" class="collapse in">
+  <div class="markdown level1 summary"><p>Converts object's attributes to appropriate types as specified by the given attributes dictionary.</p>
+<p>Sets non-existent attributes to default values, removes unknown attributes.</p>
+<p>Doesn&apos;t modify the original object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicDictionary ParseObjectByAttributeType(DynamicDictionary obj, IDictionary&lt;string, Attribute&gt; attributes)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DynamicDictionary</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CCSPluginAPI.Attribute.html">Attribute</a>&gt;</span>
+        <span class="parametername">attributes</span>
+        <p><p>Attribute dictionary as used by <a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a></p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicDictionary</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

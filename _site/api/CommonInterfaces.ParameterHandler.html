@@ -1,0 +1,568 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ParameterHandler
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ParameterHandler
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.ParameterHandler">
+  <h1 id="CommonInterfaces_ParameterHandler" data-uid="CommonInterfaces.ParameterHandler">Class ParameterHandler
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ParameterHandler</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_ParameterHandler_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ParameterHandler : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_CheckAttributeParameters_" data-uid="CommonInterfaces.ParameterHandler.CheckAttributeParameters*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_CheckAttributeParameters_IEnumerable_CCSPluginAPI_Parameter__IEnumerable_CCSPluginAPI_ParameterConfig__" data-uid="CommonInterfaces.ParameterHandler.CheckAttributeParameters(IEnumerable{CCSPluginAPI.Parameter},IEnumerable{CCSPluginAPI.ParameterConfig})"><a href="#collapsible-CommonInterfaces_ParameterHandler_CheckAttributeParameters_IEnumerable_CCSPluginAPI_Parameter__IEnumerable_CCSPluginAPI_ParameterConfig__" class="expander" data-toggle="collapse">CheckAttributeParameters(IEnumerable&lt;Parameter&gt;, IEnumerable&lt;ParameterConfig&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_CheckAttributeParameters_IEnumerable_CCSPluginAPI_Parameter__IEnumerable_CCSPluginAPI_ParameterConfig__" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks 'Attribute' type parameters for validity of their reference in the given parameter combination</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckAttributeParameters(IEnumerable&lt;Parameter&gt; inputParameters, IEnumerable&lt;ParameterConfig&gt; attributeParamConfigs)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">inputParameters</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.ParameterConfig.html">ParameterConfig</a>&gt;</span>
+        <span class="parametername">attributeParamConfigs</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>bool indicating validity</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_CheckSingleConfigurationItem_" data-uid="CommonInterfaces.ParameterHandler.CheckSingleConfigurationItem*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_CheckSingleConfigurationItem_IDictionary_System_String_System_Object__KeyValuePair_System_String_System_Object__" data-uid="CommonInterfaces.ParameterHandler.CheckSingleConfigurationItem(IDictionary{System.String,System.Object},KeyValuePair{System.String,System.Object})"><a href="#collapsible-CommonInterfaces_ParameterHandler_CheckSingleConfigurationItem_IDictionary_System_String_System_Object__KeyValuePair_System_String_System_Object__" class="expander" data-toggle="collapse">CheckSingleConfigurationItem(IDictionary&lt;String, Object&gt;, KeyValuePair&lt;String, Object&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_CheckSingleConfigurationItem_IDictionary_System_String_System_Object__KeyValuePair_System_String_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks given data using the configurationItem.
+If the data conforms, returns <span class="xref">true</span>, otherwise <span class="xref">false</span>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckSingleConfigurationItem(IDictionary&lt;string, dynamic&gt; data, KeyValuePair&lt;string, object&gt; configurationItem)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">data</span>
+        <p><p>The object to check using the given configurationItem</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">configurationItem</span>
+        <p><p>Item mapping an attribute to an expected value</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_CreateDisplayableParameters_" data-uid="CommonInterfaces.ParameterHandler.CreateDisplayableParameters*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_CreateDisplayableParameters_IEnumerable_CCSPluginAPI_Parameter__" data-uid="CommonInterfaces.ParameterHandler.CreateDisplayableParameters(IEnumerable{CCSPluginAPI.Parameter})"><a href="#collapsible-CommonInterfaces_ParameterHandler_CreateDisplayableParameters_IEnumerable_CCSPluginAPI_Parameter__" class="expander" data-toggle="collapse">CreateDisplayableParameters(IEnumerable&lt;Parameter&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_CreateDisplayableParameters_IEnumerable_CCSPluginAPI_Parameter__" class="collapse in">
+  <div class="markdown level1 summary"><p>Deepcopies the given parameters while also replacing their Value
+with a human-readable representation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Parameter&gt; CreateDisplayableParameters(IEnumerable&lt;Parameter&gt; inputParameters)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">inputParameters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;
+        <p><p>Deepcopied altered parameter list</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_CreateParameterInfos_" data-uid="CommonInterfaces.ParameterHandler.CreateParameterInfos*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_CreateParameterInfos_IEnumerable_CCSPluginAPI_Parameter__" data-uid="CommonInterfaces.ParameterHandler.CreateParameterInfos(IEnumerable{CCSPluginAPI.Parameter})"><a href="#collapsible-CommonInterfaces_ParameterHandler_CreateParameterInfos_IEnumerable_CCSPluginAPI_Parameter__" class="expander" data-toggle="collapse">CreateParameterInfos(IEnumerable&lt;Parameter&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_CreateParameterInfos_IEnumerable_CCSPluginAPI_Parameter__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates displayable <a class="xref" href="CCSPluginAPI.ParameterInfo.html">ParameterInfo</a> objects from given input parameters, mapped
+according to their Key. Input collection should have no repeating <a class="xref" href="CCSPluginAPI.Parameter.html#CCSPluginAPI_Parameter_Key">Key</a>-s.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Dictionary&lt;string, ParameterInfo&gt; CreateParameterInfos(IEnumerable&lt;Parameter&gt; inputParameters)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">inputParameters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CCSPluginAPI.ParameterInfo.html">ParameterInfo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_CreateStaticParameterInfos_" data-uid="CommonInterfaces.ParameterHandler.CreateStaticParameterInfos*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_CreateStaticParameterInfos_IEnumerable_CCSPluginAPI_Parameter__" data-uid="CommonInterfaces.ParameterHandler.CreateStaticParameterInfos(IEnumerable{CCSPluginAPI.Parameter})"><a href="#collapsible-CommonInterfaces_ParameterHandler_CreateStaticParameterInfos_IEnumerable_CCSPluginAPI_Parameter__" class="expander" data-toggle="collapse">CreateStaticParameterInfos(IEnumerable&lt;Parameter&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_CreateStaticParameterInfos_IEnumerable_CCSPluginAPI_Parameter__" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates displayable <a class="xref" href="CCSPluginAPI.ParameterInfo.html">ParameterInfo</a> objects from given input parameters.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;ParameterInfo&gt; CreateStaticParameterInfos(IEnumerable&lt;Parameter&gt; inputParameters)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">inputParameters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.ParameterInfo.html">ParameterInfo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_GetAttributeParameter_" data-uid="CommonInterfaces.ParameterHandler.GetAttributeParameter*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_GetAttributeParameter_CCSPluginAPI_Parameter_CCSPluginAPI_ILandscape_" data-uid="CommonInterfaces.ParameterHandler.GetAttributeParameter(CCSPluginAPI.Parameter,CCSPluginAPI.ILandscape)"><a href="#collapsible-CommonInterfaces_ParameterHandler_GetAttributeParameter_CCSPluginAPI_Parameter_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetAttributeParameter(Parameter, ILandscape)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_GetAttributeParameter_CCSPluginAPI_Parameter_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns the subentity referenced by the Parameter (which must be of <a class="xref" href="CCSPluginAPI.ParameterType.html#CCSPluginAPI_ParameterType_Attribute">Attribute</a>).
+If no entity can be retrieved, returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetAttributeParameter(Parameter param, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a></span>
+        <span class="parametername">param</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_GetParametersForPlayer_" data-uid="CommonInterfaces.ParameterHandler.GetParametersForPlayer*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_GetParametersForPlayer_CCSPluginAPI_ActionConfig_CCSPluginAPI_IPlayer_" data-uid="CommonInterfaces.ParameterHandler.GetParametersForPlayer(CCSPluginAPI.ActionConfig,CCSPluginAPI.IPlayer)"><a href="#collapsible-CommonInterfaces_ParameterHandler_GetParametersForPlayer_CCSPluginAPI_ActionConfig_CCSPluginAPI_IPlayer_" class="expander" data-toggle="collapse">GetParametersForPlayer(ActionConfig, IPlayer)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_GetParametersForPlayer_CCSPluginAPI_ActionConfig_CCSPluginAPI_IPlayer_" class="collapse in">
+  <div class="markdown level1 summary"><p>Reads action configuration and gets all parameters that satisfy preconditions for the given player.
+If inner list has more than one element, it means that eather one of parameters satisfy preconditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;List&lt;Parameter&gt;&gt; GetParametersForPlayer(ActionConfig config, IPlayer player)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionConfig.html">ActionConfig</a></span>
+        <span class="parametername">config</span>
+        <p><p>Action configuration</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a></span>
+        <span class="parametername">player</span>
+        <p><p>player who will issue the action</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;&gt;
+        <p><p>List of parameter combinations that satisfy preconditions.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ParameterHandler_PreProcessActionParameters_" data-uid="CommonInterfaces.ParameterHandler.PreProcessActionParameters*"></a>
+  
+  <h4 id="CommonInterfaces_ParameterHandler_PreProcessActionParameters_IEnumerable_CCSPluginAPI_Parameter__CCSPluginAPI_ActionConfig_System_String_" data-uid="CommonInterfaces.ParameterHandler.PreProcessActionParameters(IEnumerable{CCSPluginAPI.Parameter},CCSPluginAPI.ActionConfig,System.String)"><a href="#collapsible-CommonInterfaces_ParameterHandler_PreProcessActionParameters_IEnumerable_CCSPluginAPI_Parameter__CCSPluginAPI_ActionConfig_System_String_" class="expander" data-toggle="collapse">PreProcessActionParameters(IEnumerable&lt;Parameter&gt;, ActionConfig, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ParameterHandler_PreProcessActionParameters_IEnumerable_CCSPluginAPI_Parameter__CCSPluginAPI_ActionConfig_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Deepcopies given parameters, setting their Value to an object actions can use.
+Uses current Landscape and Player object state for resource retrival.
+Processes input parameter list to be useful to action instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;Parameter&gt; PreProcessActionParameters(IEnumerable&lt;Parameter&gt; inputParameters, ActionConfig config, string playerID)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">inputParameters</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionConfig.html">ActionConfig</a></span>
+        <span class="parametername">config</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerID</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;
+        <p><p>Deepcopied altered parameter list</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

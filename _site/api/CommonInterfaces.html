@@ -1,0 +1,632 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Namespace CommonInterfaces
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Namespace CommonInterfaces
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces">
+  <h1 id="CommonInterfaces" data-uid="CommonInterfaces">Namespace CommonInterfaces
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="markdown level0 remarks"></div>
+    <h3 id="classes">Classes
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.AccessGraph.html">AccessGraph</a></p>
+          <p><p>A graph used for keeping track of object relations, mainly network connections
+and actor or software access to software/machines.
+Also provides pathfinding capability intended for use with Observables.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.AccessGraph.AccessGraphNode.html">AccessGraph.AccessGraphNode</a></p>
+          <p><p>Inner class of Graph class. Represents one node of the graph.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.AccessTuple.html">AccessTuple</a></p>
+          <p><p>Defines access information, comprising of ConnectionType and an associated Privilege.</p>
+<p>If the ConnectionType is Login, a Protocol is expected to be set as well.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionAndParamsLocalization.html">ActionAndParamsLocalization</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionCombinationAggregate.html">ActionCombinationAggregate</a></p>
+          <p><p>Defines object for multiple combinations of a particular action.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionCombinationHandler.html">ActionCombinationHandler</a></p>
+          <p><p>Class defines functions for handling combination processing and parameters handling</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionCombinationInfo.html">ActionCombinationInfo</a></p>
+          <p><p>Defines object for single action combination.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionController.html">ActionController</a></p>
+          <p><p>Class used to control program flow of one instance of the action.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionLocalization.html">ActionLocalization</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionLog.html">ActionLog</a></p>
+          <p><p>Message type containing logs of actions</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionManager.html">ActionManager</a></p>
+          <p><p>Class used to manage Actions and action lifecycle.
+It consists of  components:
+<a class="xref" href="CommonInterfaces.ActionManager.html#CommonInterfaces_ActionManager_CombinationHandler">CombinationHandler</a> and <a class="xref" href="CommonInterfaces.ActionManager.html#CommonInterfaces_ActionManager_ActionController">ActionController</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionState.html">ActionState</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActionToDo.html">ActionToDo</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActorTeam.html">ActorTeam</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.AggregateControlOutput.html">AggregateControlOutput</a></p>
+          <p><p>Contains the collection of <a class="xref" href="CommonInterfaces.EntityControlOutput.html">EntityControlOutput</a>s over multiple entities on a path.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Alert.html">Alert</a></p>
+          <p><p>Message type containing logs of controls.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Application.html">Application</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ApplicationBase.html">ApplicationBase</a></p>
+          <p><p>Simulator application implementation.
+This is singleton class as only single instance per simulation game is allowed!
+It implementes all interfaces needed for app to run.
+Maintains the player, landscape and actions state; Should Control time of simulation(needs refactoring, now game class fiddles with that logic?).</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.AttributeExpression.html">AttributeExpression</a></p>
+          <p><p>Implements the construct for evaluating Expressions tied to attributes on landscape objects.
+Whenever an <a class="xref" href="CommonInterfaces.AttributeExpression.html">AttributeExpression</a> is evaluated,
+the attribute specified by <a class="xref" href="CommonInterfaces.AttributeExpression.html#CommonInterfaces_AttributeExpression_AttributeName">AttributeName</a> on object with ID <a class="xref" href="CommonInterfaces.AttributeExpression.html#CommonInterfaces_AttributeExpression_ResidingObjectId">ResidingObjectId</a> on the residing landscape is updated.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ControlManager.html">ControlManager</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Culture.html">Culture</a></p>
+          <p><p>Static class used for setting default culture for whole app</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.EntityControlOutput.html">EntityControlOutput</a></p>
+          <p><p>Contains the aggregate of <a class="xref" href="CCSPluginAPI.ControlOutput.html">ControlOutput</a> collections over multiple control types
+on a single entity.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a></p>
+          <p><p>Wrapper abstract class containing the minimal API for handling expressions dependant on particular <a class="xref" href="CommonInterfaces.Landscape.html#CommonInterfaces_Landscape_Objects">Objects</a>.
+The class implements an expression precondition mechanic using an <a class="xref" href="CommonInterfaces.ModelData.ExpressionPrecondition.html">ExpressionPrecondition</a> object as input.</p>
+<p>
+Every class derived from <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a> can (but doesn&apos;t have to) utilize the precondition mechanic. 
+If no <a class="xref" href="CommonInterfaces.ModelData.ExpressionPrecondition.html">ExpressionPrecondition</a> is given to <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>&apos;s constructor, 
+the precondition will always evaluate to <span class="xref">true</span>.
+</p>
+<p>
+Derived classes have the freedom to do whatever within their overridden Evaluate method, 
+which is called every time a subject is updated.
+The method receives landscape objects corresponding to the IDs added by the derived class through <a class="xref" href="CommonInterfaces.ExpressionBase.html#CommonInterfaces_ExpressionBase_SetArguments_List_System_String__">SetArguments(List&lt;String&gt;)</a>, 
+along with the current evaluation of the precondition.
+</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ExpressionDelegator.html">ExpressionDelegator</a></p>
+          <p><p>Class containing of methods used to compile string expressions and operations.
+Every method returns compiled delegate of expression or operation.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ExpressionManager.html">ExpressionManager</a></p>
+          <p><p>Manager class for <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>-deriving classes. Contains existing expressions
+and prompts their evaluation according to the observer pattern.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.FolderDataManager.html">FolderDataManager</a></p>
+          <p><p>Data manager for game files contained in folders.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Helpers.html">Helpers</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Hint.html">Hint</a></p>
+          <p><p>Message type containing objects that serve as a hint to player.
+Only gamemaster is allowed to send hints.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Indicator.html">Indicator</a></p>
+          <p><p>Indicator type of expressions. Used for data display. Player can
+choose which numerical indicators are important to display
+on his dashboard.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Inject.html">Inject</a></p>
+          <p><p>Message containing inject and new objects that player receives due to inject.
+Inject is a message caused by an event happening.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Inventory.html">Inventory</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a></p>
+          <p><p>Class implementes ILandscape interface
+Loads and maintains CL objects
+Landscape oobject is part of the application and/or player object</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.LandscapeStateDelta.html">LandscapeStateDelta</a></p>
+          <p><p>Contains state delta information of a <a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a>
+or an <a class="xref" href="CommonInterfaces.Inventory.html">Inventory</a>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Ledger.html">Ledger</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.MessageSession.html">MessageSession</a></p>
+          <p><p>A class containing all messages in one conversation.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Messenger.html">Messenger</a></p>
+          <p><p>General class for sending all types of messages.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Metadata.html">Metadata</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.NewMessage.html">NewMessage</a></p>
+          <p><p>Class containing neccessary properties for processing new messages.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.NewMessages.html">NewMessages</a></p>
+          <p><p>Contains a list of new messages.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.NewRecords.html">NewRecords</a></p>
+          <p><p>Contains ledger records that have been added or updated.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Offer.html">Offer</a></p>
+          <p><p>Message type containing offer</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.OperationParser.html">OperationParser</a></p>
+          <p><p>Class used as parser of operations from config files. One instance is used to parse one operation.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ParameterHandler.html">ParameterHandler</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ParamsLocalization.html">ParamsLocalization</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Parser.html">Parser</a></p>
+          <p><p>Implements methods for parsing objects into <see cref="!:DynamicDictionary"></see>.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.PathNode.html">PathNode</a></p>
+          <p><p>Single node of a landscape path.
+Contains Id of the related landscape entity, access obtained to it, and the
+accessing node's Id.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Player.html">Player</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.PlayerStateDelta.html">PlayerStateDelta</a></p>
+          <p><p>Contains a <a class="xref" href="CommonInterfaces.Player.html">Player</a>'s Actors and Organizations
+as well as the available actions in a new state.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.PluginHandler.html">PluginHandler</a></p>
+          <p><p>This class is responsible for loading and keeping informations about different Actions that implement ActionBase abstract class.</p>
+<p>List of actions can be acquired by calling GetActionTypes(). Before we can do that we must call LoadActions() to load action types information from plugin dll file.
+Folder that keeps plugin dlls is acquired by calling Helpers.GetDataFolder().</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Request.html">Request</a></p>
+          <p><p>Message type containing request.
+Request is directed to landscape object.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Response.html">Response</a></p>
+          <p><p>Message type containing response for a <a class="xref" href="CommonInterfaces.Request.html">Request</a></p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.Schema.html">Schema</a></p>
+          <p><p>Contains everything related to the JSON schema.
+<a class="xref" href="CommonInterfaces.Schema.html#CommonInterfaces_Schema_Load_System_String_">Load(String)</a> must be called before accessing any other properties or methods.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.SimulatorDataManagerFactory.html">SimulatorDataManagerFactory</a></p>
+          <p><p>Implements factory pattern for constructing DataManager for
+given scenario file/folder based on it's extension.
+Currently suppotred managers:</p>
+<ul><li></li><li></li></ul>
+Throws exception if DataManager is not supported.
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.StreamDataManager.html">StreamDataManager</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.SubjectData.html">SubjectData</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.TextMessage.html">TextMessage</a></p>
+          <p><p>Message type containing basic text message</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.TriggerExpression.html">TriggerExpression</a></p>
+          <p><p>Implements the construct for evaluating Expressions dependant on condition change.
+The given expression will be evaluated only when the precondition switches from <span class="xref">false</span> to <span class="xref">true</span>
+or vice-versa.</p>
+<p>The specific behaviour is defined by <a class="xref" href="CommonInterfaces.TriggerExpression.html#CommonInterfaces_TriggerExpression_TriggerOnRisingEdge">TriggerOnRisingEdge</a>, where &apos;Rising edge&apos; indicates the switch from 
+<span class="xref">false</span> to <span class="xref">true</span>.</p>
+<p>Additionally, <a class="xref" href="CommonInterfaces.TriggerExpression.html#CommonInterfaces_TriggerExpression_Charges">Charges</a> indicates the number of times this trigger will happen. If it&apos;s initially set to 0 or 
+a negative number, the amount of charges will be infinite.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ZipDataManager.html">ZipDataManager</a></p>
+          <p><p>Data manager for game files contained in zip archives.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="interfaces">Interfaces
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.IBoundGameSubject.html">IBoundGameSubject</a></p>
+          <p><p>Defines method required by a Game subject bound to a player (Landscape, Inventory..)
+or bound globally.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.IDataManagerCreator.html">IDataManagerCreator</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.IGameSubject.html">IGameSubject</a></p>
+          <p><p>Defines properties every Game subject must implement.
+A Game subject is any data container vital to the application
+that is tempered with during Action and Expression updating.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ILog.html">ILog</a></p>
+          <p><p>Custom logging interface for actions and controls usage</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html">ISimulatorDataManager</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.IStandaloneGameSubject.html">IStandaloneGameSubject</a></p>
+          <p><p>Defines method required by a Standalone Game subject, meaning not bound to a particular Player.</p>
+</p>
+        </td>
+      </tr>
+    </table>
+    <h3 id="enums">Enums
+  </h3>
+    <table>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ActorDirection.html">ActorDirection</a></p>
+          <p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ConnectionType.html">ConnectionType</a></p>
+          <p><p>Type of connection established to a node,
+ordered from least to most valuable.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.ExpressionStatus.html">ExpressionStatus</a></p>
+          <p><p>Enumerates possible <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a> statuses.</p>
+</p>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <p><a class="xref" href="CommonInterfaces.SessionType.html">SessionType</a></p>
+          <p>
+        </td>
+      </tr>
+    </table>
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

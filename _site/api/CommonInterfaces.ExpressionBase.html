@@ -1,0 +1,756 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExpressionBase
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExpressionBase
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.ExpressionBase">
+  <h1 id="CommonInterfaces_ExpressionBase" data-uid="CommonInterfaces.ExpressionBase">Class ExpressionBase
+  </h1>
+  <div class="markdown level0 summary"><p>Wrapper abstract class containing the minimal API for handling expressions dependant on particular <a class="xref" href="CommonInterfaces.Landscape.html#CommonInterfaces_Landscape_Objects">Objects</a>.
+The class implements an expression precondition mechanic using an <a class="xref" href="CommonInterfaces.ModelData.ExpressionPrecondition.html">ExpressionPrecondition</a> object as input.</p>
+<p>
+Every class derived from <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a> can (but doesn&apos;t have to) utilize the precondition mechanic. 
+If no <a class="xref" href="CommonInterfaces.ModelData.ExpressionPrecondition.html">ExpressionPrecondition</a> is given to <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>&apos;s constructor, 
+the precondition will always evaluate to <span class="xref">true</span>.
+</p>
+<p>
+Derived classes have the freedom to do whatever within their overridden Evaluate method, 
+which is called every time a subject is updated.
+The method receives landscape objects corresponding to the IDs added by the derived class through <a class="xref" href="CommonInterfaces.ExpressionBase.html#CommonInterfaces_ExpressionBase_SetArguments_List_System_String__">SetArguments(List&lt;String&gt;)</a>, 
+along with the current evaluation of the precondition.
+</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ExpressionBase</span></div>
+  </div>
+  
+      <div class="level2"><a class="xref" href="CommonInterfaces.AttributeExpression.html">AttributeExpression</a></div>
+      <div class="level2"><a class="xref" href="CommonInterfaces.Indicator.html">Indicator</a></div>
+      <div class="level2"><a class="xref" href="CommonInterfaces.TriggerExpression.html">TriggerExpression</a></div>
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_ExpressionBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ExpressionBase : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase__ctor_" data-uid="CommonInterfaces.ExpressionBase.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase__ctor_CommonInterfaces_ModelData_ExpressionPrecondition_" data-uid="CommonInterfaces.ExpressionBase.#ctor(CommonInterfaces.ModelData.ExpressionPrecondition)"><a href="#collapsible-CommonInterfaces_ExpressionBase__ctor_CommonInterfaces_ModelData_ExpressionPrecondition_" class="expander" data-toggle="collapse">ExpressionBase(ExpressionPrecondition)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase__ctor_CommonInterfaces_ModelData_ExpressionPrecondition_" class="collapse in">
+  <div class="markdown level1 summary"><p>Handles the preconditions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionBase(ExpressionPrecondition preconditionBlock)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.ExpressionPrecondition.html">ExpressionPrecondition</a></span>
+        <span class="parametername">preconditionBlock</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_ConditionArguments_" data-uid="CommonInterfaces.ExpressionBase.ConditionArguments*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_ConditionArguments" data-uid="CommonInterfaces.ExpressionBase.ConditionArguments"><a href="#collapsible-CommonInterfaces_ExpressionBase_ConditionArguments" class="expander" data-toggle="collapse">ConditionArguments</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_ConditionArguments" class="collapse in">
+  <div class="markdown level1 summary"><p>Condition arguments, with repetition, in order.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;string&gt; ConditionArguments { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_ExpressionArguments_" data-uid="CommonInterfaces.ExpressionBase.ExpressionArguments*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_ExpressionArguments" data-uid="CommonInterfaces.ExpressionBase.ExpressionArguments"><a href="#collapsible-CommonInterfaces_ExpressionBase_ExpressionArguments" class="expander" data-toggle="collapse">ExpressionArguments</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_ExpressionArguments" class="collapse in">
+  <div class="markdown level1 summary"><p>Expression arguments, with repetition, in order. To be set by the deriving class.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;string&gt; ExpressionArguments { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_Id_" data-uid="CommonInterfaces.ExpressionBase.Id*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_Id" data-uid="CommonInterfaces.ExpressionBase.Id"><a href="#collapsible-CommonInterfaces_ExpressionBase_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_Id" class="collapse in">
+  <div class="markdown level1 summary"><p>Unique ID of the Expression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Id { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Guid</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_InputBlock_" data-uid="CommonInterfaces.ExpressionBase.InputBlock*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_InputBlock" data-uid="CommonInterfaces.ExpressionBase.InputBlock"><a href="#collapsible-CommonInterfaces_ExpressionBase_InputBlock" class="expander" data-toggle="collapse">InputBlock</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_InputBlock" class="collapse in">
+  <div class="markdown level1 summary"><p>A reference to the expression block passed to the constructor.
+For future reference.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public CCSData InputBlock { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.CCSData.html">CCSData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_Status_" data-uid="CommonInterfaces.ExpressionBase.Status*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_Status" data-uid="CommonInterfaces.ExpressionBase.Status"><a href="#collapsible-CommonInterfaces_ExpressionBase_Status" class="expander" data-toggle="collapse">Status</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_Status" class="collapse in">
+  <div class="markdown level1 summary"><p>Status of the expression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionStatus Status { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ExpressionStatus.html">ExpressionStatus</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_UnifiedArguments_" data-uid="CommonInterfaces.ExpressionBase.UnifiedArguments*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_UnifiedArguments" data-uid="CommonInterfaces.ExpressionBase.UnifiedArguments"><a href="#collapsible-CommonInterfaces_ExpressionBase_UnifiedArguments" class="expander" data-toggle="collapse">UnifiedArguments</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_UnifiedArguments" class="collapse in">
+  <div class="markdown level1 summary"><p>Union of ConditionArguments and ExpressionArguments, without repetition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ReadOnlyCollection&lt;string&gt; UnifiedArguments { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ReadOnlyCollection</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_Equals_" data-uid="CommonInterfaces.ExpressionBase.Equals*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_Equals_System_Object_" data-uid="CommonInterfaces.ExpressionBase.Equals(System.Object)"><a href="#collapsible-CommonInterfaces_ExpressionBase_Equals_System_Object_" class="expander" data-toggle="collapse">Equals(Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_Equals_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool Equals(object obj)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_Evaluate_" data-uid="CommonInterfaces.ExpressionBase.Evaluate*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_Evaluate_List_System_Object__System_Boolean_" data-uid="CommonInterfaces.ExpressionBase.Evaluate(List{System.Object},System.Boolean)"><a href="#collapsible-CommonInterfaces_ExpressionBase_Evaluate_List_System_Object__System_Boolean_" class="expander" data-toggle="collapse">Evaluate(List&lt;Object&gt;, Boolean)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_Evaluate_List_System_Object__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Performs all the required evaluation for an <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>-inheriting class.
+This method is called after the precondition has been checked, and the precondition's evaluation is given
+in the <code data-dev-comment-type="paramref" class="paramref">conditionState</code> parameter.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Evaluate(List&lt;object&gt; expressionArgumentObjects, bool conditionState)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">expressionArgumentObjects</span>
+        <p><p>Objects which the inheriting class requires for evaluation. Defined through <a class="xref" href="CommonInterfaces.ExpressionBase.html#CommonInterfaces_ExpressionBase_SetArguments_List_System_String__">SetArguments(List&lt;String&gt;)</a></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">conditionState</span>
+        <p><p>Evaluation of the precondition</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_GetHashCode_" data-uid="CommonInterfaces.ExpressionBase.GetHashCode*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_GetHashCode" data-uid="CommonInterfaces.ExpressionBase.GetHashCode"><a href="#collapsible-CommonInterfaces_ExpressionBase_GetHashCode" class="expander" data-toggle="collapse">GetHashCode()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_GetHashCode" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override int GetHashCode()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_Initialize_" data-uid="CommonInterfaces.ExpressionBase.Initialize*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_Initialize" data-uid="CommonInterfaces.ExpressionBase.Initialize"><a href="#collapsible-CommonInterfaces_ExpressionBase_Initialize" class="expander" data-toggle="collapse">Initialize()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_Initialize" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes the Expression, locking its arguments and returning a complete argument list, without repetition.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; Initialize()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_ListToDictionary_" data-uid="CommonInterfaces.ExpressionBase.ListToDictionary*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_ListToDictionary_IEnumerable_CommonInterfaces_ModelData_Formula__" data-uid="CommonInterfaces.ExpressionBase.ListToDictionary(IEnumerable{CommonInterfaces.ModelData.Formula})"><a href="#collapsible-CommonInterfaces_ExpressionBase_ListToDictionary_IEnumerable_CommonInterfaces_ModelData_Formula__" class="expander" data-toggle="collapse">ListToDictionary(IEnumerable&lt;Formula&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_ListToDictionary_IEnumerable_CommonInterfaces_ModelData_Formula__" class="collapse in">
+  <div class="markdown level1 summary"><p>Used for converting a <a class="xref" href="CommonInterfaces.ModelData.Formula.html">Formula</a> collection into
+a dictionary to be used by <a class="xref" href="CommonInterfaces.ExpressionDelegator.html">ExpressionDelegator</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected static DynamicDictionary ListToDictionary(IEnumerable&lt;Formula&gt; inputBlock)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CommonInterfaces.ModelData.Formula.html">Formula</a>&gt;</span>
+        <span class="parametername">inputBlock</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicDictionary</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_PerformEvaluation_" data-uid="CommonInterfaces.ExpressionBase.PerformEvaluation*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_PerformEvaluation_List_System_Object__List_System_Object__" data-uid="CommonInterfaces.ExpressionBase.PerformEvaluation(List{System.Object},List{System.Object})"><a href="#collapsible-CommonInterfaces_ExpressionBase_PerformEvaluation_List_System_Object__List_System_Object__" class="expander" data-toggle="collapse">PerformEvaluation(List&lt;Object&gt;, List&lt;Object&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_PerformEvaluation_List_System_Object__List_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Evaluates the expression's precondition (if it has any) and the expression itself afterwards,
+using the given respective argument lists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void PerformEvaluation(List&lt;object&gt; conditionArgumentObjects, List&lt;object&gt; expressionArgumentObjects)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">conditionArgumentObjects</span>
+        <p><p>Ordered argument objects for the precondition</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">expressionArgumentObjects</span>
+        <p><p>Ordered argument objects for the expression</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_SetArguments_" data-uid="CommonInterfaces.ExpressionBase.SetArguments*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_SetArguments_List_System_String__" data-uid="CommonInterfaces.ExpressionBase.SetArguments(List{System.String})"><a href="#collapsible-CommonInterfaces_ExpressionBase_SetArguments_List_System_String__" class="expander" data-toggle="collapse">SetArguments(List&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_SetArguments_List_System_String__" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets arguments as given by
+<a class="xref" href="CommonInterfaces.ExpressionDelegator.html#CommonInterfaces_ExpressionDelegator_ParseExpression_IEnumerable_KeyValuePair_System_String_System_Object___List_System_String___">ParseExpression(IEnumerable&lt;KeyValuePair&lt;String, Object&gt;&gt;, out List&lt;String&gt;)</a>.
+Only these arguments will be used for observer-pattern initialization
+and, in extension, be passed to Evaluate (in the exact order as listed).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void SetArguments(List&lt;string&gt; arguments)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">arguments</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionBase_Terminate_" data-uid="CommonInterfaces.ExpressionBase.Terminate*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionBase_Terminate" data-uid="CommonInterfaces.ExpressionBase.Terminate"><a href="#collapsible-CommonInterfaces_ExpressionBase_Terminate" class="expander" data-toggle="collapse">Terminate()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionBase_Terminate" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the <a class="xref" href="CommonInterfaces.ExpressionBase.html#CommonInterfaces_ExpressionBase_Status">Status</a> to <a class="xref" href="CommonInterfaces.ExpressionStatus.html#CommonInterfaces_ExpressionStatus_Terminated">Terminated</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void Terminate()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,679 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExpressionManager
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExpressionManager
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.ExpressionManager">
+  <h1 id="CommonInterfaces_ExpressionManager" data-uid="CommonInterfaces.ExpressionManager">Class ExpressionManager
+  </h1>
+  <div class="markdown level0 summary"><p>Manager class for <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>-deriving classes. Contains existing expressions
+and prompts their evaluation according to the observer pattern.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ExpressionManager</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_ExpressionManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ExpressionManager : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager__ctor_" data-uid="CommonInterfaces.ExpressionManager.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager__ctor_CommonInterfaces_ModelData_ExpressionsData_" data-uid="CommonInterfaces.ExpressionManager.#ctor(CommonInterfaces.ModelData.ExpressionsData)"><a href="#collapsible-CommonInterfaces_ExpressionManager__ctor_CommonInterfaces_ModelData_ExpressionsData_" class="expander" data-toggle="collapse">ExpressionManager(ExpressionsData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager__ctor_CommonInterfaces_ModelData_ExpressionsData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionManager(ExpressionsData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.ExpressionsData.html">ExpressionsData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_AllExpressions_" data-uid="CommonInterfaces.ExpressionManager.AllExpressions*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_AllExpressions" data-uid="CommonInterfaces.ExpressionManager.AllExpressions"><a href="#collapsible-CommonInterfaces_ExpressionManager_AllExpressions" class="expander" data-toggle="collapse">AllExpressions</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_AllExpressions" class="collapse in">
+  <div class="markdown level1 summary"><p>Pool containing all Expressions, unsorted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerable&lt;ExpressionBase&gt; AllExpressions { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerable</span>&lt;<a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_ExpressionPool_" data-uid="CommonInterfaces.ExpressionManager.ExpressionPool*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_ExpressionPool" data-uid="CommonInterfaces.ExpressionManager.ExpressionPool"><a href="#collapsible-CommonInterfaces_ExpressionManager_ExpressionPool" class="expander" data-toggle="collapse">ExpressionPool</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_ExpressionPool" class="collapse in">
+  <div class="markdown level1 summary"><p>Expression pool mapping object ID to a list of Expressions
+that depend on that particular object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IDictionary&lt;string, List&lt;ExpressionBase&gt;&gt; ExpressionPool { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_Indicators_" data-uid="CommonInterfaces.ExpressionManager.Indicators*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_Indicators" data-uid="CommonInterfaces.ExpressionManager.Indicators"><a href="#collapsible-CommonInterfaces_ExpressionManager_Indicators" class="expander" data-toggle="collapse">Indicators</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_Indicators" class="collapse in">
+  <div class="markdown level1 summary"><p>Pool containing Indicator expressions, unsorted.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Indicator&gt; Indicators { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.Indicator.html">Indicator</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_AddExpression_" data-uid="CommonInterfaces.ExpressionManager.AddExpression*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_AddExpression_CommonInterfaces_ExpressionBase_" data-uid="CommonInterfaces.ExpressionManager.AddExpression(CommonInterfaces.ExpressionBase)"><a href="#collapsible-CommonInterfaces_ExpressionManager_AddExpression_CommonInterfaces_ExpressionBase_" class="expander" data-toggle="collapse">AddExpression(ExpressionBase)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_AddExpression_CommonInterfaces_ExpressionBase_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds the given Expression to the <a class="xref" href="CommonInterfaces.ExpressionManager.html#CommonInterfaces_ExpressionManager_AllExpressions">AllExpressions</a> pool.
+Calling <a class="xref" href="CommonInterfaces.ExpressionManager.html#CommonInterfaces_ExpressionManager_InitializeExpressions">InitializeExpressions()</a> is required before the added Expression
+can be used by the observer system.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddExpression(ExpressionBase expression)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a></span>
+        <span class="parametername">expression</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_Export_" data-uid="CommonInterfaces.ExpressionManager.Export*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_Export" data-uid="CommonInterfaces.ExpressionManager.Export"><a href="#collapsible-CommonInterfaces_ExpressionManager_Export" class="expander" data-toggle="collapse">Export()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_Export" class="collapse in">
+  <div class="markdown level1 summary"><p>Exports the expressions' data.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionsData Export()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.ExpressionsData.html">ExpressionsData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_GetIndicator_" data-uid="CommonInterfaces.ExpressionManager.GetIndicator*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_GetIndicator_Guid_" data-uid="CommonInterfaces.ExpressionManager.GetIndicator(Guid)"><a href="#collapsible-CommonInterfaces_ExpressionManager_GetIndicator_Guid_" class="expander" data-toggle="collapse">GetIndicator(Guid)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_GetIndicator_Guid_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves an Indicator expression specified by the given ID.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Indicator GetIndicator(Guid recordId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Guid</span></span>
+        <span class="parametername">recordId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Indicator.html">Indicator</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_GetObservers_" data-uid="CommonInterfaces.ExpressionManager.GetObservers*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_GetObservers_System_String_" data-uid="CommonInterfaces.ExpressionManager.GetObservers(System.String)"><a href="#collapsible-CommonInterfaces_ExpressionManager_GetObservers_System_String_" class="expander" data-toggle="collapse">GetObservers(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_GetObservers_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves the subject's observer expressions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ExpressionBase&gt; GetObservers(string subjectId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">subjectId</span>
+        <p><p>Id of the entity in a landscape</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a>&gt;
+        <p><p>List of the observer expressions, empty if none exist</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_HasObservers_" data-uid="CommonInterfaces.ExpressionManager.HasObservers*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_HasObservers_System_String_" data-uid="CommonInterfaces.ExpressionManager.HasObservers(System.String)"><a href="#collapsible-CommonInterfaces_ExpressionManager_HasObservers_System_String_" class="expander" data-toggle="collapse">HasObservers(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_HasObservers_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if the given subject has any observer expressions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool HasObservers(string subjectId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">subjectId</span>
+        <p><p>Id of the entity in a landscape</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_InitializeExpressions_" data-uid="CommonInterfaces.ExpressionManager.InitializeExpressions*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_InitializeExpressions" data-uid="CommonInterfaces.ExpressionManager.InitializeExpressions"><a href="#collapsible-CommonInterfaces_ExpressionManager_InitializeExpressions" class="expander" data-toggle="collapse">InitializeExpressions()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_InitializeExpressions" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes all unitialized <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a> instances in <a class="xref" href="CommonInterfaces.ExpressionManager.html#CommonInterfaces_ExpressionManager_AllExpressions">AllExpressions</a>,
+thereby populating the <a class="xref" href="CommonInterfaces.ExpressionManager.html#CommonInterfaces_ExpressionManager_ExpressionPool">ExpressionPool</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeExpressions()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_LandscapeUpdateHandler_" data-uid="CommonInterfaces.ExpressionManager.LandscapeUpdateHandler*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_LandscapeUpdateHandler_System_Object_System_Object_System_Boolean_" data-uid="CommonInterfaces.ExpressionManager.LandscapeUpdateHandler(System.Object,System.Object,System.Boolean)"><a href="#collapsible-CommonInterfaces_ExpressionManager_LandscapeUpdateHandler_System_Object_System_Object_System_Boolean_" class="expander" data-toggle="collapse">LandscapeUpdateHandler(Object, Object, Boolean)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_LandscapeUpdateHandler_System_Object_System_Object_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Handler method for <a class="xref" href="CommonInterfaces.Landscape.html#CommonInterfaces_Landscape_ObjectUpdatedEvent">ObjectUpdatedEvent</a>.
+Intended for use ONLY on ground-truth landscapes (Global landscape, Shared objects etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LandscapeUpdateHandler(dynamic updatedObject, dynamic oldObject, bool viaExpression)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">updatedObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">oldObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">viaExpression</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_RemoveExpression_" data-uid="CommonInterfaces.ExpressionManager.RemoveExpression*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_RemoveExpression_Guid_" data-uid="CommonInterfaces.ExpressionManager.RemoveExpression(Guid)"><a href="#collapsible-CommonInterfaces_ExpressionManager_RemoveExpression_Guid_" class="expander" data-toggle="collapse">RemoveExpression(Guid)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_RemoveExpression_Guid_" class="collapse in">
+  <div class="markdown level1 summary"><p>Places an order for the <a class="xref" href="CommonInterfaces.ExpressionBase.html">ExpressionBase</a> instance with the given Id to be removed
+from ExpressionPool and AllExpressions. The removal is performed on the next time update to ExpressionManager.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void RemoveExpression(Guid expressionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Guid</span></span>
+        <span class="parametername">expressionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionManager_UpdateTime_" data-uid="CommonInterfaces.ExpressionManager.UpdateTime*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionManager_UpdateTime_System_Double_" data-uid="CommonInterfaces.ExpressionManager.UpdateTime(System.Double)"><a href="#collapsible-CommonInterfaces_ExpressionManager_UpdateTime_System_Double_" class="expander" data-toggle="collapse">UpdateTime(Double)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionManager_UpdateTime_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"><p>Updates the time delta value of the ExpressionManager and notifies all the expressions dependant on it.
+Also performs cleanup of Expressions that have to be disposed of.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTime(double delta)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">delta</span>
+        <p><p>Time delta, in seconds</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

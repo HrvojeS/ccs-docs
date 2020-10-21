@@ -1,0 +1,1586 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Landscape
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Landscape
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.Landscape">
+  <h1 id="CommonInterfaces_Landscape" data-uid="CommonInterfaces.Landscape">Class Landscape
+  </h1>
+  <div class="markdown level0 summary"><p>Class implementes ILandscape interface
+Loads and maintains CL objects
+Landscape oobject is part of the application and/or player object</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Landscape</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_Landscape_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Landscape : object, ILandscape, IBoundGameSubject, IGameSubject, ISerializable&lt;LandscapeData&gt;</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Landscape__ctor_" data-uid="CommonInterfaces.Landscape.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape__ctor_CommonInterfaces_ModelData_LandscapeData_" data-uid="CommonInterfaces.Landscape.#ctor(CommonInterfaces.ModelData.LandscapeData)"><a href="#collapsible-CommonInterfaces_Landscape__ctor_CommonInterfaces_ModelData_LandscapeData_" class="expander" data-toggle="collapse">Landscape(LandscapeData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape__ctor_CommonInterfaces_ModelData_LandscapeData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Landscape(LandscapeData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.LandscapeData.html">LandscapeData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Landscape_AccessGraph_" data-uid="CommonInterfaces.Landscape.AccessGraph*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_AccessGraph" data-uid="CommonInterfaces.Landscape.AccessGraph"><a href="#collapsible-CommonInterfaces_Landscape_AccessGraph" class="expander" data-toggle="collapse">AccessGraph</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_AccessGraph" class="collapse in">
+  <div class="markdown level1 summary"><p>Access graph, keeping track of object access relations (login, exploit, malware, physical etc.).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public AccessGraph AccessGraph { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.AccessGraph.html">AccessGraph</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Id_" data-uid="CommonInterfaces.Landscape.Id*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Id" data-uid="CommonInterfaces.Landscape.Id"><a href="#collapsible-CommonInterfaces_Landscape_Id" class="expander" data-toggle="collapse">Id</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Id" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Guid Id { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Guid</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Objects_" data-uid="CommonInterfaces.Landscape.Objects*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Objects" data-uid="CommonInterfaces.Landscape.Objects"><a href="#collapsible-CommonInterfaces_Landscape_Objects" class="expander" data-toggle="collapse">Objects</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Objects" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; Objects { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_RemovedObjectIds_" data-uid="CommonInterfaces.Landscape.RemovedObjectIds*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_RemovedObjectIds" data-uid="CommonInterfaces.Landscape.RemovedObjectIds"><a href="#collapsible-CommonInterfaces_Landscape_RemovedObjectIds" class="expander" data-toggle="collapse">RemovedObjectIds</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_RemovedObjectIds" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; RemovedObjectIds { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Updated_" data-uid="CommonInterfaces.Landscape.Updated*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Updated" data-uid="CommonInterfaces.Landscape.Updated"><a href="#collapsible-CommonInterfaces_Landscape_Updated" class="expander" data-toggle="collapse">Updated</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Updated" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Updated { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Updated">IGameSubject.Updated</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_UpdatedObjects_" data-uid="CommonInterfaces.Landscape.UpdatedObjects*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_UpdatedObjects" data-uid="CommonInterfaces.Landscape.UpdatedObjects"><a href="#collapsible-CommonInterfaces_Landscape_UpdatedObjects" class="expander" data-toggle="collapse">UpdatedObjects</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_UpdatedObjects" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; UpdatedObjects { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Landscape_AddList_" data-uid="CommonInterfaces.Landscape.AddList*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_AddList_IEnumerable_" data-uid="CommonInterfaces.Landscape.AddList(IEnumerable)"><a href="#collapsible-CommonInterfaces_Landscape_AddList_IEnumerable_" class="expander" data-toggle="collapse">AddList(IEnumerable)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_AddList_IEnumerable_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddList(IEnumerable entity)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_AddOrUpdate_" data-uid="CommonInterfaces.Landscape.AddOrUpdate*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_AddOrUpdate_System_Object_System_Boolean_" data-uid="CommonInterfaces.Landscape.AddOrUpdate(System.Object,System.Boolean)"><a href="#collapsible-CommonInterfaces_Landscape_AddOrUpdate_System_Object_System_Boolean_" class="expander" data-toggle="collapse">AddOrUpdate(Object, Boolean)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_AddOrUpdate_System_Object_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds or updates given object into the landscape, notifiying object listeners if the object is being updated</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddOrUpdate(dynamic entity, bool genericName = false)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">genericName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_AddOrUpdate_System_Object_System_Boolean_">ILandscape.AddOrUpdate(Object, Boolean)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_AddToListAttribute_" data-uid="CommonInterfaces.Landscape.AddToListAttribute*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_AddToListAttribute_System_String_System_String_System_Object_" data-uid="CommonInterfaces.Landscape.AddToListAttribute(System.String,System.String,System.Object)"><a href="#collapsible-CommonInterfaces_Landscape_AddToListAttribute_System_String_System_String_System_Object_" class="expander" data-toggle="collapse">AddToListAttribute(String, String, Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_AddToListAttribute_System_String_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool AddToListAttribute(string entityId, string attributeName, object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_AddToListAttribute_System_String_System_String_System_Object_">ILandscape.AddToListAttribute(String, String, Object)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Clear_" data-uid="CommonInterfaces.Landscape.Clear*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Clear" data-uid="CommonInterfaces.Landscape.Clear"><a href="#collapsible-CommonInterfaces_Landscape_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Clear" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Clear">IGameSubject.Clear()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Contains_" data-uid="CommonInterfaces.Landscape.Contains*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Contains_System_String_" data-uid="CommonInterfaces.Landscape.Contains(System.String)"><a href="#collapsible-CommonInterfaces_Landscape_Contains_System_String_" class="expander" data-toggle="collapse">Contains(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Contains_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string entityId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_Contains_System_String_">ILandscape.Contains(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Export_" data-uid="CommonInterfaces.Landscape.Export*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Export" data-uid="CommonInterfaces.Landscape.Export"><a href="#collapsible-CommonInterfaces_Landscape_Export" class="expander" data-toggle="collapse">Export()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Export" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LandscapeData Export()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.LandscapeData.html">LandscapeData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.Serializer.ISerializable-1.html#CommonInterfaces_Serializer_ISerializable_1_Export">ISerializable&lt;T&gt;.Export()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetObject_" data-uid="CommonInterfaces.Landscape.GetObject*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetObject_System_String_" data-uid="CommonInterfaces.Landscape.GetObject(System.String)"><a href="#collapsible-CommonInterfaces_Landscape_GetObject_System_String_" class="expander" data-toggle="collapse">GetObject(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetObject_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic GetObject(string entityId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_GetObject_System_String_">ILandscape.GetObject(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetObjectName_" data-uid="CommonInterfaces.Landscape.GetObjectName*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetObjectName_System_String_" data-uid="CommonInterfaces.Landscape.GetObjectName(System.String)"><a href="#collapsible-CommonInterfaces_Landscape_GetObjectName_System_String_" class="expander" data-toggle="collapse">GetObjectName(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetObjectName_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetObjectName(string entityId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_GetObjectName_System_String_">ILandscape.GetObjectName(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetObjectsWhere_" data-uid="CommonInterfaces.Landscape.GetObjectsWhere*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetObjectsWhere_Func_System_Object_System_Boolean__" data-uid="CommonInterfaces.Landscape.GetObjectsWhere(Func{System.Object,System.Boolean})"><a href="#collapsible-CommonInterfaces_Landscape_GetObjectsWhere_Func_System_Object_System_Boolean__" class="expander" data-toggle="collapse">GetObjectsWhere(Func&lt;Object, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetObjectsWhere_Func_System_Object_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; GetObjectsWhere(Func&lt;dynamic, bool&gt; predicate)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">predicate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetObjectsWithAttributeValue_" data-uid="CommonInterfaces.Landscape.GetObjectsWithAttributeValue*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetObjectsWithAttributeValue_IEnumerable_System_ValueTuple_System_String_System_Object___" data-uid="CommonInterfaces.Landscape.GetObjectsWithAttributeValue(IEnumerable{System.ValueTuple{System.String,System.Object}})"><a href="#collapsible-CommonInterfaces_Landscape_GetObjectsWithAttributeValue_IEnumerable_System_ValueTuple_System_String_System_Object___" class="expander" data-toggle="collapse">GetObjectsWithAttributeValue(IEnumerable&lt;(String attributeName, Object value)&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetObjectsWithAttributeValue_IEnumerable_System_ValueTuple_System_String_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; GetObjectsWithAttributeValue(IEnumerable&lt;(string attributeName, dynamic value)&gt; attributeValuePairs)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;</span>
+        <span class="parametername">attributeValuePairs</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetObjectsWithAttributeValue_" data-uid="CommonInterfaces.Landscape.GetObjectsWithAttributeValue*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetObjectsWithAttributeValue_System_String_System_Object_" data-uid="CommonInterfaces.Landscape.GetObjectsWithAttributeValue(System.String,System.Object)"><a href="#collapsible-CommonInterfaces_Landscape_GetObjectsWithAttributeValue_System_String_System_Object_" class="expander" data-toggle="collapse">GetObjectsWithAttributeValue(String, Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetObjectsWithAttributeValue_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; GetObjectsWithAttributeValue(string attributeName, dynamic value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetObjectsWithLabel_" data-uid="CommonInterfaces.Landscape.GetObjectsWithLabel*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetObjectsWithLabel_System_String_" data-uid="CommonInterfaces.Landscape.GetObjectsWithLabel(System.String)"><a href="#collapsible-CommonInterfaces_Landscape_GetObjectsWithLabel_System_String_" class="expander" data-toggle="collapse">GetObjectsWithLabel(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetObjectsWithLabel_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; GetObjectsWithLabel(string label)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">label</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetObjectUnsafe_" data-uid="CommonInterfaces.Landscape.GetObjectUnsafe*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetObjectUnsafe_System_String_" data-uid="CommonInterfaces.Landscape.GetObjectUnsafe(System.String)"><a href="#collapsible-CommonInterfaces_Landscape_GetObjectUnsafe_System_String_" class="expander" data-toggle="collapse">GetObjectUnsafe(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetObjectUnsafe_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic GetObjectUnsafe(string entityId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_GetSubjectDelta_" data-uid="CommonInterfaces.Landscape.GetSubjectDelta*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_GetSubjectDelta" data-uid="CommonInterfaces.Landscape.GetSubjectDelta"><a href="#collapsible-CommonInterfaces_Landscape_GetSubjectDelta" class="expander" data-toggle="collapse">GetSubjectDelta()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_GetSubjectDelta" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubjectData GetSubjectDelta()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.SubjectData.html">SubjectData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IBoundGameSubject.html#CommonInterfaces_IBoundGameSubject_GetSubjectDelta">IBoundGameSubject.GetSubjectDelta()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Remove_" data-uid="CommonInterfaces.Landscape.Remove*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Remove_System_Object_" data-uid="CommonInterfaces.Landscape.Remove(System.Object)"><a href="#collapsible-CommonInterfaces_Landscape_Remove_System_Object_" class="expander" data-toggle="collapse">Remove(Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Remove_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(dynamic entity)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_Remove_System_Object_">ILandscape.Remove(Object)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_Remove_" data-uid="CommonInterfaces.Landscape.Remove*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_Remove_System_String_" data-uid="CommonInterfaces.Landscape.Remove(System.String)"><a href="#collapsible-CommonInterfaces_Landscape_Remove_System_String_" class="expander" data-toggle="collapse">Remove(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_Remove_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes an object from <a class="xref" href="CommonInterfaces.Landscape.html#CommonInterfaces_Landscape_Objects">Objects</a>.
+Also, sets the <a class="xref" href="CommonInterfaces.Landscape.html#CommonInterfaces_Landscape_Updated">Updated</a> flag.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(string entityId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_Remove_System_String_">ILandscape.Remove(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_RemoveAll_" data-uid="CommonInterfaces.Landscape.RemoveAll*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_RemoveAll_Predicate_System_Object__" data-uid="CommonInterfaces.Landscape.RemoveAll(Predicate{System.Object})"><a href="#collapsible-CommonInterfaces_Landscape_RemoveAll_Predicate_System_Object__" class="expander" data-toggle="collapse">RemoveAll(Predicate&lt;Object&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_RemoveAll_Predicate_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int RemoveAll(Predicate&lt;dynamic&gt; predicate)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Predicate</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">predicate</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_RemoveFromListAttribute_" data-uid="CommonInterfaces.Landscape.RemoveFromListAttribute*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_RemoveFromListAttribute_System_String_System_String_Predicate_System_Object__" data-uid="CommonInterfaces.Landscape.RemoveFromListAttribute(System.String,System.String,Predicate{System.Object})"><a href="#collapsible-CommonInterfaces_Landscape_RemoveFromListAttribute_System_String_System_String_Predicate_System_Object__" class="expander" data-toggle="collapse">RemoveFromListAttribute(String, String, Predicate&lt;Object&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_RemoveFromListAttribute_System_String_System_String_Predicate_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Remove all elements from list that satisfy given condition</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveFromListAttribute(string entityId, string attributeName, Predicate&lt;dynamic&gt; condition)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Predicate</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">condition</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_RemoveFromListAttribute_" data-uid="CommonInterfaces.Landscape.RemoveFromListAttribute*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_RemoveFromListAttribute_System_String_System_String_System_String_" data-uid="CommonInterfaces.Landscape.RemoveFromListAttribute(System.String,System.String,System.String)"><a href="#collapsible-CommonInterfaces_Landscape_RemoveFromListAttribute_System_String_System_String_System_String_" class="expander" data-toggle="collapse">RemoveFromListAttribute(String, String, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_RemoveFromListAttribute_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RemoveFromListAttribute(string entityId, string attributeName, string value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_RemoveFromListAttribute_System_String_System_String_System_String_">ILandscape.RemoveFromListAttribute(String, String, String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_SetValueAttribute_" data-uid="CommonInterfaces.Landscape.SetValueAttribute*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_SetValueAttribute_System_String_System_String_System_Object_" data-uid="CommonInterfaces.Landscape.SetValueAttribute(System.String,System.String,System.Object)"><a href="#collapsible-CommonInterfaces_Landscape_SetValueAttribute_System_String_System_String_System_Object_" class="expander" data-toggle="collapse">SetValueAttribute(String, String, Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_SetValueAttribute_System_String_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetValueAttribute(string entityId, string attributeName, object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_SetValueAttribute_System_String_System_String_System_Object_">ILandscape.SetValueAttribute(String, String, Object)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_SetValueAttribute_" data-uid="CommonInterfaces.Landscape.SetValueAttribute*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_SetValueAttribute_System_String_System_String_System_Object_System_Object___" data-uid="CommonInterfaces.Landscape.SetValueAttribute(System.String,System.String,System.Object,System.Object[])"><a href="#collapsible-CommonInterfaces_Landscape_SetValueAttribute_System_String_System_String_System_Object_System_Object___" class="expander" data-toggle="collapse">SetValueAttribute(String, String, Object, Object[])</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_SetValueAttribute_System_String_System_String_System_Object_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool SetValueAttribute(string entityId, string attributeName, object value, params object[] operations)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">operations</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_SetValueAttribute_System_String_System_String_System_Object_System_Object___">ILandscape.SetValueAttribute(String, String, Object, Object[])</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Landscape_UpdateViaExpression_" data-uid="CommonInterfaces.Landscape.UpdateViaExpression*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_UpdateViaExpression_System_String_Func_System_Object_System_Boolean__" data-uid="CommonInterfaces.Landscape.UpdateViaExpression(System.String,Func{System.Object,System.Boolean})"><a href="#collapsible-CommonInterfaces_Landscape_UpdateViaExpression_System_String_Func_System_Object_System_Boolean__" class="expander" data-toggle="collapse">UpdateViaExpression(String, Func&lt;Object, Boolean&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_UpdateViaExpression_System_String_Func_System_Object_System_Boolean__" class="collapse in">
+  <div class="markdown level1 summary"><p>Add or update given object to landscape and notify object listeners via expression</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool UpdateViaExpression(string entityId, Func&lt;dynamic, bool&gt; funcToDo)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">System.Object</span>, <span class="xref">System.Boolean</span>&gt;</span>
+        <span class="parametername">funcToDo</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="events">Events
+  </h3>
+  
+  
+  
+  <h4 id="CommonInterfaces_Landscape_ObjectUpdatedEvent" data-uid="CommonInterfaces.Landscape.ObjectUpdatedEvent"><a href="#collapsible-CommonInterfaces_Landscape_ObjectUpdatedEvent" class="expander" data-toggle="collapse">ObjectUpdatedEvent</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_ObjectUpdatedEvent" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public event ILandscape.UpdateHandler ObjectUpdatedEvent</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  <h5 class="eventType">Event Type</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILandscape.UpdateHandler.html">ILandscape.UpdateHandler</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_ObjectUpdatedEvent">ILandscape.ObjectUpdatedEvent</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Landscape_CCSPluginAPI_ILandscape_AccessGraph_" data-uid="CommonInterfaces.Landscape.CCSPluginAPI#ILandscape#AccessGraph*"></a>
+  
+  <h4 id="CommonInterfaces_Landscape_CCSPluginAPI_ILandscape_AccessGraph" data-uid="CommonInterfaces.Landscape.CCSPluginAPI#ILandscape#AccessGraph"><a href="#collapsible-CommonInterfaces_Landscape_CCSPluginAPI_ILandscape_AccessGraph" class="expander" data-toggle="collapse">ILandscape.AccessGraph</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Landscape_CCSPluginAPI_ILandscape_AccessGraph" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IAccessGraph ILandscape.AccessGraph { get; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IAccessGraph.html">IAccessGraph</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILandscape.html#CCSPluginAPI_ILandscape_AccessGraph">ILandscape.AccessGraph</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

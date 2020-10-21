@@ -1,0 +1,2127 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class StreamDataManager
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class StreamDataManager
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.StreamDataManager">
+  <h1 id="CommonInterfaces_StreamDataManager" data-uid="CommonInterfaces.StreamDataManager">Class StreamDataManager
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">StreamDataManager</span></div>
+  </div>
+  
+      <div class="level2"><a class="xref" href="CommonInterfaces.FolderDataManager.html">FolderDataManager</a></div>
+      <div class="level2"><a class="xref" href="CommonInterfaces.ZipDataManager.html">ZipDataManager</a></div>
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_StreamDataManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class StreamDataManager : object, ISimulatorDataManager, IDisposable</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager__ctor_" data-uid="CommonInterfaces.StreamDataManager.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager__ctor_Stream_" data-uid="CommonInterfaces.StreamDataManager.#ctor(Stream)"><a href="#collapsible-CommonInterfaces_StreamDataManager__ctor_Stream_" class="expander" data-toggle="collapse">StreamDataManager(Stream)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager__ctor_Stream_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamDataManager(Stream stream)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Stream</span></span>
+        <span class="parametername">stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager__ctor_" data-uid="CommonInterfaces.StreamDataManager.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager__ctor_System_String_" data-uid="CommonInterfaces.StreamDataManager.#ctor(System.String)"><a href="#collapsible-CommonInterfaces_StreamDataManager__ctor_System_String_" class="expander" data-toggle="collapse">StreamDataManager(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager__ctor_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public StreamDataManager(string scenarioPath)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">scenarioPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_ScenarioPath_" data-uid="CommonInterfaces.StreamDataManager.ScenarioPath*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_ScenarioPath" data-uid="CommonInterfaces.StreamDataManager.ScenarioPath"><a href="#collapsible-CommonInterfaces_StreamDataManager_ScenarioPath" class="expander" data-toggle="collapse">ScenarioPath</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_ScenarioPath" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ScenarioPath { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_ScenarioPath">ISimulatorDataManager.ScenarioPath</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_ScenarioStream_" data-uid="CommonInterfaces.StreamDataManager.ScenarioStream*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_ScenarioStream" data-uid="CommonInterfaces.StreamDataManager.ScenarioStream"><a href="#collapsible-CommonInterfaces_StreamDataManager_ScenarioStream" class="expander" data-toggle="collapse">ScenarioStream</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_ScenarioStream" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Stream ScenarioStream { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_CopyTo_" data-uid="CommonInterfaces.StreamDataManager.CopyTo*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_CopyTo_CommonInterfaces_ISimulatorDataManager_" data-uid="CommonInterfaces.StreamDataManager.CopyTo(CommonInterfaces.ISimulatorDataManager)"><a href="#collapsible-CommonInterfaces_StreamDataManager_CopyTo_CommonInterfaces_ISimulatorDataManager_" class="expander" data-toggle="collapse">CopyTo(ISimulatorDataManager)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_CopyTo_CommonInterfaces_ISimulatorDataManager_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(ISimulatorDataManager manager)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html">ISimulatorDataManager</a></span>
+        <span class="parametername">manager</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_CopyTo_CommonInterfaces_ISimulatorDataManager_">ISimulatorDataManager.CopyTo(ISimulatorDataManager)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_CreateEntry_" data-uid="CommonInterfaces.StreamDataManager.CreateEntry*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_CreateEntry_System_String_" data-uid="CommonInterfaces.StreamDataManager.CreateEntry(System.String)"><a href="#collapsible-CommonInterfaces_StreamDataManager_CreateEntry_System_String_" class="expander" data-toggle="collapse">CreateEntry(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_CreateEntry_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Stream CreateEntry(string entryName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entryName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_Dispose_" data-uid="CommonInterfaces.StreamDataManager.Dispose*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_Dispose" data-uid="CommonInterfaces.StreamDataManager.Dispose"><a href="#collapsible-CommonInterfaces_StreamDataManager_Dispose" class="expander" data-toggle="collapse">Dispose()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_Dispose" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract void Dispose()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_GetEntry_" data-uid="CommonInterfaces.StreamDataManager.GetEntry*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_GetEntry_System_String_" data-uid="CommonInterfaces.StreamDataManager.GetEntry(System.String)"><a href="#collapsible-CommonInterfaces_StreamDataManager_GetEntry_System_String_" class="expander" data-toggle="collapse">GetEntry(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_GetEntry_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract Stream GetEntry(string entryName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entryName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadActions_" data-uid="CommonInterfaces.StreamDataManager.LoadActions*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadActions" data-uid="CommonInterfaces.StreamDataManager.LoadActions"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadActions" class="expander" data-toggle="collapse">LoadActions()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadActions" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionManager LoadActions()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ActionManager.html">ActionManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadActions">ISimulatorDataManager.LoadActions()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadActionsData_" data-uid="CommonInterfaces.StreamDataManager.LoadActionsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadActionsData" data-uid="CommonInterfaces.StreamDataManager.LoadActionsData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadActionsData" class="expander" data-toggle="collapse">LoadActionsData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadActionsData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionManagerData LoadActionsData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.ActionManagerData.html">ActionManagerData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadActionsData">ISimulatorDataManager.LoadActionsData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadAttributes_" data-uid="CommonInterfaces.StreamDataManager.LoadAttributes*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadAttributes" data-uid="CommonInterfaces.StreamDataManager.LoadAttributes"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadAttributes" class="expander" data-toggle="collapse">LoadAttributes()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadAttributes" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, Attribute&gt; LoadAttributes()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CCSPluginAPI.Attribute.html">Attribute</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadAttributes">ISimulatorDataManager.LoadAttributes()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadClientInfo_" data-uid="CommonInterfaces.StreamDataManager.LoadClientInfo*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadClientInfo" data-uid="CommonInterfaces.StreamDataManager.LoadClientInfo"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadClientInfo" class="expander" data-toggle="collapse">LoadClientInfo()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadClientInfo" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ClientInfo&gt; LoadClientInfo()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.ModelData.ClientInfo.html">ClientInfo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadClientInfo">ISimulatorDataManager.LoadClientInfo()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadControls_" data-uid="CommonInterfaces.StreamDataManager.LoadControls*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadControls_List_System_Object__" data-uid="CommonInterfaces.StreamDataManager.LoadControls(List{System.Object})"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadControls_List_System_Object__" class="expander" data-toggle="collapse">LoadControls(List&lt;Object&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadControls_List_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlManager LoadControls(List&lt;dynamic&gt; landscapeEntities)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">landscapeEntities</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ControlManager.html">ControlManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadControls_List_System_Object__">ISimulatorDataManager.LoadControls(List&lt;Object&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadControlsData_" data-uid="CommonInterfaces.StreamDataManager.LoadControlsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadControlsData" data-uid="CommonInterfaces.StreamDataManager.LoadControlsData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadControlsData" class="expander" data-toggle="collapse">LoadControlsData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadControlsData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlsData LoadControlsData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.ControlsData.html">ControlsData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadControlsData">ISimulatorDataManager.LoadControlsData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadExpressions_" data-uid="CommonInterfaces.StreamDataManager.LoadExpressions*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadExpressions" data-uid="CommonInterfaces.StreamDataManager.LoadExpressions"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadExpressions" class="expander" data-toggle="collapse">LoadExpressions()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadExpressions" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionManager LoadExpressions()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ExpressionManager.html">ExpressionManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadExpressions">ISimulatorDataManager.LoadExpressions()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadExpressionsData_" data-uid="CommonInterfaces.StreamDataManager.LoadExpressionsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadExpressionsData" data-uid="CommonInterfaces.StreamDataManager.LoadExpressionsData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadExpressionsData" class="expander" data-toggle="collapse">LoadExpressionsData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadExpressionsData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionsData LoadExpressionsData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.ExpressionsData.html">ExpressionsData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadExpressionsData">ISimulatorDataManager.LoadExpressionsData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadGlobalLandscape_" data-uid="CommonInterfaces.StreamDataManager.LoadGlobalLandscape*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadGlobalLandscape" data-uid="CommonInterfaces.StreamDataManager.LoadGlobalLandscape"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadGlobalLandscape" class="expander" data-toggle="collapse">LoadGlobalLandscape()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadGlobalLandscape" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Landscape LoadGlobalLandscape()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadGlobalLandscape">ISimulatorDataManager.LoadGlobalLandscape()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadGlobalLandscapeData_" data-uid="CommonInterfaces.StreamDataManager.LoadGlobalLandscapeData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadGlobalLandscapeData" data-uid="CommonInterfaces.StreamDataManager.LoadGlobalLandscapeData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadGlobalLandscapeData" class="expander" data-toggle="collapse">LoadGlobalLandscapeData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadGlobalLandscapeData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LandscapeData LoadGlobalLandscapeData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.LandscapeData.html">LandscapeData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadGlobalLandscapeData">ISimulatorDataManager.LoadGlobalLandscapeData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadLabels_" data-uid="CommonInterfaces.StreamDataManager.LoadLabels*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadLabels" data-uid="CommonInterfaces.StreamDataManager.LoadLabels"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadLabels" class="expander" data-toggle="collapse">LoadLabels()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadLabels" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Label&gt; LoadLabels()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Label.html">Label</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadLabels">ISimulatorDataManager.LoadLabels()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadLedger_" data-uid="CommonInterfaces.StreamDataManager.LoadLedger*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadLedger" data-uid="CommonInterfaces.StreamDataManager.LoadLedger"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadLedger" class="expander" data-toggle="collapse">LoadLedger()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadLedger" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ledger LoadLedger()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Ledger.html">Ledger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadLedger">ISimulatorDataManager.LoadLedger()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadLedgerData_" data-uid="CommonInterfaces.StreamDataManager.LoadLedgerData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadLedgerData" data-uid="CommonInterfaces.StreamDataManager.LoadLedgerData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadLedgerData" class="expander" data-toggle="collapse">LoadLedgerData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadLedgerData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LedgerData LoadLedgerData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.LedgerData.html">LedgerData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadLedgerData">ISimulatorDataManager.LoadLedgerData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadLogs_" data-uid="CommonInterfaces.StreamDataManager.LoadLogs*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadLogs" data-uid="CommonInterfaces.StreamDataManager.LoadLogs"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadLogs" class="expander" data-toggle="collapse">LoadLogs()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadLogs" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Log&gt; LoadLogs()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Log.html">Log</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadLogs">ISimulatorDataManager.LoadLogs()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadMessenger_" data-uid="CommonInterfaces.StreamDataManager.LoadMessenger*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadMessenger" data-uid="CommonInterfaces.StreamDataManager.LoadMessenger"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadMessenger" class="expander" data-toggle="collapse">LoadMessenger()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadMessenger" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Messenger LoadMessenger()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Messenger.html">Messenger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadMessenger">ISimulatorDataManager.LoadMessenger()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadMessengerData_" data-uid="CommonInterfaces.StreamDataManager.LoadMessengerData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadMessengerData" data-uid="CommonInterfaces.StreamDataManager.LoadMessengerData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadMessengerData" class="expander" data-toggle="collapse">LoadMessengerData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadMessengerData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessengerData LoadMessengerData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.MessengerData.html">MessengerData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadMessengerData">ISimulatorDataManager.LoadMessengerData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadMetadata_" data-uid="CommonInterfaces.StreamDataManager.LoadMetadata*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadMetadata" data-uid="CommonInterfaces.StreamDataManager.LoadMetadata"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadMetadata" class="expander" data-toggle="collapse">LoadMetadata()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadMetadata" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Metadata LoadMetadata()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Metadata.html">Metadata</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadMetadata">ISimulatorDataManager.LoadMetadata()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadPlayers_" data-uid="CommonInterfaces.StreamDataManager.LoadPlayers*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadPlayers" data-uid="CommonInterfaces.StreamDataManager.LoadPlayers"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadPlayers" class="expander" data-toggle="collapse">LoadPlayers()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadPlayers" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Player&gt; LoadPlayers()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.Player.html">Player</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadPlayers">ISimulatorDataManager.LoadPlayers()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadPlayersData_" data-uid="CommonInterfaces.StreamDataManager.LoadPlayersData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadPlayersData" data-uid="CommonInterfaces.StreamDataManager.LoadPlayersData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadPlayersData" class="expander" data-toggle="collapse">LoadPlayersData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadPlayersData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;PlayerData&gt; LoadPlayersData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.ModelData.PlayerData.html">PlayerData</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadPlayersData">ISimulatorDataManager.LoadPlayersData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadSharedObjects_" data-uid="CommonInterfaces.StreamDataManager.LoadSharedObjects*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadSharedObjects" data-uid="CommonInterfaces.StreamDataManager.LoadSharedObjects"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadSharedObjects" class="expander" data-toggle="collapse">LoadSharedObjects()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadSharedObjects" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Landscape LoadSharedObjects()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadSharedObjects">ISimulatorDataManager.LoadSharedObjects()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_LoadSharedObjectsData_" data-uid="CommonInterfaces.StreamDataManager.LoadSharedObjectsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_LoadSharedObjectsData" data-uid="CommonInterfaces.StreamDataManager.LoadSharedObjectsData"><a href="#collapsible-CommonInterfaces_StreamDataManager_LoadSharedObjectsData" class="expander" data-toggle="collapse">LoadSharedObjectsData()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_LoadSharedObjectsData" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LandscapeData LoadSharedObjectsData()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.LandscapeData.html">LandscapeData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_LoadSharedObjectsData">ISimulatorDataManager.LoadSharedObjectsData()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_RemoveEntry_" data-uid="CommonInterfaces.StreamDataManager.RemoveEntry*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_RemoveEntry_System_String_" data-uid="CommonInterfaces.StreamDataManager.RemoveEntry(System.String)"><a href="#collapsible-CommonInterfaces_StreamDataManager_RemoveEntry_System_String_" class="expander" data-toggle="collapse">RemoveEntry(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_RemoveEntry_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract bool RemoveEntry(string entryName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entryName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveActions_" data-uid="CommonInterfaces.StreamDataManager.SaveActions*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveActions_CommonInterfaces_ActionManager_" data-uid="CommonInterfaces.StreamDataManager.SaveActions(CommonInterfaces.ActionManager)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveActions_CommonInterfaces_ActionManager_" class="expander" data-toggle="collapse">SaveActions(ActionManager)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveActions_CommonInterfaces_ActionManager_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveActions(ActionManager actions)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ActionManager.html">ActionManager</a></span>
+        <span class="parametername">actions</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveActions_CommonInterfaces_ActionManager_">ISimulatorDataManager.SaveActions(ActionManager)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveActionsData_" data-uid="CommonInterfaces.StreamDataManager.SaveActionsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveActionsData_CommonInterfaces_ModelData_ActionManagerData_" data-uid="CommonInterfaces.StreamDataManager.SaveActionsData(CommonInterfaces.ModelData.ActionManagerData)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveActionsData_CommonInterfaces_ModelData_ActionManagerData_" class="expander" data-toggle="collapse">SaveActionsData(ActionManagerData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveActionsData_CommonInterfaces_ModelData_ActionManagerData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveActionsData(ActionManagerData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.ActionManagerData.html">ActionManagerData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveActionsData_CommonInterfaces_ModelData_ActionManagerData_">ISimulatorDataManager.SaveActionsData(ActionManagerData)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveAttributes_" data-uid="CommonInterfaces.StreamDataManager.SaveAttributes*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveAttributes_Dictionary_System_String_CCSPluginAPI_Attribute__" data-uid="CommonInterfaces.StreamDataManager.SaveAttributes(Dictionary{System.String,CCSPluginAPI.Attribute})"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveAttributes_Dictionary_System_String_CCSPluginAPI_Attribute__" class="expander" data-toggle="collapse">SaveAttributes(Dictionary&lt;String, Attribute&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveAttributes_Dictionary_System_String_CCSPluginAPI_Attribute__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveAttributes(Dictionary&lt;string, Attribute&gt; data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CCSPluginAPI.Attribute.html">Attribute</a>&gt;</span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveAttributes_Dictionary_System_String_CCSPluginAPI_Attribute__">ISimulatorDataManager.SaveAttributes(Dictionary&lt;String, Attribute&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveClientInfo_" data-uid="CommonInterfaces.StreamDataManager.SaveClientInfo*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveClientInfo_List_CommonInterfaces_ModelData_ClientInfo__" data-uid="CommonInterfaces.StreamDataManager.SaveClientInfo(List{CommonInterfaces.ModelData.ClientInfo})"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveClientInfo_List_CommonInterfaces_ModelData_ClientInfo__" class="expander" data-toggle="collapse">SaveClientInfo(List&lt;ClientInfo&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveClientInfo_List_CommonInterfaces_ModelData_ClientInfo__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveClientInfo(List&lt;ClientInfo&gt; clientInfo)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.ModelData.ClientInfo.html">ClientInfo</a>&gt;</span>
+        <span class="parametername">clientInfo</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveClientInfo_List_CommonInterfaces_ModelData_ClientInfo__">ISimulatorDataManager.SaveClientInfo(List&lt;ClientInfo&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveControls_" data-uid="CommonInterfaces.StreamDataManager.SaveControls*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveControls_CommonInterfaces_ControlManager_" data-uid="CommonInterfaces.StreamDataManager.SaveControls(CommonInterfaces.ControlManager)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveControls_CommonInterfaces_ControlManager_" class="expander" data-toggle="collapse">SaveControls(ControlManager)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveControls_CommonInterfaces_ControlManager_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveControls(ControlManager controlManager)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ControlManager.html">ControlManager</a></span>
+        <span class="parametername">controlManager</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveControls_CommonInterfaces_ControlManager_">ISimulatorDataManager.SaveControls(ControlManager)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveControlsData_" data-uid="CommonInterfaces.StreamDataManager.SaveControlsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveControlsData_CommonInterfaces_ModelData_ControlsData_" data-uid="CommonInterfaces.StreamDataManager.SaveControlsData(CommonInterfaces.ModelData.ControlsData)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveControlsData_CommonInterfaces_ModelData_ControlsData_" class="expander" data-toggle="collapse">SaveControlsData(ControlsData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveControlsData_CommonInterfaces_ModelData_ControlsData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveControlsData(ControlsData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.ControlsData.html">ControlsData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveControlsData_CommonInterfaces_ModelData_ControlsData_">ISimulatorDataManager.SaveControlsData(ControlsData)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveExpressions_" data-uid="CommonInterfaces.StreamDataManager.SaveExpressions*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveExpressions_CommonInterfaces_ExpressionManager_" data-uid="CommonInterfaces.StreamDataManager.SaveExpressions(CommonInterfaces.ExpressionManager)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveExpressions_CommonInterfaces_ExpressionManager_" class="expander" data-toggle="collapse">SaveExpressions(ExpressionManager)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveExpressions_CommonInterfaces_ExpressionManager_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveExpressions(ExpressionManager expressionManager)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ExpressionManager.html">ExpressionManager</a></span>
+        <span class="parametername">expressionManager</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveExpressions_CommonInterfaces_ExpressionManager_">ISimulatorDataManager.SaveExpressions(ExpressionManager)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveExpressionsData_" data-uid="CommonInterfaces.StreamDataManager.SaveExpressionsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveExpressionsData_CommonInterfaces_ModelData_ExpressionsData_" data-uid="CommonInterfaces.StreamDataManager.SaveExpressionsData(CommonInterfaces.ModelData.ExpressionsData)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveExpressionsData_CommonInterfaces_ModelData_ExpressionsData_" class="expander" data-toggle="collapse">SaveExpressionsData(ExpressionsData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveExpressionsData_CommonInterfaces_ModelData_ExpressionsData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveExpressionsData(ExpressionsData expressions)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.ExpressionsData.html">ExpressionsData</a></span>
+        <span class="parametername">expressions</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveExpressionsData_CommonInterfaces_ModelData_ExpressionsData_">ISimulatorDataManager.SaveExpressionsData(ExpressionsData)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveGlobalLandscape_" data-uid="CommonInterfaces.StreamDataManager.SaveGlobalLandscape*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveGlobalLandscape_CommonInterfaces_Landscape_" data-uid="CommonInterfaces.StreamDataManager.SaveGlobalLandscape(CommonInterfaces.Landscape)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveGlobalLandscape_CommonInterfaces_Landscape_" class="expander" data-toggle="collapse">SaveGlobalLandscape(Landscape)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveGlobalLandscape_CommonInterfaces_Landscape_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveGlobalLandscape(Landscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveGlobalLandscape_CommonInterfaces_Landscape_">ISimulatorDataManager.SaveGlobalLandscape(Landscape)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveGlobalLandscapeData_" data-uid="CommonInterfaces.StreamDataManager.SaveGlobalLandscapeData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveGlobalLandscapeData_CommonInterfaces_ModelData_LandscapeData_" data-uid="CommonInterfaces.StreamDataManager.SaveGlobalLandscapeData(CommonInterfaces.ModelData.LandscapeData)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveGlobalLandscapeData_CommonInterfaces_ModelData_LandscapeData_" class="expander" data-toggle="collapse">SaveGlobalLandscapeData(LandscapeData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveGlobalLandscapeData_CommonInterfaces_ModelData_LandscapeData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveGlobalLandscapeData(LandscapeData landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.LandscapeData.html">LandscapeData</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveGlobalLandscapeData_CommonInterfaces_ModelData_LandscapeData_">ISimulatorDataManager.SaveGlobalLandscapeData(LandscapeData)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveLabels_" data-uid="CommonInterfaces.StreamDataManager.SaveLabels*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveLabels_List_CCSPluginAPI_Label__" data-uid="CommonInterfaces.StreamDataManager.SaveLabels(List{CCSPluginAPI.Label})"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveLabels_List_CCSPluginAPI_Label__" class="expander" data-toggle="collapse">SaveLabels(List&lt;Label&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveLabels_List_CCSPluginAPI_Label__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveLabels(List&lt;Label&gt; data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Label.html">Label</a>&gt;</span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveLabels_List_CCSPluginAPI_Label__">ISimulatorDataManager.SaveLabels(List&lt;Label&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveLedger_" data-uid="CommonInterfaces.StreamDataManager.SaveLedger*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveLedger_CommonInterfaces_Ledger_" data-uid="CommonInterfaces.StreamDataManager.SaveLedger(CommonInterfaces.Ledger)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveLedger_CommonInterfaces_Ledger_" class="expander" data-toggle="collapse">SaveLedger(Ledger)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveLedger_CommonInterfaces_Ledger_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveLedger(Ledger ledger)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.Ledger.html">Ledger</a></span>
+        <span class="parametername">ledger</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveLedger_CommonInterfaces_Ledger_">ISimulatorDataManager.SaveLedger(Ledger)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveLedgerData_" data-uid="CommonInterfaces.StreamDataManager.SaveLedgerData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveLedgerData_CommonInterfaces_ModelData_LedgerData_" data-uid="CommonInterfaces.StreamDataManager.SaveLedgerData(CommonInterfaces.ModelData.LedgerData)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveLedgerData_CommonInterfaces_ModelData_LedgerData_" class="expander" data-toggle="collapse">SaveLedgerData(LedgerData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveLedgerData_CommonInterfaces_ModelData_LedgerData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveLedgerData(LedgerData ledger)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.LedgerData.html">LedgerData</a></span>
+        <span class="parametername">ledger</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveLedgerData_CommonInterfaces_ModelData_LedgerData_">ISimulatorDataManager.SaveLedgerData(LedgerData)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveLogs_" data-uid="CommonInterfaces.StreamDataManager.SaveLogs*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveLogs_List_CCSPluginAPI_Log__" data-uid="CommonInterfaces.StreamDataManager.SaveLogs(List{CCSPluginAPI.Log})"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveLogs_List_CCSPluginAPI_Log__" class="expander" data-toggle="collapse">SaveLogs(List&lt;Log&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveLogs_List_CCSPluginAPI_Log__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveLogs(List&lt;Log&gt; data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Log.html">Log</a>&gt;</span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveLogs_List_CCSPluginAPI_Log__">ISimulatorDataManager.SaveLogs(List&lt;Log&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveMessenger_" data-uid="CommonInterfaces.StreamDataManager.SaveMessenger*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveMessenger_CommonInterfaces_Messenger_" data-uid="CommonInterfaces.StreamDataManager.SaveMessenger(CommonInterfaces.Messenger)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveMessenger_CommonInterfaces_Messenger_" class="expander" data-toggle="collapse">SaveMessenger(Messenger)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveMessenger_CommonInterfaces_Messenger_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveMessenger(Messenger messenger)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.Messenger.html">Messenger</a></span>
+        <span class="parametername">messenger</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveMessenger_CommonInterfaces_Messenger_">ISimulatorDataManager.SaveMessenger(Messenger)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveMessengerData_" data-uid="CommonInterfaces.StreamDataManager.SaveMessengerData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveMessengerData_CommonInterfaces_ModelData_MessengerData_" data-uid="CommonInterfaces.StreamDataManager.SaveMessengerData(CommonInterfaces.ModelData.MessengerData)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveMessengerData_CommonInterfaces_ModelData_MessengerData_" class="expander" data-toggle="collapse">SaveMessengerData(MessengerData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveMessengerData_CommonInterfaces_ModelData_MessengerData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveMessengerData(MessengerData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.MessengerData.html">MessengerData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveMessengerData_CommonInterfaces_ModelData_MessengerData_">ISimulatorDataManager.SaveMessengerData(MessengerData)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveMetadata_" data-uid="CommonInterfaces.StreamDataManager.SaveMetadata*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveMetadata_CommonInterfaces_Metadata_" data-uid="CommonInterfaces.StreamDataManager.SaveMetadata(CommonInterfaces.Metadata)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveMetadata_CommonInterfaces_Metadata_" class="expander" data-toggle="collapse">SaveMetadata(Metadata)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveMetadata_CommonInterfaces_Metadata_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveMetadata(Metadata metadata)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.Metadata.html">Metadata</a></span>
+        <span class="parametername">metadata</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveMetadata_CommonInterfaces_Metadata_">ISimulatorDataManager.SaveMetadata(Metadata)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SavePlayers_" data-uid="CommonInterfaces.StreamDataManager.SavePlayers*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SavePlayers_List_CommonInterfaces_Player__" data-uid="CommonInterfaces.StreamDataManager.SavePlayers(List{CommonInterfaces.Player})"><a href="#collapsible-CommonInterfaces_StreamDataManager_SavePlayers_List_CommonInterfaces_Player__" class="expander" data-toggle="collapse">SavePlayers(List&lt;Player&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SavePlayers_List_CommonInterfaces_Player__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SavePlayers(List&lt;Player&gt; players)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.Player.html">Player</a>&gt;</span>
+        <span class="parametername">players</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SavePlayers_List_CommonInterfaces_Player__">ISimulatorDataManager.SavePlayers(List&lt;Player&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SavePlayersData_" data-uid="CommonInterfaces.StreamDataManager.SavePlayersData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SavePlayersData_List_CommonInterfaces_ModelData_PlayerData__" data-uid="CommonInterfaces.StreamDataManager.SavePlayersData(List{CommonInterfaces.ModelData.PlayerData})"><a href="#collapsible-CommonInterfaces_StreamDataManager_SavePlayersData_List_CommonInterfaces_ModelData_PlayerData__" class="expander" data-toggle="collapse">SavePlayersData(List&lt;PlayerData&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SavePlayersData_List_CommonInterfaces_ModelData_PlayerData__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SavePlayersData(List&lt;PlayerData&gt; players)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.ModelData.PlayerData.html">PlayerData</a>&gt;</span>
+        <span class="parametername">players</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SavePlayersData_List_CommonInterfaces_ModelData_PlayerData__">ISimulatorDataManager.SavePlayersData(List&lt;PlayerData&gt;)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveSharedObjects_" data-uid="CommonInterfaces.StreamDataManager.SaveSharedObjects*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveSharedObjects_CommonInterfaces_Landscape_" data-uid="CommonInterfaces.StreamDataManager.SaveSharedObjects(CommonInterfaces.Landscape)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveSharedObjects_CommonInterfaces_Landscape_" class="expander" data-toggle="collapse">SaveSharedObjects(Landscape)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveSharedObjects_CommonInterfaces_Landscape_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveSharedObjects(Landscape sharedObjects)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a></span>
+        <span class="parametername">sharedObjects</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveSharedObjects_CommonInterfaces_Landscape_">ISimulatorDataManager.SaveSharedObjects(Landscape)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_StreamDataManager_SaveSharedObjectsData_" data-uid="CommonInterfaces.StreamDataManager.SaveSharedObjectsData*"></a>
+  
+  <h4 id="CommonInterfaces_StreamDataManager_SaveSharedObjectsData_CommonInterfaces_ModelData_LandscapeData_" data-uid="CommonInterfaces.StreamDataManager.SaveSharedObjectsData(CommonInterfaces.ModelData.LandscapeData)"><a href="#collapsible-CommonInterfaces_StreamDataManager_SaveSharedObjectsData_CommonInterfaces_ModelData_LandscapeData_" class="expander" data-toggle="collapse">SaveSharedObjectsData(LandscapeData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_StreamDataManager_SaveSharedObjectsData_CommonInterfaces_ModelData_LandscapeData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SaveSharedObjectsData(LandscapeData sharedObjects)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.LandscapeData.html">LandscapeData</a></span>
+        <span class="parametername">sharedObjects</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ISimulatorDataManager.html#CommonInterfaces_ISimulatorDataManager_SaveSharedObjectsData_CommonInterfaces_ModelData_LandscapeData_">ISimulatorDataManager.SaveSharedObjectsData(LandscapeData)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

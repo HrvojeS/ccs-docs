@@ -1,0 +1,1824 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ApplicationBase
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ApplicationBase
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.ApplicationBase">
+  <h1 id="CommonInterfaces_ApplicationBase" data-uid="CommonInterfaces.ApplicationBase">Class ApplicationBase
+  </h1>
+  <div class="markdown level0 summary"><p>Simulator application implementation.
+This is singleton class as only single instance per simulation game is allowed!
+It implementes all interfaces needed for app to run.
+Maintains the player, landscape and actions state; Should Control time of simulation(needs refactoring, now game class fiddles with that logic?).</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ApplicationBase</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_ApplicationBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ApplicationBase : object, IReadOnlyApplication, ILog</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_ActionManager_" data-uid="CommonInterfaces.ApplicationBase.ActionManager*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_ActionManager" data-uid="CommonInterfaces.ApplicationBase.ActionManager"><a href="#collapsible-CommonInterfaces_ApplicationBase_ActionManager" class="expander" data-toggle="collapse">ActionManager</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_ActionManager" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionManager ActionManager { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ActionManager.html">ActionManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_ControlManager_" data-uid="CommonInterfaces.ApplicationBase.ControlManager*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_ControlManager" data-uid="CommonInterfaces.ApplicationBase.ControlManager"><a href="#collapsible-CommonInterfaces_ApplicationBase_ControlManager" class="expander" data-toggle="collapse">ControlManager</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_ControlManager" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlManager ControlManager { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ControlManager.html">ControlManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CurrentDateTime_" data-uid="CommonInterfaces.ApplicationBase.CurrentDateTime*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CurrentDateTime" data-uid="CommonInterfaces.ApplicationBase.CurrentDateTime"><a href="#collapsible-CommonInterfaces_ApplicationBase_CurrentDateTime" class="expander" data-toggle="collapse">CurrentDateTime</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CurrentDateTime" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DateTime CurrentDateTime { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DateTime</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_DeltaT_" data-uid="CommonInterfaces.ApplicationBase.DeltaT*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_DeltaT" data-uid="CommonInterfaces.ApplicationBase.DeltaT"><a href="#collapsible-CommonInterfaces_ApplicationBase_DeltaT" class="expander" data-toggle="collapse">DeltaT</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_DeltaT" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double DeltaT { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_DeltaT">IReadOnlyApplication.DeltaT</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_ExpressionManager_" data-uid="CommonInterfaces.ApplicationBase.ExpressionManager*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_ExpressionManager" data-uid="CommonInterfaces.ApplicationBase.ExpressionManager"><a href="#collapsible-CommonInterfaces_ApplicationBase_ExpressionManager" class="expander" data-toggle="collapse">ExpressionManager</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_ExpressionManager" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ExpressionManager ExpressionManager { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ExpressionManager.html">ExpressionManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_Landscape_" data-uid="CommonInterfaces.ApplicationBase.Landscape*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_Landscape" data-uid="CommonInterfaces.ApplicationBase.Landscape"><a href="#collapsible-CommonInterfaces_ApplicationBase_Landscape" class="expander" data-toggle="collapse">Landscape</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_Landscape" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Landscape Landscape { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_Ledger_" data-uid="CommonInterfaces.ApplicationBase.Ledger*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_Ledger" data-uid="CommonInterfaces.ApplicationBase.Ledger"><a href="#collapsible-CommonInterfaces_ApplicationBase_Ledger" class="expander" data-toggle="collapse">Ledger</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_Ledger" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ledger Ledger { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Ledger.html">Ledger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_Logs_" data-uid="CommonInterfaces.ApplicationBase.Logs*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_Logs" data-uid="CommonInterfaces.ApplicationBase.Logs"><a href="#collapsible-CommonInterfaces_ApplicationBase_Logs" class="expander" data-toggle="collapse">Logs</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_Logs" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Log&gt; Logs { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Log.html">Log</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ILog.html#CommonInterfaces_ILog_Logs">ILog.Logs</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_Messenger_" data-uid="CommonInterfaces.ApplicationBase.Messenger*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_Messenger" data-uid="CommonInterfaces.ApplicationBase.Messenger"><a href="#collapsible-CommonInterfaces_ApplicationBase_Messenger" class="expander" data-toggle="collapse">Messenger</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_Messenger" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Messenger Messenger { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Messenger.html">Messenger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_Metadata_" data-uid="CommonInterfaces.ApplicationBase.Metadata*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_Metadata" data-uid="CommonInterfaces.ApplicationBase.Metadata"><a href="#collapsible-CommonInterfaces_ApplicationBase_Metadata" class="expander" data-toggle="collapse">Metadata</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_Metadata" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Metadata Metadata { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Metadata.html">Metadata</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_Players_" data-uid="CommonInterfaces.ApplicationBase.Players*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_Players" data-uid="CommonInterfaces.ApplicationBase.Players"><a href="#collapsible-CommonInterfaces_ApplicationBase_Players" class="expander" data-toggle="collapse">Players</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_Players" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Player&gt; Players { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.Player.html">Player</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_SharedObjects_" data-uid="CommonInterfaces.ApplicationBase.SharedObjects*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_SharedObjects" data-uid="CommonInterfaces.ApplicationBase.SharedObjects"><a href="#collapsible-CommonInterfaces_ApplicationBase_SharedObjects" class="expander" data-toggle="collapse">SharedObjects</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_SharedObjects" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Landscape SharedObjects { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_SimulationTime_" data-uid="CommonInterfaces.ApplicationBase.SimulationTime*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_SimulationTime" data-uid="CommonInterfaces.ApplicationBase.SimulationTime"><a href="#collapsible-CommonInterfaces_ApplicationBase_SimulationTime" class="expander" data-toggle="collapse">SimulationTime</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_SimulationTime" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double SimulationTime { get; protected set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_SimulationTime">IReadOnlyApplication.SimulationTime</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_AddToLog_" data-uid="CommonInterfaces.ApplicationBase.AddToLog*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_AddToLog_CCSPluginAPI_Log_" data-uid="CommonInterfaces.ApplicationBase.AddToLog(CCSPluginAPI.Log)"><a href="#collapsible-CommonInterfaces_ApplicationBase_AddToLog_CCSPluginAPI_Log_" class="expander" data-toggle="collapse">AddToLog(Log)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_AddToLog_CCSPluginAPI_Log_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddToLog(Log log)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Log.html">Log</a></span>
+        <span class="parametername">log</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_AddToLog_CCSPluginAPI_Log_">IReadOnlyApplication.AddToLog(Log)</a></div>
+      <div><a class="xref" href="CommonInterfaces.ILog.html#CommonInterfaces_ILog_AddToLog_CCSPluginAPI_Log_">ILog.AddToLog(Log)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_DoAction_" data-uid="CommonInterfaces.ApplicationBase.DoAction*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_DoAction_CCSPluginAPI_ActionBase_Type_System_String_List_CCSPluginAPI_Parameter__" data-uid="CommonInterfaces.ApplicationBase.DoAction(CCSPluginAPI.ActionBase,Type,System.String,List{CCSPluginAPI.Parameter})"><a href="#collapsible-CommonInterfaces_ApplicationBase_DoAction_CCSPluginAPI_ActionBase_Type_System_String_List_CCSPluginAPI_Parameter__" class="expander" data-toggle="collapse">DoAction(ActionBase, Type, String, List&lt;Parameter&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_DoAction_CCSPluginAPI_ActionBase_Type_System_String_List_CCSPluginAPI_Parameter__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DoAction(ActionBase caller, Type actionType, string playerId, List&lt;Parameter&gt; parameters)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a></span>
+        <span class="parametername">caller</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">actionType</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">parameters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_DoAction_" data-uid="CommonInterfaces.ApplicationBase.DoAction*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_DoAction_CommonInterfaces_ActionToDo_" data-uid="CommonInterfaces.ApplicationBase.DoAction(CommonInterfaces.ActionToDo)"><a href="#collapsible-CommonInterfaces_ApplicationBase_DoAction_CommonInterfaces_ActionToDo_" class="expander" data-toggle="collapse">DoAction(ActionToDo)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_DoAction_CommonInterfaces_ActionToDo_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string DoAction(ActionToDo action)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ActionToDo.html">ActionToDo</a></span>
+        <span class="parametername">action</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_FinishAction_" data-uid="CommonInterfaces.ApplicationBase.FinishAction*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_FinishAction_System_String_" data-uid="CommonInterfaces.ApplicationBase.FinishAction(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_FinishAction_System_String_" class="expander" data-toggle="collapse">FinishAction(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_FinishAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishAction(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_FinishAction_System_String_">IReadOnlyApplication.FinishAction(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetActionOutput_" data-uid="CommonInterfaces.ApplicationBase.GetActionOutput*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetActionOutput_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetActionOutput(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetActionOutput_System_String_" class="expander" data-toggle="collapse">GetActionOutput(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetActionOutput_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicDictionary GetActionOutput(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicDictionary</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetActionsHistory_" data-uid="CommonInterfaces.ApplicationBase.GetActionsHistory*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetActionsHistory" data-uid="CommonInterfaces.ApplicationBase.GetActionsHistory"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetActionsHistory" class="expander" data-toggle="collapse">GetActionsHistory()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetActionsHistory" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ActionBase&gt; GetActionsHistory()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetActionsInProgress_" data-uid="CommonInterfaces.ApplicationBase.GetActionsInProgress*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetActionsInProgress" data-uid="CommonInterfaces.ApplicationBase.GetActionsInProgress"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetActionsInProgress" class="expander" data-toggle="collapse">GetActionsInProgress()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetActionsInProgress" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ActionBase&gt; GetActionsInProgress()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetActionStatus_" data-uid="CommonInterfaces.ApplicationBase.GetActionStatus*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetActionStatus_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetActionStatus(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetActionStatus_System_String_" class="expander" data-toggle="collapse">GetActionStatus(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetActionStatus_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionStatus GetActionStatus(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ActionStatus.html">ActionStatus</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetActionsToDo_" data-uid="CommonInterfaces.ApplicationBase.GetActionsToDo*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetActionsToDo" data-uid="CommonInterfaces.ApplicationBase.GetActionsToDo"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetActionsToDo" class="expander" data-toggle="collapse">GetActionsToDo()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetActionsToDo" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentList&lt;ActionToDo&gt; GetActionsToDo()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ConcurrentList</span>&lt;<a class="xref" href="CommonInterfaces.ActionToDo.html">ActionToDo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetActionSuccessFlag_" data-uid="CommonInterfaces.ApplicationBase.GetActionSuccessFlag*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetActionSuccessFlag_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetActionSuccessFlag(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetActionSuccessFlag_System_String_" class="expander" data-toggle="collapse">GetActionSuccessFlag(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetActionSuccessFlag_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool GetActionSuccessFlag(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetActionTypeName_" data-uid="CommonInterfaces.ApplicationBase.GetActionTypeName*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetActionTypeName_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetActionTypeName(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetActionTypeName_System_String_" class="expander" data-toggle="collapse">GetActionTypeName(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetActionTypeName_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string GetActionTypeName(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_GetActionTypeName_System_String_">IReadOnlyApplication.GetActionTypeName(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetConfigForAction_" data-uid="CommonInterfaces.ApplicationBase.GetConfigForAction*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetConfigForAction_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetConfigForAction(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetConfigForAction_System_String_" class="expander" data-toggle="collapse">GetConfigForAction(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetConfigForAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionConfig GetConfigForAction(string actionName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ActionConfig.html">ActionConfig</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetLogger_" data-uid="CommonInterfaces.ApplicationBase.GetLogger*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetLogger_CCSPluginAPI_LoggerType_" data-uid="CommonInterfaces.ApplicationBase.GetLogger(CCSPluginAPI.LoggerType)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetLogger_CCSPluginAPI_LoggerType_" class="expander" data-toggle="collapse">GetLogger(LoggerType)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetLogger_CCSPluginAPI_LoggerType_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logger GetLogger(LoggerType type)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.LoggerType.html">LoggerType</a></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Logger</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetNewActions_" data-uid="CommonInterfaces.ApplicationBase.GetNewActions*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetNewActions" data-uid="CommonInterfaces.ApplicationBase.GetNewActions"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetNewActions" class="expander" data-toggle="collapse">GetNewActions()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetNewActions" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;ActionToDo&gt; GetNewActions()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.ActionToDo.html">ActionToDo</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetPlayer_" data-uid="CommonInterfaces.ApplicationBase.GetPlayer*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetPlayer_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetPlayer(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetPlayer_System_String_" class="expander" data-toggle="collapse">GetPlayer(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetPlayer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Player GetPlayer(string playerId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Player.html">Player</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetPlayerLandscape_" data-uid="CommonInterfaces.ApplicationBase.GetPlayerLandscape*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetPlayerLandscape_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetPlayerLandscape(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetPlayerLandscape_System_String_" class="expander" data-toggle="collapse">GetPlayerLandscape(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetPlayerLandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Landscape GetPlayerLandscape(string playerId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.Landscape.html">Landscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_GetPlayerLogs_" data-uid="CommonInterfaces.ApplicationBase.GetPlayerLogs*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_GetPlayerLogs_System_String_" data-uid="CommonInterfaces.ApplicationBase.GetPlayerLogs(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_GetPlayerLogs_System_String_" class="expander" data-toggle="collapse">GetPlayerLogs(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_GetPlayerLogs_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Log&gt; GetPlayerLogs(string playerId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Log.html">Log</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.ILog.html#CommonInterfaces_ILog_GetPlayerLogs_System_String_">ILog.GetPlayerLogs(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_KillAction_" data-uid="CommonInterfaces.ApplicationBase.KillAction*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_KillAction_System_String_" data-uid="CommonInterfaces.ApplicationBase.KillAction(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_KillAction_System_String_" class="expander" data-toggle="collapse">KillAction(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_KillAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KillAction(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_KillAction_System_String_">IReadOnlyApplication.KillAction(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_StopAction_" data-uid="CommonInterfaces.ApplicationBase.StopAction*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_StopAction_System_String_" data-uid="CommonInterfaces.ApplicationBase.StopAction(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_StopAction_System_String_" class="expander" data-toggle="collapse">StopAction(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_StopAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool StopAction(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_UpdateCurrentDateTime_" data-uid="CommonInterfaces.ApplicationBase.UpdateCurrentDateTime*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_UpdateCurrentDateTime_System_Double_" data-uid="CommonInterfaces.ApplicationBase.UpdateCurrentDateTime(System.Double)"><a href="#collapsible-CommonInterfaces_ApplicationBase_UpdateCurrentDateTime_System_Double_" class="expander" data-toggle="collapse">UpdateCurrentDateTime(Double)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_UpdateCurrentDateTime_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateCurrentDateTime(double simTimeDelta)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">simTimeDelta</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_UpdateTime_" data-uid="CommonInterfaces.ApplicationBase.UpdateTime*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_UpdateTime_System_Double_" data-uid="CommonInterfaces.ApplicationBase.UpdateTime(System.Double)"><a href="#collapsible-CommonInterfaces_ApplicationBase_UpdateTime_System_Double_" class="expander" data-toggle="collapse">UpdateTime(Double)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_UpdateTime_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"><p>Increases the Application's time by given amount and updates any linked mechanisms.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateTime(double deltaT)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">deltaT</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="eii">Explicit Interface Implementations
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_ControlManager_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#ControlManager*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_ControlManager" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#ControlManager"><a href="#collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_ControlManager" class="expander" data-toggle="collapse">IReadOnlyApplication.ControlManager</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_ControlManager" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IControlManager IReadOnlyApplication.ControlManager { get; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IControlManager.html">IControlManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_ControlManager">IReadOnlyApplication.ControlManager</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayer_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#GetPlayer*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayer_System_String_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#GetPlayer(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayer_System_String_" class="expander" data-toggle="collapse">IReadOnlyApplication.GetPlayer(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPlayer IReadOnlyApplication.GetPlayer(string playerId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_GetPlayer_System_String_">IReadOnlyApplication.GetPlayer(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#GetPlayerLandscape*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_System_String_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#GetPlayerLandscape(System.String)"><a href="#collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_System_String_" class="expander" data-toggle="collapse">IReadOnlyApplication.GetPlayerLandscape(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILandscape IReadOnlyApplication.GetPlayerLandscape(string playerId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_System_String_">IReadOnlyApplication.GetPlayerLandscape(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Landscape_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#Landscape*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Landscape" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#Landscape"><a href="#collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Landscape" class="expander" data-toggle="collapse">IReadOnlyApplication.Landscape</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Landscape" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILandscape IReadOnlyApplication.Landscape { get; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_Landscape">IReadOnlyApplication.Landscape</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Ledger_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#Ledger*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Ledger" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#Ledger"><a href="#collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Ledger" class="expander" data-toggle="collapse">IReadOnlyApplication.Ledger</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Ledger" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILedger IReadOnlyApplication.Ledger { get; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILedger.html">ILedger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_Ledger">IReadOnlyApplication.Ledger</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Messenger_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#Messenger*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Messenger" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#Messenger"><a href="#collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Messenger" class="expander" data-toggle="collapse">IReadOnlyApplication.Messenger</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_Messenger" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IMessenger IReadOnlyApplication.Messenger { get; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IMessenger.html">IMessenger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_Messenger">IReadOnlyApplication.Messenger</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_SharedObjects_" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#SharedObjects*"></a>
+  
+  <h4 id="CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_SharedObjects" data-uid="CommonInterfaces.ApplicationBase.CCSPluginAPI#IReadOnlyApplication#SharedObjects"><a href="#collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_SharedObjects" class="expander" data-toggle="collapse">IReadOnlyApplication.SharedObjects</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ApplicationBase_CCSPluginAPI_IReadOnlyApplication_SharedObjects" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILandscape IReadOnlyApplication.SharedObjects { get; }</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html#CCSPluginAPI_IReadOnlyApplication_SharedObjects">IReadOnlyApplication.SharedObjects</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,861 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Inventory
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Inventory
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.Inventory">
+  <h1 id="CommonInterfaces_Inventory" data-uid="CommonInterfaces.Inventory">Class Inventory
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Inventory</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_Inventory_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Inventory : object, IInventory, IBoundGameSubject, IGameSubject, ISerializable&lt;InventoryData&gt;</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Inventory__ctor_" data-uid="CommonInterfaces.Inventory.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory__ctor_CommonInterfaces_ModelData_InventoryData_" data-uid="CommonInterfaces.Inventory.#ctor(CommonInterfaces.ModelData.InventoryData)"><a href="#collapsible-CommonInterfaces_Inventory__ctor_CommonInterfaces_ModelData_InventoryData_" class="expander" data-toggle="collapse">Inventory(InventoryData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory__ctor_CommonInterfaces_ModelData_InventoryData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Inventory(InventoryData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.InventoryData.html">InventoryData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Inventory_Content_" data-uid="CommonInterfaces.Inventory.Content*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Content" data-uid="CommonInterfaces.Inventory.Content"><a href="#collapsible-CommonInterfaces_Inventory_Content" class="expander" data-toggle="collapse">Content</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Content" class="collapse in">
+  <div class="markdown level1 summary"><p>Copy of all the inventory items.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;dynamic&gt; Content { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Count_" data-uid="CommonInterfaces.Inventory.Count*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Count" data-uid="CommonInterfaces.Inventory.Count"><a href="#collapsible-CommonInterfaces_Inventory_Count" class="expander" data-toggle="collapse">Count</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Count" class="collapse in">
+  <div class="markdown level1 summary"><p>Number of items in the Inventory.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IInventory.html#CCSPluginAPI_IInventory_Count">IInventory.Count</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_RemovedObjectIds_" data-uid="CommonInterfaces.Inventory.RemovedObjectIds*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_RemovedObjectIds" data-uid="CommonInterfaces.Inventory.RemovedObjectIds"><a href="#collapsible-CommonInterfaces_Inventory_RemovedObjectIds" class="expander" data-toggle="collapse">RemovedObjectIds</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_RemovedObjectIds" class="collapse in">
+  <div class="markdown level1 summary"><p>Ids of objects that have been removed since the last call to <a class="xref" href="CommonInterfaces.Inventory.html#CommonInterfaces_Inventory_Clear">Clear()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; RemovedObjectIds { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Updated_" data-uid="CommonInterfaces.Inventory.Updated*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Updated" data-uid="CommonInterfaces.Inventory.Updated"><a href="#collapsible-CommonInterfaces_Inventory_Updated" class="expander" data-toggle="collapse">Updated</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Updated" class="collapse in">
+  <div class="markdown level1 summary"><p>Indicator of changes in Inventory content.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Updated { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Updated">IGameSubject.Updated</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_UpdatedObjects_" data-uid="CommonInterfaces.Inventory.UpdatedObjects*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_UpdatedObjects" data-uid="CommonInterfaces.Inventory.UpdatedObjects"><a href="#collapsible-CommonInterfaces_Inventory_UpdatedObjects" class="expander" data-toggle="collapse">UpdatedObjects</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_UpdatedObjects" class="collapse in">
+  <div class="markdown level1 summary"><p>Objects that have been updated since the last call to <a class="xref" href="CommonInterfaces.Inventory.html#CommonInterfaces_Inventory_Clear">Clear()</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; UpdatedObjects { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Inventory_Add_" data-uid="CommonInterfaces.Inventory.Add*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Add_System_Object_" data-uid="CommonInterfaces.Inventory.Add(System.Object)"><a href="#collapsible-CommonInterfaces_Inventory_Add_System_Object_" class="expander" data-toggle="collapse">Add(Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Add_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Add(dynamic entity)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IInventory.html#CCSPluginAPI_IInventory_Add_System_Object_">IInventory.Add(Object)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Clear_" data-uid="CommonInterfaces.Inventory.Clear*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Clear" data-uid="CommonInterfaces.Inventory.Clear"><a href="#collapsible-CommonInterfaces_Inventory_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Clear" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Clear">IGameSubject.Clear()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Contains_" data-uid="CommonInterfaces.Inventory.Contains*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Contains_System_String_" data-uid="CommonInterfaces.Inventory.Contains(System.String)"><a href="#collapsible-CommonInterfaces_Inventory_Contains_System_String_" class="expander" data-toggle="collapse">Contains(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Contains_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string id)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IInventory.html#CCSPluginAPI_IInventory_Contains_System_String_">IInventory.Contains(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_ContainsItemLabeled_" data-uid="CommonInterfaces.Inventory.ContainsItemLabeled*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_ContainsItemLabeled_System_String_" data-uid="CommonInterfaces.Inventory.ContainsItemLabeled(System.String)"><a href="#collapsible-CommonInterfaces_Inventory_ContainsItemLabeled_System_String_" class="expander" data-toggle="collapse">ContainsItemLabeled(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_ContainsItemLabeled_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsItemLabeled(string label)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">label</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IInventory.html#CCSPluginAPI_IInventory_ContainsItemLabeled_System_String_">IInventory.ContainsItemLabeled(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Export_" data-uid="CommonInterfaces.Inventory.Export*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Export" data-uid="CommonInterfaces.Inventory.Export"><a href="#collapsible-CommonInterfaces_Inventory_Export" class="expander" data-toggle="collapse">Export()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Export" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public InventoryData Export()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.InventoryData.html">InventoryData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.Serializer.ISerializable-1.html#CommonInterfaces_Serializer_ISerializable_1_Export">ISerializable&lt;T&gt;.Export()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Get_" data-uid="CommonInterfaces.Inventory.Get*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Get_System_String_" data-uid="CommonInterfaces.Inventory.Get(System.String)"><a href="#collapsible-CommonInterfaces_Inventory_Get_System_String_" class="expander" data-toggle="collapse">Get(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Get_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves an item of given Id.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic Get(string id)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IInventory.html#CCSPluginAPI_IInventory_Get_System_String_">IInventory.Get(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_GetItemIdsLabeled_" data-uid="CommonInterfaces.Inventory.GetItemIdsLabeled*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_GetItemIdsLabeled_System_String_" data-uid="CommonInterfaces.Inventory.GetItemIdsLabeled(System.String)"><a href="#collapsible-CommonInterfaces_Inventory_GetItemIdsLabeled_System_String_" class="expander" data-toggle="collapse">GetItemIdsLabeled(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_GetItemIdsLabeled_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;string&gt; GetItemIdsLabeled(string label)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">label</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_GetItemsLabeled_" data-uid="CommonInterfaces.Inventory.GetItemsLabeled*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_GetItemsLabeled_System_String_" data-uid="CommonInterfaces.Inventory.GetItemsLabeled(System.String)"><a href="#collapsible-CommonInterfaces_Inventory_GetItemsLabeled_System_String_" class="expander" data-toggle="collapse">GetItemsLabeled(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_GetItemsLabeled_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a list of items with given label</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;dynamic&gt; GetItemsLabeled(string label)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">label</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_GetSubjectDelta_" data-uid="CommonInterfaces.Inventory.GetSubjectDelta*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_GetSubjectDelta" data-uid="CommonInterfaces.Inventory.GetSubjectDelta"><a href="#collapsible-CommonInterfaces_Inventory_GetSubjectDelta" class="expander" data-toggle="collapse">GetSubjectDelta()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_GetSubjectDelta" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public SubjectData GetSubjectDelta()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.SubjectData.html">SubjectData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IBoundGameSubject.html#CommonInterfaces_IBoundGameSubject_GetSubjectDelta">IBoundGameSubject.GetSubjectDelta()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Remove_" data-uid="CommonInterfaces.Inventory.Remove*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Remove_System_Object_" data-uid="CommonInterfaces.Inventory.Remove(System.Object)"><a href="#collapsible-CommonInterfaces_Inventory_Remove_System_Object_" class="expander" data-toggle="collapse">Remove(Object)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Remove_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes the given item. If removed successfully, also adds the item's id to <a class="xref" href="CommonInterfaces.Inventory.html#CommonInterfaces_Inventory_RemovedObjectIds">RemovedObjectIds</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(dynamic obj)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IInventory.html#CCSPluginAPI_IInventory_Remove_System_Object_">IInventory.Remove(Object)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Inventory_Remove_" data-uid="CommonInterfaces.Inventory.Remove*"></a>
+  
+  <h4 id="CommonInterfaces_Inventory_Remove_System_String_" data-uid="CommonInterfaces.Inventory.Remove(System.String)"><a href="#collapsible-CommonInterfaces_Inventory_Remove_System_String_" class="expander" data-toggle="collapse">Remove(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Inventory_Remove_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes item of given Id. If removed successfully, also adds the Id to <a class="xref" href="CommonInterfaces.Inventory.html#CommonInterfaces_Inventory_RemovedObjectIds">RemovedObjectIds</a>.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(string id)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IInventory.html#CCSPluginAPI_IInventory_Remove_System_String_">IInventory.Remove(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

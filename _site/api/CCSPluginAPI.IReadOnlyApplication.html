@@ -1,0 +1,874 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Interface IReadOnlyApplication
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Interface IReadOnlyApplication
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CCSPluginAPI.IReadOnlyApplication">
+  <h1 id="CCSPluginAPI_IReadOnlyApplication" data-uid="CCSPluginAPI.IReadOnlyApplication">Interface IReadOnlyApplication
+  </h1>
+  <div class="markdown level0 summary"><p>Defines basic set of methods needed for action plugins to communicate
+to application state.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CCSPluginAPI.html">CCSPluginAPI</a></h6>
+  <h6><strong>Assembly</strong>: CCSPluginAPI.dll</h6>
+  
+  <h5 id="CCSPluginAPI_IReadOnlyApplication_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public interface IReadOnlyApplication</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_ControlManager_" data-uid="CCSPluginAPI.IReadOnlyApplication.ControlManager*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_ControlManager" data-uid="CCSPluginAPI.IReadOnlyApplication.ControlManager"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_ControlManager" class="expander" data-toggle="collapse">ControlManager</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_ControlManager" class="collapse in">
+  <div class="markdown level1 summary"><p>Used for any and all Control related activities.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IControlManager ControlManager { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IControlManager.html">IControlManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_CurrentDateTime_" data-uid="CCSPluginAPI.IReadOnlyApplication.CurrentDateTime*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_CurrentDateTime" data-uid="CCSPluginAPI.IReadOnlyApplication.CurrentDateTime"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_CurrentDateTime" class="expander" data-toggle="collapse">CurrentDateTime</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_CurrentDateTime" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets base date time + simulator time</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">DateTime CurrentDateTime { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DateTime</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_DeltaT_" data-uid="CCSPluginAPI.IReadOnlyApplication.DeltaT*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_DeltaT" data-uid="CCSPluginAPI.IReadOnlyApplication.DeltaT"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_DeltaT" class="expander" data-toggle="collapse">DeltaT</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_DeltaT" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double DeltaT { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_Landscape_" data-uid="CCSPluginAPI.IReadOnlyApplication.Landscape*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_Landscape" data-uid="CCSPluginAPI.IReadOnlyApplication.Landscape"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_Landscape" class="expander" data-toggle="collapse">Landscape</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_Landscape" class="collapse in">
+  <div class="markdown level1 summary"><p>List of all objects in current state of simulation</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILandscape Landscape { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_Ledger_" data-uid="CCSPluginAPI.IReadOnlyApplication.Ledger*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_Ledger" data-uid="CCSPluginAPI.IReadOnlyApplication.Ledger"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_Ledger" class="expander" data-toggle="collapse">Ledger</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_Ledger" class="collapse in">
+  <div class="markdown level1 summary"><p>Record sheet for recording losses for individual players</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILedger Ledger { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILedger.html">ILedger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_Logs_" data-uid="CCSPluginAPI.IReadOnlyApplication.Logs*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_Logs" data-uid="CCSPluginAPI.IReadOnlyApplication.Logs"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_Logs" class="expander" data-toggle="collapse">Logs</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_Logs" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;Log&gt; Logs { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="CCSPluginAPI.Log.html">Log</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_Messenger_" data-uid="CCSPluginAPI.IReadOnlyApplication.Messenger*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_Messenger" data-uid="CCSPluginAPI.IReadOnlyApplication.Messenger"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_Messenger" class="expander" data-toggle="collapse">Messenger</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_Messenger" class="collapse in">
+  <div class="markdown level1 summary"><p>Used to send messages between application entities</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IMessenger Messenger { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IMessenger.html">IMessenger</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_Players_" data-uid="CCSPluginAPI.IReadOnlyApplication.Players*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_Players" data-uid="CCSPluginAPI.IReadOnlyApplication.Players"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_Players" class="expander" data-toggle="collapse">Players</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_Players" class="collapse in">
+  <div class="markdown level1 summary"><p>List of players</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IReadOnlyList&lt;IPlayer&gt; Players { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_SharedObjects_" data-uid="CCSPluginAPI.IReadOnlyApplication.SharedObjects*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_SharedObjects" data-uid="CCSPluginAPI.IReadOnlyApplication.SharedObjects"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_SharedObjects" class="expander" data-toggle="collapse">SharedObjects</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_SharedObjects" class="collapse in">
+  <div class="markdown level1 summary"><p>List of objects that are shared between players</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILandscape SharedObjects { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_SimulationTime_" data-uid="CCSPluginAPI.IReadOnlyApplication.SimulationTime*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_SimulationTime" data-uid="CCSPluginAPI.IReadOnlyApplication.SimulationTime"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_SimulationTime" class="expander" data-toggle="collapse">SimulationTime</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_SimulationTime" class="collapse in">
+  <div class="markdown level1 summary"><p>Time passed inside the simulation since the beginning, in seconds</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">double SimulationTime { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_AddToLog_" data-uid="CCSPluginAPI.IReadOnlyApplication.AddToLog*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_AddToLog_CCSPluginAPI_Log_" data-uid="CCSPluginAPI.IReadOnlyApplication.AddToLog(CCSPluginAPI.Log)"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_AddToLog_CCSPluginAPI_Log_" class="expander" data-toggle="collapse">AddToLog(Log)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_AddToLog_CCSPluginAPI_Log_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void AddToLog(Log log)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Log.html">Log</a></span>
+        <span class="parametername">log</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_DoAction_" data-uid="CCSPluginAPI.IReadOnlyApplication.DoAction*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_DoAction_CCSPluginAPI_ActionBase_Type_System_String_List_CCSPluginAPI_Parameter__" data-uid="CCSPluginAPI.IReadOnlyApplication.DoAction(CCSPluginAPI.ActionBase,Type,System.String,List{CCSPluginAPI.Parameter})"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_DoAction_CCSPluginAPI_ActionBase_Type_System_String_List_CCSPluginAPI_Parameter__" class="expander" data-toggle="collapse">DoAction(ActionBase, Type, String, List&lt;Parameter&gt;)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_DoAction_CCSPluginAPI_ActionBase_Type_System_String_List_CCSPluginAPI_Parameter__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string DoAction(ActionBase caller, Type actionType, string playerId, List&lt;Parameter&gt; parameters)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a></span>
+        <span class="parametername">caller</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">actionType</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">parameters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_FinishAction_" data-uid="CCSPluginAPI.IReadOnlyApplication.FinishAction*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_FinishAction_System_String_" data-uid="CCSPluginAPI.IReadOnlyApplication.FinishAction(System.String)"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_FinishAction_System_String_" class="expander" data-toggle="collapse">FinishAction(String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_FinishAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void FinishAction(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_GetActionTypeName_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetActionTypeName*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_GetActionTypeName_System_String_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetActionTypeName(System.String)"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_GetActionTypeName_System_String_" class="expander" data-toggle="collapse">GetActionTypeName(String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_GetActionTypeName_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets aplication type name</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">string GetActionTypeName(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_GetLogger_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetLogger*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_GetLogger_CCSPluginAPI_LoggerType_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetLogger(CCSPluginAPI.LoggerType)"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_GetLogger_CCSPluginAPI_LoggerType_" class="expander" data-toggle="collapse">GetLogger(LoggerType)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_GetLogger_CCSPluginAPI_LoggerType_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">static Logger GetLogger(LoggerType type)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.LoggerType.html">LoggerType</a></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Logger</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_GetPlayer_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetPlayer*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_GetPlayer_System_String_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetPlayer(System.String)"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_GetPlayer_System_String_" class="expander" data-toggle="collapse">GetPlayer(String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_GetPlayer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets single player object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">IPlayer GetPlayer(string playerID)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerID</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetPlayerLandscape*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_System_String_" data-uid="CCSPluginAPI.IReadOnlyApplication.GetPlayerLandscape(System.String)"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_System_String_" class="expander" data-toggle="collapse">GetPlayerLandscape(String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_GetPlayerLandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets requested player landscape object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">ILandscape GetPlayerLandscape(string playerID)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerID</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_IReadOnlyApplication_KillAction_" data-uid="CCSPluginAPI.IReadOnlyApplication.KillAction*"></a>
+  
+  <h4 id="CCSPluginAPI_IReadOnlyApplication_KillAction_System_String_" data-uid="CCSPluginAPI.IReadOnlyApplication.KillAction(System.String)"><a href="#collapsible-CCSPluginAPI_IReadOnlyApplication_KillAction_System_String_" class="expander" data-toggle="collapse">KillAction(String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_IReadOnlyApplication_KillAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">void KillAction(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

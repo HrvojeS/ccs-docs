@@ -1,0 +1,646 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class FolderDataManager
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class FolderDataManager
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.FolderDataManager">
+  <h1 id="CommonInterfaces_FolderDataManager" data-uid="CommonInterfaces.FolderDataManager">Class FolderDataManager
+  </h1>
+  <div class="markdown level0 summary"><p>Data manager for game files contained in folders.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><a class="xref" href="CommonInterfaces.StreamDataManager.html">StreamDataManager</a></div>
+    <div class="level2"><span class="xref">FolderDataManager</span></div>
+  </div>
+  
+  
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_ScenarioPath">StreamDataManager.ScenarioPath</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_ScenarioStream">StreamDataManager.ScenarioStream</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadGlobalLandscape">StreamDataManager.LoadGlobalLandscape()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadPlayers">StreamDataManager.LoadPlayers()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadSharedObjects">StreamDataManager.LoadSharedObjects()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadMetadata">StreamDataManager.LoadMetadata()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadLedger">StreamDataManager.LoadLedger()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadExpressions">StreamDataManager.LoadExpressions()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadControls_List_System_Object__">StreamDataManager.LoadControls(List&lt;Object&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadClientInfo">StreamDataManager.LoadClientInfo()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadMessenger">StreamDataManager.LoadMessenger()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadActions">StreamDataManager.LoadActions()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadLogs">StreamDataManager.LoadLogs()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadLabels">StreamDataManager.LoadLabels()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadAttributes">StreamDataManager.LoadAttributes()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadGlobalLandscapeData">StreamDataManager.LoadGlobalLandscapeData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadPlayersData">StreamDataManager.LoadPlayersData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadSharedObjectsData">StreamDataManager.LoadSharedObjectsData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadLedgerData">StreamDataManager.LoadLedgerData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadExpressionsData">StreamDataManager.LoadExpressionsData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadControlsData">StreamDataManager.LoadControlsData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadMessengerData">StreamDataManager.LoadMessengerData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_LoadActionsData">StreamDataManager.LoadActionsData()</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveGlobalLandscape_CommonInterfaces_Landscape_">StreamDataManager.SaveGlobalLandscape(Landscape)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SavePlayers_List_CommonInterfaces_Player__">StreamDataManager.SavePlayers(List&lt;Player&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveSharedObjects_CommonInterfaces_Landscape_">StreamDataManager.SaveSharedObjects(Landscape)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveMetadata_CommonInterfaces_Metadata_">StreamDataManager.SaveMetadata(Metadata)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveLedger_CommonInterfaces_Ledger_">StreamDataManager.SaveLedger(Ledger)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveExpressions_CommonInterfaces_ExpressionManager_">StreamDataManager.SaveExpressions(ExpressionManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveClientInfo_List_CommonInterfaces_ModelData_ClientInfo__">StreamDataManager.SaveClientInfo(List&lt;ClientInfo&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveMessenger_CommonInterfaces_Messenger_">StreamDataManager.SaveMessenger(Messenger)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveActions_CommonInterfaces_ActionManager_">StreamDataManager.SaveActions(ActionManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveControls_CommonInterfaces_ControlManager_">StreamDataManager.SaveControls(ControlManager)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveLogs_List_CCSPluginAPI_Log__">StreamDataManager.SaveLogs(List&lt;Log&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveLabels_List_CCSPluginAPI_Label__">StreamDataManager.SaveLabels(List&lt;Label&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveAttributes_Dictionary_System_String_CCSPluginAPI_Attribute__">StreamDataManager.SaveAttributes(Dictionary&lt;String, Attribute&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveGlobalLandscapeData_CommonInterfaces_ModelData_LandscapeData_">StreamDataManager.SaveGlobalLandscapeData(LandscapeData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SavePlayersData_List_CommonInterfaces_ModelData_PlayerData__">StreamDataManager.SavePlayersData(List&lt;PlayerData&gt;)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveSharedObjectsData_CommonInterfaces_ModelData_LandscapeData_">StreamDataManager.SaveSharedObjectsData(LandscapeData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveLedgerData_CommonInterfaces_ModelData_LedgerData_">StreamDataManager.SaveLedgerData(LedgerData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveExpressionsData_CommonInterfaces_ModelData_ExpressionsData_">StreamDataManager.SaveExpressionsData(ExpressionsData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveMessengerData_CommonInterfaces_ModelData_MessengerData_">StreamDataManager.SaveMessengerData(MessengerData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveActionsData_CommonInterfaces_ModelData_ActionManagerData_">StreamDataManager.SaveActionsData(ActionManagerData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_SaveControlsData_CommonInterfaces_ModelData_ControlsData_">StreamDataManager.SaveControlsData(ControlsData)</a>
+    </div>
+    <div>
+      <a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_CopyTo_CommonInterfaces_ISimulatorDataManager_">StreamDataManager.CopyTo(ISimulatorDataManager)</a>
+    </div>
+  </div>
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_FolderDataManager_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class FolderDataManager : StreamDataManager, ISimulatorDataManager, IDisposable</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_Create_" data-uid="CommonInterfaces.FolderDataManager.Create*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_Create_System_String_" data-uid="CommonInterfaces.FolderDataManager.Create(System.String)"><a href="#collapsible-CommonInterfaces_FolderDataManager_Create_System_String_" class="expander" data-toggle="collapse">Create(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_Create_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISimulatorDataManager Create(string fullPath)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">fullPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ISimulatorDataManager.html">ISimulatorDataManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_Create_" data-uid="CommonInterfaces.FolderDataManager.Create*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_Create_System_String_System_String_" data-uid="CommonInterfaces.FolderDataManager.Create(System.String,System.String)"><a href="#collapsible-CommonInterfaces_FolderDataManager_Create_System_String_System_String_" class="expander" data-toggle="collapse">Create(String, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_Create_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISimulatorDataManager Create(string name, string outPath)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">outPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ISimulatorDataManager.html">ISimulatorDataManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_CreateEntry_" data-uid="CommonInterfaces.FolderDataManager.CreateEntry*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_CreateEntry_System_String_" data-uid="CommonInterfaces.FolderDataManager.CreateEntry(System.String)"><a href="#collapsible-CommonInterfaces_FolderDataManager_CreateEntry_System_String_" class="expander" data-toggle="collapse">CreateEntry(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_CreateEntry_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Stream CreateEntry(string entryName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entryName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_CreateEntry_System_String_">StreamDataManager.CreateEntry(String)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_Dispose_" data-uid="CommonInterfaces.FolderDataManager.Dispose*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_Dispose" data-uid="CommonInterfaces.FolderDataManager.Dispose"><a href="#collapsible-CommonInterfaces_FolderDataManager_Dispose" class="expander" data-toggle="collapse">Dispose()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_Dispose" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override void Dispose()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_Dispose">StreamDataManager.Dispose()</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_GetEntry_" data-uid="CommonInterfaces.FolderDataManager.GetEntry*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_GetEntry_System_String_" data-uid="CommonInterfaces.FolderDataManager.GetEntry(System.String)"><a href="#collapsible-CommonInterfaces_FolderDataManager_GetEntry_System_String_" class="expander" data-toggle="collapse">GetEntry(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_GetEntry_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Stream GetEntry(string entryName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entryName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Stream</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_GetEntry_System_String_">StreamDataManager.GetEntry(String)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_Open_" data-uid="CommonInterfaces.FolderDataManager.Open*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_Open_System_String_" data-uid="CommonInterfaces.FolderDataManager.Open(System.String)"><a href="#collapsible-CommonInterfaces_FolderDataManager_Open_System_String_" class="expander" data-toggle="collapse">Open(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_Open_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISimulatorDataManager Open(string scenarioPath)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">scenarioPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ISimulatorDataManager.html">ISimulatorDataManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_Read_" data-uid="CommonInterfaces.FolderDataManager.Read*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_Read_System_String_" data-uid="CommonInterfaces.FolderDataManager.Read(System.String)"><a href="#collapsible-CommonInterfaces_FolderDataManager_Read_System_String_" class="expander" data-toggle="collapse">Read(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_Read_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ISimulatorDataManager Read(string fullPath)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">fullPath</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ISimulatorDataManager.html">ISimulatorDataManager</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_FolderDataManager_RemoveEntry_" data-uid="CommonInterfaces.FolderDataManager.RemoveEntry*"></a>
+  
+  <h4 id="CommonInterfaces_FolderDataManager_RemoveEntry_System_String_" data-uid="CommonInterfaces.FolderDataManager.RemoveEntry(System.String)"><a href="#collapsible-CommonInterfaces_FolderDataManager_RemoveEntry_System_String_" class="expander" data-toggle="collapse">RemoveEntry(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_FolderDataManager_RemoveEntry_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool RemoveEntry(string entryName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entryName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="CommonInterfaces.StreamDataManager.html#CommonInterfaces_StreamDataManager_RemoveEntry_System_String_">StreamDataManager.RemoveEntry(String)</a></div>
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

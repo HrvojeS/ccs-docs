@@ -1,0 +1,1354 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class DynamicDictionary
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class DynamicDictionary
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Utils.Collections.DynamicDictionary">
+  <h1 id="Utils_Collections_DynamicDictionary" data-uid="Utils.Collections.DynamicDictionary">Class DynamicDictionary
+  </h1>
+  <div class="markdown level0 summary"><p>Class used to represent every object on CL.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">DynamicDictionary</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="Utils.Collections.html">Utils.Collections</a></h6>
+  <h6><strong>Assembly</strong>: Utils.dll</h6>
+  
+  <h5 id="Utils_Collections_DynamicDictionary_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class DynamicDictionary : DynamicObject, IEnumerable, IDictionary&lt;string, object&gt;</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary__ctor_" data-uid="Utils.Collections.DynamicDictionary.#ctor*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary__ctor" data-uid="Utils.Collections.DynamicDictionary.#ctor"><a href="#collapsible-Utils_Collections_DynamicDictionary__ctor" class="expander" data-toggle="collapse">DynamicDictionary()</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary__ctor" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicDictionary()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary__ctor_" data-uid="Utils.Collections.DynamicDictionary.#ctor*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary__ctor_IDictionary_System_String_System_Object__System_Boolean_" data-uid="Utils.Collections.DynamicDictionary.#ctor(IDictionary{System.String,System.Object},System.Boolean)"><a href="#collapsible-Utils_Collections_DynamicDictionary__ctor_IDictionary_System_String_System_Object__System_Boolean_" class="expander" data-toggle="collapse">DynamicDictionary(IDictionary&lt;String, Object&gt;, Boolean)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary__ctor_IDictionary_System_String_System_Object__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicDictionary(IDictionary&lt;string, object&gt; entity, bool caseSensitive = false)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">caseSensitive</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary__ctor_" data-uid="Utils.Collections.DynamicDictionary.#ctor*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary__ctor_System_Boolean_" data-uid="Utils.Collections.DynamicDictionary.#ctor(System.Boolean)"><a href="#collapsible-Utils_Collections_DynamicDictionary__ctor_System_Boolean_" class="expander" data-toggle="collapse">DynamicDictionary(Boolean)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary__ctor_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DynamicDictionary(bool caseSensitive = false)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">caseSensitive</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Count_" data-uid="Utils.Collections.DynamicDictionary.Count*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Count" data-uid="Utils.Collections.DynamicDictionary.Count"><a href="#collapsible-Utils_Collections_DynamicDictionary_Count" class="expander" data-toggle="collapse">Count</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Count" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public int Count { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_IsReadOnly_" data-uid="Utils.Collections.DynamicDictionary.IsReadOnly*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_IsReadOnly" data-uid="Utils.Collections.DynamicDictionary.IsReadOnly"><a href="#collapsible-Utils_Collections_DynamicDictionary_IsReadOnly" class="expander" data-toggle="collapse">IsReadOnly</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_IsReadOnly" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsReadOnly { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Item_" data-uid="Utils.Collections.DynamicDictionary.Item*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Item_System_String_" data-uid="Utils.Collections.DynamicDictionary.Item(System.String)"><a href="#collapsible-Utils_Collections_DynamicDictionary_Item_System_String_" class="expander" data-toggle="collapse">Item[String]</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Item_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public object this[string key] { get; set; }</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Keys_" data-uid="Utils.Collections.DynamicDictionary.Keys*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Keys" data-uid="Utils.Collections.DynamicDictionary.Keys"><a href="#collapsible-Utils_Collections_DynamicDictionary_Keys" class="expander" data-toggle="collapse">Keys</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Keys" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;string&gt; Keys { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ICollection</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Values_" data-uid="Utils.Collections.DynamicDictionary.Values*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Values" data-uid="Utils.Collections.DynamicDictionary.Values"><a href="#collapsible-Utils_Collections_DynamicDictionary_Values" class="expander" data-toggle="collapse">Values</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Values" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ICollection&lt;object&gt; Values { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ICollection</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Add_" data-uid="Utils.Collections.DynamicDictionary.Add*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Add_IDictionary_System_String_System_Object__" data-uid="Utils.Collections.DynamicDictionary.Add(IDictionary{System.String,System.Object})"><a href="#collapsible-Utils_Collections_DynamicDictionary_Add_IDictionary_System_String_System_Object__" class="expander" data-toggle="collapse">Add(IDictionary&lt;String, Object&gt;)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Add_IDictionary_System_String_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Add collection of properties to object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(IDictionary&lt;string, object&gt; propertyCollection)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">propertyCollection</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Add_" data-uid="Utils.Collections.DynamicDictionary.Add*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Add_KeyValuePair_System_String_System_Object__" data-uid="Utils.Collections.DynamicDictionary.Add(KeyValuePair{System.String,System.Object})"><a href="#collapsible-Utils_Collections_DynamicDictionary_Add_KeyValuePair_System_String_System_Object__" class="expander" data-toggle="collapse">Add(KeyValuePair&lt;String, Object&gt;)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Add_KeyValuePair_System_String_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Add KeyValuePair to object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(KeyValuePair&lt;string, object&gt; o)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">o</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Add_" data-uid="Utils.Collections.DynamicDictionary.Add*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Add_System_String_System_Object_" data-uid="Utils.Collections.DynamicDictionary.Add(System.String,System.Object)"><a href="#collapsible-Utils_Collections_DynamicDictionary_Add_System_String_System_Object_" class="expander" data-toggle="collapse">Add(String, Object)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Add_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add new property to object with name=key and value=value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Add(string key, object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Clear_" data-uid="Utils.Collections.DynamicDictionary.Clear*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Clear" data-uid="Utils.Collections.DynamicDictionary.Clear"><a href="#collapsible-Utils_Collections_DynamicDictionary_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Clear" class="collapse in">
+  <div class="markdown level1 summary"><p>Clear object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Contains_" data-uid="Utils.Collections.DynamicDictionary.Contains*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Contains_KeyValuePair_System_String_System_Object__" data-uid="Utils.Collections.DynamicDictionary.Contains(KeyValuePair{System.String,System.Object})"><a href="#collapsible-Utils_Collections_DynamicDictionary_Contains_KeyValuePair_System_String_System_Object__" class="expander" data-toggle="collapse">Contains(KeyValuePair&lt;String, Object&gt;)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Contains_KeyValuePair_System_String_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Check if object contains an item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(KeyValuePair&lt;string, object&gt; item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">item</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Contains_" data-uid="Utils.Collections.DynamicDictionary.Contains*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Contains_System_String_System_Object_" data-uid="Utils.Collections.DynamicDictionary.Contains(System.String,System.Object)"><a href="#collapsible-Utils_Collections_DynamicDictionary_Contains_System_String_System_Object_" class="expander" data-toggle="collapse">Contains(String, Object)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Contains_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Check if object contains an item.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Contains(string key, object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_ContainsKey_" data-uid="Utils.Collections.DynamicDictionary.ContainsKey*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_ContainsKey_System_String_" data-uid="Utils.Collections.DynamicDictionary.ContainsKey(System.String)"><a href="#collapsible-Utils_Collections_DynamicDictionary_ContainsKey_System_String_" class="expander" data-toggle="collapse">ContainsKey(String)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_ContainsKey_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool ContainsKey(string key)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_CopyTo_" data-uid="Utils.Collections.DynamicDictionary.CopyTo*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_CopyTo_KeyValuePair_System_String_System_Object____System_Int32_" data-uid="Utils.Collections.DynamicDictionary.CopyTo(KeyValuePair{System.String,System.Object}[],System.Int32)"><a href="#collapsible-Utils_Collections_DynamicDictionary_CopyTo_KeyValuePair_System_String_System_Object____System_Int32_" class="expander" data-toggle="collapse">CopyTo(KeyValuePair&lt;String, Object&gt;[], Int32)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_CopyTo_KeyValuePair_System_String_System_Object____System_Int32_" class="collapse in">
+  <div class="markdown level1 summary"><p>Not implemented.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void CopyTo(KeyValuePair&lt;string, object&gt;[] array, int arrayIndex)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;[]</span>
+        <span class="parametername">array</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">arrayIndex</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Get_" data-uid="Utils.Collections.DynamicDictionary.Get*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Get_System_Object___" data-uid="Utils.Collections.DynamicDictionary.Get(System.Object[])"><a href="#collapsible-Utils_Collections_DynamicDictionary_Get_System_Object___" class="expander" data-toggle="collapse">Get(Object[])</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Get_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieve a property (of any type) using the given operations.
+Operations can be attribute names (string) or queries (Func(dynamic, bool)) which are executed in order.
+Attribute names are used as keys to the dictionary. Queries are used for filtering lists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic Get(params object[] operations)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">operations</span>
+        <p><p>Operation list</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_GetCaseInsensitive_" data-uid="Utils.Collections.DynamicDictionary.GetCaseInsensitive*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_GetCaseInsensitive_System_String_" data-uid="Utils.Collections.DynamicDictionary.GetCaseInsensitive(System.String)"><a href="#collapsible-Utils_Collections_DynamicDictionary_GetCaseInsensitive_System_String_" class="expander" data-toggle="collapse">GetCaseInsensitive(String)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_GetCaseInsensitive_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public dynamic GetCaseInsensitive(string key)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_GetEnumerator_" data-uid="Utils.Collections.DynamicDictionary.GetEnumerator*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_GetEnumerator" data-uid="Utils.Collections.DynamicDictionary.GetEnumerator"><a href="#collapsible-Utils_Collections_DynamicDictionary_GetEnumerator" class="expander" data-toggle="collapse">GetEnumerator()</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_GetEnumerator" class="collapse in">
+  <div class="markdown level1 summary"><p>Get enumerator of object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IEnumerator GetEnumerator()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IEnumerator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_IsCaseSensitive_" data-uid="Utils.Collections.DynamicDictionary.IsCaseSensitive*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_IsCaseSensitive" data-uid="Utils.Collections.DynamicDictionary.IsCaseSensitive"><a href="#collapsible-Utils_Collections_DynamicDictionary_IsCaseSensitive" class="expander" data-toggle="collapse">IsCaseSensitive()</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_IsCaseSensitive" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if the dictionary is case sensitive</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsCaseSensitive()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_IsNullOrEmpty_" data-uid="Utils.Collections.DynamicDictionary.IsNullOrEmpty*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_IsNullOrEmpty_System_Object_" data-uid="Utils.Collections.DynamicDictionary.IsNullOrEmpty(System.Object)"><a href="#collapsible-Utils_Collections_DynamicDictionary_IsNullOrEmpty_System_Object_" class="expander" data-toggle="collapse">IsNullOrEmpty(Object)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_IsNullOrEmpty_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns <span class="xref">true</span> if the given object is <span class="xref">null</span>
+or if it's a <a class="xref" href="Utils.Collections.DynamicDictionary.html">DynamicDictionary</a> and empty.
+If it's not a <a class="xref" href="Utils.Collections.DynamicDictionary.html">DynamicDictionary</a>, throws an exception.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsNullOrEmpty(object obj)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Remove_" data-uid="Utils.Collections.DynamicDictionary.Remove*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Remove_KeyValuePair_System_String_System_Object__" data-uid="Utils.Collections.DynamicDictionary.Remove(KeyValuePair{System.String,System.Object})"><a href="#collapsible-Utils_Collections_DynamicDictionary_Remove_KeyValuePair_System_String_System_Object__" class="expander" data-toggle="collapse">Remove(KeyValuePair&lt;String, Object&gt;)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Remove_KeyValuePair_System_String_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Remove property from object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(KeyValuePair&lt;string, object&gt; item)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">item</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Remove_" data-uid="Utils.Collections.DynamicDictionary.Remove*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Remove_System_String_" data-uid="Utils.Collections.DynamicDictionary.Remove(System.String)"><a href="#collapsible-Utils_Collections_DynamicDictionary_Remove_System_String_" class="expander" data-toggle="collapse">Remove(String)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Remove_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Remove property with given key from object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Remove(string key)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_Set_" data-uid="Utils.Collections.DynamicDictionary.Set*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_Set_System_String_System_Object_System_Object___" data-uid="Utils.Collections.DynamicDictionary.Set(System.String,System.Object,System.Object[])"><a href="#collapsible-Utils_Collections_DynamicDictionary_Set_System_String_System_Object_System_Object___" class="expander" data-toggle="collapse">Set(String, Object, Object[])</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_Set_System_String_System_Object_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"><p>Set an attribute (of any type) to the given value, using the given operations.
+Operations can be attribute names (string) or queries (Func(dynamic, bool)) which are executed in order.
+Attribute names are used as keys to the dictionary. Queries are used for filtering lists.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Set(string attributeName, object value, params object[] operations)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p><p>Name of the attribute to be set</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p><p>Value which the attribute will be set to</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">operations</span>
+        <p><p>Operation list</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_ToString_" data-uid="Utils.Collections.DynamicDictionary.ToString*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_ToString" data-uid="Utils.Collections.DynamicDictionary.ToString"><a href="#collapsible-Utils_Collections_DynamicDictionary_ToString" class="expander" data-toggle="collapse">ToString()</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_ToString" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override string ToString()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_TryGetMember_" data-uid="Utils.Collections.DynamicDictionary.TryGetMember*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_TryGetMember_GetMemberBinder_System_Object__" data-uid="Utils.Collections.DynamicDictionary.TryGetMember(GetMemberBinder,System.Object@)"><a href="#collapsible-Utils_Collections_DynamicDictionary_TryGetMember_GetMemberBinder_System_Object__" class="expander" data-toggle="collapse">TryGetMember(GetMemberBinder, out Object)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_TryGetMember_GetMemberBinder_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Get property by . operator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TryGetMember(GetMemberBinder binder, out object result)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">GetMemberBinder</span></span>
+        <span class="parametername">binder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">result</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_TryGetValue_" data-uid="Utils.Collections.DynamicDictionary.TryGetValue*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_TryGetValue_System_String_System_Object__" data-uid="Utils.Collections.DynamicDictionary.TryGetValue(System.String,System.Object@)"><a href="#collapsible-Utils_Collections_DynamicDictionary_TryGetValue_System_String_System_Object__" class="expander" data-toggle="collapse">TryGetValue(String, out Object)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_TryGetValue_System_String_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"><p>Try to get value from object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool TryGetValue(string key, out object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Utils_Collections_DynamicDictionary_TrySetMember_" data-uid="Utils.Collections.DynamicDictionary.TrySetMember*"></a>
+  
+  <h4 id="Utils_Collections_DynamicDictionary_TrySetMember_SetMemberBinder_System_Object_" data-uid="Utils.Collections.DynamicDictionary.TrySetMember(SetMemberBinder,System.Object)"><a href="#collapsible-Utils_Collections_DynamicDictionary_TrySetMember_SetMemberBinder_System_Object_" class="expander" data-toggle="collapse">TrySetMember(SetMemberBinder, Object)</a></h4>
+  
+  <div id="collapsible-Utils_Collections_DynamicDictionary_TrySetMember_SetMemberBinder_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Set property by . operator</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override bool TrySetMember(SetMemberBinder binder, object value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">SetMemberBinder</span></span>
+        <span class="parametername">binder</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

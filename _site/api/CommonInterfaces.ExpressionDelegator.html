@@ -1,0 +1,368 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ExpressionDelegator
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ExpressionDelegator
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.ExpressionDelegator">
+  <h1 id="CommonInterfaces_ExpressionDelegator" data-uid="CommonInterfaces.ExpressionDelegator">Class ExpressionDelegator
+  </h1>
+  <div class="markdown level0 summary"><p>Class containing of methods used to compile string expressions and operations.
+Every method returns compiled delegate of expression or operation.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ExpressionDelegator</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_ExpressionDelegator_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ExpressionDelegator : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ExpressionDelegator_GetActionConditionsChecker_" data-uid="CommonInterfaces.ExpressionDelegator.GetActionConditionsChecker*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionDelegator_GetActionConditionsChecker_CCSPluginAPI_ActionConfig_List_System_String___" data-uid="CommonInterfaces.ExpressionDelegator.GetActionConditionsChecker(CCSPluginAPI.ActionConfig,List{System.String}@)"><a href="#collapsible-CommonInterfaces_ExpressionDelegator_GetActionConditionsChecker_CCSPluginAPI_ActionConfig_List_System_String___" class="expander" data-toggle="collapse">GetActionConditionsChecker(ActionConfig, out List&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionDelegator_GetActionConditionsChecker_CCSPluginAPI_ActionConfig_List_System_String___" class="collapse in">
+  <div class="markdown level1 summary"><p>For action with given ActionConfig, create compiled Expression of Checker method to evaluate given combination.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;IEnumerable&lt;Parameter&gt;, bool, (bool, Dictionary&lt;string, object&gt;)&gt; GetActionConditionsChecker(ActionConfig config, out List&lt;string&gt; parameterList)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionConfig.html">ActionConfig</a></span>
+        <span class="parametername">config</span>
+        <p><p>Action config</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">parameterList</span>
+        <p><p>Out parameret with list of parameter object ids</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;, <span class="xref">System.Boolean</span>, <span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Boolean</span>, <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;&gt;
+        <p><p>Compiled function delegate of action combination checker.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionDelegator_ParseExpression_" data-uid="CommonInterfaces.ExpressionDelegator.ParseExpression*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionDelegator_ParseExpression_IEnumerable_KeyValuePair_System_String_System_Object___List_System_String___" data-uid="CommonInterfaces.ExpressionDelegator.ParseExpression(IEnumerable{KeyValuePair{System.String,System.Object}},List{System.String}@)"><a href="#collapsible-CommonInterfaces_ExpressionDelegator_ParseExpression_IEnumerable_KeyValuePair_System_String_System_Object___List_System_String___" class="expander" data-toggle="collapse">ParseExpression(IEnumerable&lt;KeyValuePair&lt;String, Object&gt;&gt;, out List&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionDelegator_ParseExpression_IEnumerable_KeyValuePair_System_String_System_Object___List_System_String___" class="collapse in">
+  <div class="markdown level1 summary"><p>Used to parse expressions. Methods used in expressions are parsed once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;object[], (object, Dictionary&lt;string, object&gt;)&gt; ParseExpression(IEnumerable&lt;KeyValuePair&lt;string, object&gt;&gt; operations, out List&lt;string&gt; objectList)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;</span>
+        <span class="parametername">operations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">objectList</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">System.Object</span>[], <span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Object</span>, <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;&gt;
+        <p><p>Func object with array object as input</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionDelegator_ParseExpression_" data-uid="CommonInterfaces.ExpressionDelegator.ParseExpression*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionDelegator_ParseExpression_IEnumerable_KeyValuePair_System_String_System_String___List_System_String___" data-uid="CommonInterfaces.ExpressionDelegator.ParseExpression(IEnumerable{KeyValuePair{System.String,System.String}},List{System.String}@)"><a href="#collapsible-CommonInterfaces_ExpressionDelegator_ParseExpression_IEnumerable_KeyValuePair_System_String_System_String___List_System_String___" class="expander" data-toggle="collapse">ParseExpression(IEnumerable&lt;KeyValuePair&lt;String, String&gt;&gt;, out List&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionDelegator_ParseExpression_IEnumerable_KeyValuePair_System_String_System_String___List_System_String___" class="collapse in">
+  <div class="markdown level1 summary"><p>Used to parse expressions. Methods used in expressions are parsed once.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;object[], (object, Dictionary&lt;string, object&gt;)&gt; ParseExpression(IEnumerable&lt;KeyValuePair&lt;string, string&gt;&gt; operations, out List&lt;string&gt; objectList)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">KeyValuePair</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.String</span>&gt;&gt;</span>
+        <span class="parametername">operations</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">objectList</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">System.Object</span>[], <span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Object</span>, <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;&gt;&gt;
+        <p><p>Func object with array object as input. Output of func is explicit tuple with
+evaluated value as first item, Expression evaluation as second item and log record as third item.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ExpressionDelegator_ParseOperation_" data-uid="CommonInterfaces.ExpressionDelegator.ParseOperation*"></a>
+  
+  <h4 id="CommonInterfaces_ExpressionDelegator_ParseOperation_System_String_System_String_IEnumerable_System_String___" data-uid="CommonInterfaces.ExpressionDelegator.ParseOperation(System.String,System.String,IEnumerable{System.String}@)"><a href="#collapsible-CommonInterfaces_ExpressionDelegator_ParseOperation_System_String_System_String_IEnumerable_System_String___" class="expander" data-toggle="collapse">ParseOperation(String, String, out IEnumerable&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ExpressionDelegator_ParseOperation_System_String_System_String_IEnumerable_System_String___" class="collapse in">
+  <div class="markdown level1 summary"><p>Used to parse one operation from config given in formula.
+In parameters enumeraton are ordered id's of objects used to evaluate the operation.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Func&lt;object[], object&gt; ParseOperation(string name, string formula, out IEnumerable&lt;string&gt; parameters)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">formula</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">parameters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Func</span>&lt;<span class="xref">System.Object</span>[], <span class="xref">System.Object</span>&gt;
+        <p><p>Func object with object array as input</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

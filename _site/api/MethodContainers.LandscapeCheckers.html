@@ -1,0 +1,2558 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LandscapeCheckers
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LandscapeCheckers
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="MethodContainers.LandscapeCheckers">
+  <h1 id="MethodContainers_LandscapeCheckers" data-uid="MethodContainers.LandscapeCheckers">Class LandscapeCheckers
+  </h1>
+  <div class="markdown level0 summary"><p>Hold checker functions for landscape.
+Every method has public and private variant. Public methods are used to define types of arguments and
+can be used in code at will. Private functions are not to be used in code and are used only to be wrapped
+in other methods.
+Conditions in json config call private methods defined here with signature defined in it's public method.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LandscapeCheckers</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="MethodContainers.html">MethodContainers</a></h6>
+  <h6><strong>Assembly</strong>: CCSPluginAPI.dll</h6>
+  
+  <h5 id="MethodContainers_LandscapeCheckers_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LandscapeCheckers : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="MethodContainers_LandscapeCheckers_Cache" data-uid="MethodContainers.LandscapeCheckers.Cache"><a href="#collapsible-MethodContainers_LandscapeCheckers_Cache" class="expander" data-toggle="collapse">Cache</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_Cache" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ConcurrentDictionary&lt;string, bool&gt; Cache</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ConcurrentDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Boolean</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  
+  <h4 id="MethodContainers_LandscapeCheckers_UseCache" data-uid="MethodContainers.LandscapeCheckers.UseCache"><a href="#collapsible-MethodContainers_LandscapeCheckers_UseCache" class="expander" data-toggle="collapse">UseCache</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_UseCache" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static volatile bool UseCache</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ActorCanCommandSoftware_" data-uid="MethodContainers.LandscapeCheckers.ActorCanCommandSoftware*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ActorCanCommandSoftware_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.ActorCanCommandSoftware(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ActorCanCommandSoftware_System_Object_System_Object_" class="expander" data-toggle="collapse">ActorCanCommandSoftware(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ActorCanCommandSoftware_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Check if actor controls remote software. Software must be running.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActorCanCommandSoftware(dynamic actor, dynamic software)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">software</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>Boolean indicating command capability</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ActorCanModifyControllerRemotely_" data-uid="MethodContainers.LandscapeCheckers.ActorCanModifyControllerRemotely*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ActorCanModifyControllerRemotely_CCSPluginAPI_ILandscape_System_Object_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.ActorCanModifyControllerRemotely(CCSPluginAPI.ILandscape,System.Object,System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ActorCanModifyControllerRemotely_CCSPluginAPI_ILandscape_System_Object_System_Object_System_Object_" class="expander" data-toggle="collapse">ActorCanModifyControllerRemotely(ILandscape, Object, Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ActorCanModifyControllerRemotely_CCSPluginAPI_ILandscape_System_Object_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActorCanModifyControllerRemotely(ILandscape landscape, dynamic actor, dynamic scada, dynamic controller)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">scada</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">controller</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ActorContainsAsset_" data-uid="MethodContainers.LandscapeCheckers.ActorContainsAsset*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ActorContainsAsset_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.ActorContainsAsset(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ActorContainsAsset_System_Object_System_Object_" class="expander" data-toggle="collapse">ActorContainsAsset(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ActorContainsAsset_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if actor contains asset in his assets collection</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActorContainsAsset(dynamic actor, dynamic asset)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">asset</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ActorControlsSoftware_" data-uid="MethodContainers.LandscapeCheckers.ActorControlsSoftware*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ActorControlsSoftware_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.ActorControlsSoftware(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ActorControlsSoftware_System_Object_System_Object_" class="expander" data-toggle="collapse">ActorControlsSoftware(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ActorControlsSoftware_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Check if actor is set to control software.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActorControlsSoftware(dynamic actor, dynamic software)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">software</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>Boolean indicating if actor is set to control software</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ActorHasAccessTo_" data-uid="MethodContainers.LandscapeCheckers.ActorHasAccessTo*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ActorHasAccessTo_CCSPluginAPI_ILandscape_System_Object_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ActorHasAccessTo(CCSPluginAPI.ILandscape,System.Object,System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ActorHasAccessTo_CCSPluginAPI_ILandscape_System_Object_System_Object_System_String_" class="expander" data-toggle="collapse">ActorHasAccessTo(ILandscape, Object, Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ActorHasAccessTo_CCSPluginAPI_ILandscape_System_Object_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Check if actor has access to target machine's OS under given privilege.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActorHasAccessTo(ILandscape landscape, dynamic actor, dynamic target, string privilege = &quot;user&quot;)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">privilege</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>Boolean indicating access</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ActorHasSkill_" data-uid="MethodContainers.LandscapeCheckers.ActorHasSkill*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ActorHasSkill_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ActorHasSkill(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ActorHasSkill_System_Object_System_String_" class="expander" data-toggle="collapse">ActorHasSkill(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ActorHasSkill_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does actor have skill of type skill</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActorHasSkill(dynamic actor, string skill)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">skill</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ActorWorksOnMachineWithFile_" data-uid="MethodContainers.LandscapeCheckers.ActorWorksOnMachineWithFile*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ActorWorksOnMachineWithFile_CCSPluginAPI_ILandscape_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.ActorWorksOnMachineWithFile(CCSPluginAPI.ILandscape,System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ActorWorksOnMachineWithFile_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="expander" data-toggle="collapse">ActorWorksOnMachineWithFile(ILandscape, Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ActorWorksOnMachineWithFile_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ActorWorksOnMachineWithFile(ILandscape landscape, dynamic actor, dynamic file)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">file</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_CheckAttributeRange_" data-uid="MethodContainers.LandscapeCheckers.CheckAttributeRange*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_CheckAttributeRange_System_Object_System_String_System_String_" data-uid="MethodContainers.LandscapeCheckers.CheckAttributeRange(System.Object,System.String,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_CheckAttributeRange_System_Object_System_String_System_String_" class="expander" data-toggle="collapse">CheckAttributeRange(Object, String, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_CheckAttributeRange_System_Object_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if object contains attribute and attribute is in range range (i.e 0-1 range)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckAttributeRange(dynamic entity, string key, string range = &quot;0-1&quot;)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">range</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_CheckAttributeValue_" data-uid="MethodContainers.LandscapeCheckers.CheckAttributeValue*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_CheckAttributeValue_System_Object_System_String_System_Object_" data-uid="MethodContainers.LandscapeCheckers.CheckAttributeValue(System.Object,System.String,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_CheckAttributeValue_System_Object_System_String_System_Object_" class="expander" data-toggle="collapse">CheckAttributeValue(Object, String, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_CheckAttributeValue_System_Object_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if object contains attribute and attribute is set to value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckAttributeValue(dynamic entity, string key, dynamic value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p><p>DynamicDictionary object</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_CheckFunctionalityAttribute_" data-uid="MethodContainers.LandscapeCheckers.CheckFunctionalityAttribute*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_CheckFunctionalityAttribute_System_Object_System_String_System_String_System_Object_" data-uid="MethodContainers.LandscapeCheckers.CheckFunctionalityAttribute(System.Object,System.String,System.String,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_CheckFunctionalityAttribute_System_Object_System_String_System_String_System_Object_" class="expander" data-toggle="collapse">CheckFunctionalityAttribute(Object, String, String, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_CheckFunctionalityAttribute_System_Object_System_String_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if object's functionalites collection conatains key-value pair</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CheckFunctionalityAttribute(dynamic entity, string functionalityName, string attributeName, dynamic attributeValue)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">functionalityName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">attributeValue</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_CollectionContains_" data-uid="MethodContainers.LandscapeCheckers.CollectionContains*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_CollectionContains_IEnumerable_System_Object_" data-uid="MethodContainers.LandscapeCheckers.CollectionContains(IEnumerable,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_CollectionContains_IEnumerable_System_Object_" class="expander" data-toggle="collapse">CollectionContains(IEnumerable, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_CollectionContains_IEnumerable_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if collection contains value</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool CollectionContains(IEnumerable collection, dynamic value)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span></span>
+        <span class="parametername">collection</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_EqualsPlayerId_" data-uid="MethodContainers.LandscapeCheckers.EqualsPlayerId*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_EqualsPlayerId_CCSPluginAPI_IPlayer_System_String_" data-uid="MethodContainers.LandscapeCheckers.EqualsPlayerId(CCSPluginAPI.IPlayer,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_EqualsPlayerId_CCSPluginAPI_IPlayer_System_String_" class="expander" data-toggle="collapse">EqualsPlayerId(IPlayer, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_EqualsPlayerId_CCSPluginAPI_IPlayer_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks whether a given string equals the given player's Id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool EqualsPlayerId(IPlayer player, string toCheck)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a></span>
+        <span class="parametername">player</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">toCheck</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_GroupObjectContainsEntity_" data-uid="MethodContainers.LandscapeCheckers.GroupObjectContainsEntity*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_GroupObjectContainsEntity_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.GroupObjectContainsEntity(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_GroupObjectContainsEntity_System_Object_System_String_" class="expander" data-toggle="collapse">GroupObjectContainsEntity(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_GroupObjectContainsEntity_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does the group contain the object with the given resource id</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool GroupObjectContainsEntity(dynamic groupEntity, string resourceID)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">groupEntity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">resourceID</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_HaveContractOfType_" data-uid="MethodContainers.LandscapeCheckers.HaveContractOfType*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_HaveContractOfType_CCSPluginAPI_IPlayer_CCSPluginAPI_ILandscape_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.HaveContractOfType(CCSPluginAPI.IPlayer,CCSPluginAPI.ILandscape,System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_HaveContractOfType_CCSPluginAPI_IPlayer_CCSPluginAPI_ILandscape_System_Object_System_String_" class="expander" data-toggle="collapse">HaveContractOfType(IPlayer, ILandscape, Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_HaveContractOfType_CCSPluginAPI_IPlayer_CCSPluginAPI_ILandscape_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool HaveContractOfType(IPlayer player, ILandscape landscape, dynamic organization, string contractType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a></span>
+        <span class="parametername">player</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">organization</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">contractType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsActorInTargetPhysicalZone_" data-uid="MethodContainers.LandscapeCheckers.IsActorInTargetPhysicalZone*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsActorInTargetPhysicalZone_CCSPluginAPI_ILandscape_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsActorInTargetPhysicalZone(CCSPluginAPI.ILandscape,System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsActorInTargetPhysicalZone_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="expander" data-toggle="collapse">IsActorInTargetPhysicalZone(ILandscape, Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsActorInTargetPhysicalZone_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if actor is in same physical zone as the target object.
+If the target has no physical_zone attribute returns false</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsActorInTargetPhysicalZone(ILandscape landscape, dynamic actor, dynamic target)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsClientLoggedInTo_" data-uid="MethodContainers.LandscapeCheckers.IsClientLoggedInTo*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsClientLoggedInTo_System_Object_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.IsClientLoggedInTo(System.Object,System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsClientLoggedInTo_System_Object_System_Object_System_String_" class="expander" data-toggle="collapse">IsClientLoggedInTo(Object, Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsClientLoggedInTo_System_Object_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if given client (os or software)
+is logged in under given privileges</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsClientLoggedInTo(dynamic client, dynamic target, string privilege = &quot;user&quot;)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">client</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">privilege</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsDataInContainer_" data-uid="MethodContainers.LandscapeCheckers.IsDataInContainer*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsDataInContainer_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsDataInContainer(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsDataInContainer_System_Object_System_Object_" class="expander" data-toggle="collapse">IsDataInContainer(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsDataInContainer_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if data is in data container</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsDataInContainer(dynamic data, dynamic data_container)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">data_container</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>True if data is in data container</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsEqual_" data-uid="MethodContainers.LandscapeCheckers.IsEqual*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsEqual_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsEqual(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsEqual_System_Object_System_Object_" class="expander" data-toggle="collapse">IsEqual(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsEqual_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Are two objects equal.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsEqual(dynamic o1, dynamic o2)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">o1</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">o2</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsFileAvailableForOrganization_" data-uid="MethodContainers.LandscapeCheckers.IsFileAvailableForOrganization*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsFileAvailableForOrganization_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsFileAvailableForOrganization(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsFileAvailableForOrganization_System_Object_System_Object_" class="expander" data-toggle="collapse">IsFileAvailableForOrganization(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsFileAvailableForOrganization_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if all encryption keys used to encrypt file are available to given organizations</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFileAvailableForOrganization(dynamic file, dynamic organization)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">file</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">organization</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsFileLocatedOnMachine_" data-uid="MethodContainers.LandscapeCheckers.IsFileLocatedOnMachine*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsFileLocatedOnMachine_CCSPluginAPI_ILandscape_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsFileLocatedOnMachine(CCSPluginAPI.ILandscape,System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsFileLocatedOnMachine_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="expander" data-toggle="collapse">IsFileLocatedOnMachine(ILandscape, Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsFileLocatedOnMachine_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if file is in file system that is located on the machine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFileLocatedOnMachine(ILandscape landscape, dynamic file, dynamic machine)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">file</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">machine</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsFunctionalityOn_" data-uid="MethodContainers.LandscapeCheckers.IsFunctionalityOn*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsFunctionalityOn_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.IsFunctionalityOn(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsFunctionalityOn_System_Object_System_String_" class="expander" data-toggle="collapse">IsFunctionalityOn(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsFunctionalityOn_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if the given functionality is active on a given entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsFunctionalityOn(dynamic entity, string functionalityName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">functionalityName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsMachineConnectedToAnyNetwork_" data-uid="MethodContainers.LandscapeCheckers.IsMachineConnectedToAnyNetwork*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsMachineConnectedToAnyNetwork_CCSPluginAPI_ILandscape_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsMachineConnectedToAnyNetwork(CCSPluginAPI.ILandscape,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsMachineConnectedToAnyNetwork_CCSPluginAPI_ILandscape_System_Object_" class="expander" data-toggle="collapse">IsMachineConnectedToAnyNetwork(ILandscape, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsMachineConnectedToAnyNetwork_CCSPluginAPI_ILandscape_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if target machine is connected to any trust zone on a given landscape</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsMachineConnectedToAnyNetwork(ILandscape landscape, dynamic target)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsObjectFromPlayerOrganization_" data-uid="MethodContainers.LandscapeCheckers.IsObjectFromPlayerOrganization*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsObjectFromPlayerOrganization_CCSPluginAPI_IPlayer_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsObjectFromPlayerOrganization(CCSPluginAPI.IPlayer,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsObjectFromPlayerOrganization_CCSPluginAPI_IPlayer_System_Object_" class="expander" data-toggle="collapse">IsObjectFromPlayerOrganization(IPlayer, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsObjectFromPlayerOrganization_CCSPluginAPI_IPlayer_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsObjectFromPlayerOrganization(IPlayer player, dynamic obj)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a></span>
+        <span class="parametername">player</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">obj</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsOrganizationAffectedByNewsOrEvent_" data-uid="MethodContainers.LandscapeCheckers.IsOrganizationAffectedByNewsOrEvent*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsOrganizationAffectedByNewsOrEvent_System_String_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsOrganizationAffectedByNewsOrEvent(System.String,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsOrganizationAffectedByNewsOrEvent_System_String_System_Object_" class="expander" data-toggle="collapse">IsOrganizationAffectedByNewsOrEvent(String, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsOrganizationAffectedByNewsOrEvent_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if given organization Id is included in the list of
+organizations the given NewsOrEvent impacts.
+Checker also works if &quot;NewsOrEvent&quot; is of type &quot;event&quot;</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsOrganizationAffectedByNewsOrEvent(string organizationId, dynamic NewsOrEvent)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">organizationId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">NewsOrEvent</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>True if the given NewsOrEvent impacts the given organization</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsSoftwareLocallyLoggedIn_" data-uid="MethodContainers.LandscapeCheckers.IsSoftwareLocallyLoggedIn*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsSoftwareLocallyLoggedIn_CCSPluginAPI_ILandscape_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsSoftwareLocallyLoggedIn(CCSPluginAPI.ILandscape,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsSoftwareLocallyLoggedIn_CCSPluginAPI_ILandscape_System_Object_" class="expander" data-toggle="collapse">IsSoftwareLocallyLoggedIn(ILandscape, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsSoftwareLocallyLoggedIn_CCSPluginAPI_ILandscape_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if targeted software entity has an os entity logged in (coresponding with local login functionality)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSoftwareLocallyLoggedIn(ILandscape landscape, dynamic target)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>true if software is localy logged into the host os, false otherwise</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsSoftwareOrOSVulnerableForExploit_" data-uid="MethodContainers.LandscapeCheckers.IsSoftwareOrOSVulnerableForExploit*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsSoftwareOrOSVulnerableForExploit_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsSoftwareOrOSVulnerableForExploit(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsSoftwareOrOSVulnerableForExploit_System_Object_System_Object_" class="expander" data-toggle="collapse">IsSoftwareOrOSVulnerableForExploit(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsSoftwareOrOSVulnerableForExploit_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if given software's version and patch date make it vulnerable for given exploit</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSoftwareOrOSVulnerableForExploit(dynamic target, dynamic exploit)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">exploit</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_IsWebApplicationInfected_" data-uid="MethodContainers.LandscapeCheckers.IsWebApplicationInfected*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_IsWebApplicationInfected_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.IsWebApplicationInfected(System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_IsWebApplicationInfected_System_Object_System_Object_" class="expander" data-toggle="collapse">IsWebApplicationInfected(Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_IsWebApplicationInfected_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if a web application is infected with a specified malware.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsWebApplicationInfected(dynamic web_application, dynamic malicious_file = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">web_application</span>
+        <p><p>Web application to be inspected.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">malicious_file</span>
+        <p><p>Malicious file to be inspected. If not specified, reports any malicious file infection of the website.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_MachineHasAnyFilesystem_" data-uid="MethodContainers.LandscapeCheckers.MachineHasAnyFilesystem*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_MachineHasAnyFilesystem_CCSPluginAPI_ILandscape_System_Object_" data-uid="MethodContainers.LandscapeCheckers.MachineHasAnyFilesystem(CCSPluginAPI.ILandscape,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_MachineHasAnyFilesystem_CCSPluginAPI_ILandscape_System_Object_" class="expander" data-toggle="collapse">MachineHasAnyFilesystem(ILandscape, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_MachineHasAnyFilesystem_CCSPluginAPI_ILandscape_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MachineHasAnyFilesystem(ILandscape landscape, dynamic machine)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">machine</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_MachineHasTools_" data-uid="MethodContainers.LandscapeCheckers.MachineHasTools*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_MachineHasTools_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.MachineHasTools(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_MachineHasTools_System_Object_System_String_" class="expander" data-toggle="collapse">MachineHasTools(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_MachineHasTools_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does machine have tools of type tools</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool MachineHasTools(dynamic machine, string tools)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">machine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">tools</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasAnyControlOfType_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasAnyControlOfType*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasAnyControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasAnyControlOfType(CCSPluginAPI.ILandscape,System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasAnyControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasAnyControlOfType(ILandscape, Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasAnyControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasAnyControlOfType(ILandscape landscape, dynamic entity, string controlType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">controlType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasAttribute_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasAttribute*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasAttribute_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasAttribute(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasAttribute_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasAttribute(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasAttribute_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if object has attribute</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasAttribute(dynamic entity, string atr)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">atr</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasControlNamed_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasControlNamed*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasControlNamed_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasControlNamed(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasControlNamed_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasControlNamed(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasControlNamed_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks whether the object has a control of any type with the given name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasControlNamed(dynamic entity, string controlName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">controlName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasControlOfType_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasControlOfType*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasControlOfType_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasControlOfType(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasControlOfType_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasControlOfType(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasControlOfType_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does object contain any control of given type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasControlOfType(dynamic entity, string controlType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">controlType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>Bool indicating whether controls of given type exist</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasControlOfTypeInLandscape_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasControlOfTypeInLandscape*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasControlOfTypeInLandscape_CCSPluginAPI_ILandscape_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasControlOfTypeInLandscape(CCSPluginAPI.ILandscape,System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasControlOfTypeInLandscape_CCSPluginAPI_ILandscape_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasControlOfTypeInLandscape(ILandscape, Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasControlOfTypeInLandscape_CCSPluginAPI_ILandscape_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does the object itself, its groups, or its organization contain the control of given type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasControlOfTypeInLandscape(ILandscape landscape, dynamic entity, string controlType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">controlType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasFunctionality_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasFunctionality*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasFunctionality_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasFunctionality(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasFunctionality_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasFunctionality(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasFunctionality_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if the given entity contains a functionality of the given type (according to functionality's labels).</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasFunctionality(dynamic entity, string functionalityName)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">functionalityName</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasGroupControlOfType_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasGroupControlOfType*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasGroupControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasGroupControlOfType(CCSPluginAPI.ILandscape,System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasGroupControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasGroupControlOfType(ILandscape, Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasGroupControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does any of the groups associated with the given object contains control of given type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasGroupControlOfType(ILandscape landscape, dynamic entity, string controlType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">controlType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>Bool indicating whether the groups assigned to the object contain control of given type</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasLabel_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasLabel*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasLabel_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasLabel(System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasLabel_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasLabel(Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasLabel_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if object has label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasLabel(dynamic entity, string label)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">label</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_ObjectHasOrganizationControlOfType_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasOrganizationControlOfType*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_ObjectHasOrganizationControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" data-uid="MethodContainers.LandscapeCheckers.ObjectHasOrganizationControlOfType(CCSPluginAPI.ILandscape,System.Object,System.String)"><a href="#collapsible-MethodContainers_LandscapeCheckers_ObjectHasOrganizationControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" class="expander" data-toggle="collapse">ObjectHasOrganizationControlOfType(ILandscape, Object, String)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_ObjectHasOrganizationControlOfType_CCSPluginAPI_ILandscape_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Does the organization associated with the given object contain control of given type</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool ObjectHasOrganizationControlOfType(ILandscape landscape, dynamic entity, string controlType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">controlType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>Bool indicating whether the organization assigned to the object contains control of given type</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_RansomwareAttacksFile_" data-uid="MethodContainers.LandscapeCheckers.RansomwareAttacksFile*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_RansomwareAttacksFile_System_Object_" data-uid="MethodContainers.LandscapeCheckers.RansomwareAttacksFile(System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_RansomwareAttacksFile_System_Object_" class="expander" data-toggle="collapse">RansomwareAttacksFile(Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_RansomwareAttacksFile_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if ransomware is intended to be used on individual files</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RansomwareAttacksFile(dynamic ransomware)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">ransomware</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_RansomwareAttacksFileSystem_" data-uid="MethodContainers.LandscapeCheckers.RansomwareAttacksFileSystem*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_RansomwareAttacksFileSystem_System_Object_" data-uid="MethodContainers.LandscapeCheckers.RansomwareAttacksFileSystem(System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_RansomwareAttacksFileSystem_System_Object_" class="expander" data-toggle="collapse">RansomwareAttacksFileSystem(Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_RansomwareAttacksFileSystem_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Checks if ransomware is intended to be used on file systems</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RansomwareAttacksFileSystem(dynamic ransomware)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">ransomware</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="MethodContainers_LandscapeCheckers_VPNClientTZReady_" data-uid="MethodContainers.LandscapeCheckers.VPNClientTZReady*"></a>
+  
+  <h4 id="MethodContainers_LandscapeCheckers_VPNClientTZReady_CCSPluginAPI_ILandscape_System_Object_System_Object_" data-uid="MethodContainers.LandscapeCheckers.VPNClientTZReady(CCSPluginAPI.ILandscape,System.Object,System.Object)"><a href="#collapsible-MethodContainers_LandscapeCheckers_VPNClientTZReady_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="expander" data-toggle="collapse">VPNClientTZReady(ILandscape, Object, Object)</a></h4>
+  
+  <div id="collapsible-MethodContainers_LandscapeCheckers_VPNClientTZReady_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Determines whether the given VPN client is able to login to the VPN server
+tied to the given trust zone.
+If no VPN server is found, the connection is considered valid due to possibility
+of player not knowing about the server.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool VPNClientTZReady(ILandscape landscape, dynamic client, dynamic trustZone)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">client</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">trustZone</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1229 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Messenger
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Messenger
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.Messenger">
+  <h1 id="CommonInterfaces_Messenger" data-uid="CommonInterfaces.Messenger">Class Messenger
+  </h1>
+  <div class="markdown level0 summary"><p>General class for sending all types of messages.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Messenger</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_Messenger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Messenger : object, IMessenger, IStandaloneGameSubject, IGameSubject, ISerializable&lt;MessengerData&gt;</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Messenger__ctor_" data-uid="CommonInterfaces.Messenger.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger__ctor_CommonInterfaces_ModelData_MessengerData_" data-uid="CommonInterfaces.Messenger.#ctor(CommonInterfaces.ModelData.MessengerData)"><a href="#collapsible-CommonInterfaces_Messenger__ctor_CommonInterfaces_ModelData_MessengerData_" class="expander" data-toggle="collapse">Messenger(MessengerData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger__ctor_CommonInterfaces_ModelData_MessengerData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Messenger(MessengerData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.MessengerData.html">MessengerData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Messenger_Gamemaster_" data-uid="CommonInterfaces.Messenger.Gamemaster*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_Gamemaster" data-uid="CommonInterfaces.Messenger.Gamemaster"><a href="#collapsible-CommonInterfaces_Messenger_Gamemaster" class="expander" data-toggle="collapse">Gamemaster</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_Gamemaster" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Gamemaster { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_OpenedSessions_" data-uid="CommonInterfaces.Messenger.OpenedSessions*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_OpenedSessions" data-uid="CommonInterfaces.Messenger.OpenedSessions"><a href="#collapsible-CommonInterfaces_Messenger_OpenedSessions" class="expander" data-toggle="collapse">OpenedSessions</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_OpenedSessions" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentDictionary&lt;string, MessageSession&gt; OpenedSessions { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ConcurrentDictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CommonInterfaces.MessageSession.html">MessageSession</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SessionsOfType_" data-uid="CommonInterfaces.Messenger.SessionsOfType*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SessionsOfType" data-uid="CommonInterfaces.Messenger.SessionsOfType"><a href="#collapsible-CommonInterfaces_Messenger_SessionsOfType" class="expander" data-toggle="collapse">SessionsOfType</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SessionsOfType" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ConcurrentDictionary&lt;SessionType, List&lt;MessageSession&gt;&gt; SessionsOfType { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">ConcurrentDictionary</span>&lt;<a class="xref" href="CommonInterfaces.SessionType.html">SessionType</a>, <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.MessageSession.html">MessageSession</a>&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_Updated_" data-uid="CommonInterfaces.Messenger.Updated*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_Updated" data-uid="CommonInterfaces.Messenger.Updated"><a href="#collapsible-CommonInterfaces_Messenger_Updated" class="expander" data-toggle="collapse">Updated</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_Updated" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Updated { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Updated">IGameSubject.Updated</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Messenger_Clear_" data-uid="CommonInterfaces.Messenger.Clear*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_Clear" data-uid="CommonInterfaces.Messenger.Clear"><a href="#collapsible-CommonInterfaces_Messenger_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_Clear" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Clear">IGameSubject.Clear()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_Export_" data-uid="CommonInterfaces.Messenger.Export*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_Export" data-uid="CommonInterfaces.Messenger.Export"><a href="#collapsible-CommonInterfaces_Messenger_Export" class="expander" data-toggle="collapse">Export()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_Export" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessengerData Export()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.MessengerData.html">MessengerData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.Serializer.ISerializable-1.html#CommonInterfaces_Serializer_ISerializable_1_Export">ISerializable&lt;T&gt;.Export()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_GetAllSessions_" data-uid="CommonInterfaces.Messenger.GetAllSessions*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_GetAllSessions" data-uid="CommonInterfaces.Messenger.GetAllSessions"><a href="#collapsible-CommonInterfaces_Messenger_GetAllSessions" class="expander" data-toggle="collapse">GetAllSessions()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_GetAllSessions" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;MessageSession&gt; GetAllSessions()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<a class="xref" href="CommonInterfaces.MessageSession.html">MessageSession</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_GetPlayerMappedSubjectDelta_" data-uid="CommonInterfaces.Messenger.GetPlayerMappedSubjectDelta*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_GetPlayerMappedSubjectDelta" data-uid="CommonInterfaces.Messenger.GetPlayerMappedSubjectDelta"><a href="#collapsible-CommonInterfaces_Messenger_GetPlayerMappedSubjectDelta" class="expander" data-toggle="collapse">GetPlayerMappedSubjectDelta()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_GetPlayerMappedSubjectDelta" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, SubjectData&gt; GetPlayerMappedSubjectDelta()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CommonInterfaces.SubjectData.html">SubjectData</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IStandaloneGameSubject.html#CommonInterfaces_IStandaloneGameSubject_GetPlayerMappedSubjectDelta">IStandaloneGameSubject.GetPlayerMappedSubjectDelta()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_GetPlayersForObject_" data-uid="CommonInterfaces.Messenger.GetPlayersForObject*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_GetPlayersForObject_System_String_" data-uid="CommonInterfaces.Messenger.GetPlayersForObject(System.String)"><a href="#collapsible-CommonInterfaces_Messenger_GetPlayersForObject_System_String_" class="expander" data-toggle="collapse">GetPlayersForObject(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_GetPlayersForObject_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;string&gt; GetPlayersForObject(string objectId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">objectId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_GetResponse_" data-uid="CommonInterfaces.Messenger.GetResponse*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_GetResponse_System_String_" data-uid="CommonInterfaces.Messenger.GetResponse(System.String)"><a href="#collapsible-CommonInterfaces_Messenger_GetResponse_System_String_" class="expander" data-toggle="collapse">GetResponse(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_GetResponse_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IResponse GetResponse(string requestSessionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">requestSessionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IResponse.html">IResponse</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IMessenger.html#CCSPluginAPI_IMessenger_GetResponse_System_String_">IMessenger.GetResponse(String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_GetSession_" data-uid="CommonInterfaces.Messenger.GetSession*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_GetSession_System_String_" data-uid="CommonInterfaces.Messenger.GetSession(System.String)"><a href="#collapsible-CommonInterfaces_Messenger_GetSession_System_String_" class="expander" data-toggle="collapse">GetSession(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_GetSession_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public MessageSession GetSession(string sessionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">sessionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.MessageSession.html">MessageSession</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_IsSessionRelevantForPlayer_" data-uid="CommonInterfaces.Messenger.IsSessionRelevantForPlayer*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_IsSessionRelevantForPlayer_CommonInterfaces_MessageSession_System_String_" data-uid="CommonInterfaces.Messenger.IsSessionRelevantForPlayer(CommonInterfaces.MessageSession,System.String)"><a href="#collapsible-CommonInterfaces_Messenger_IsSessionRelevantForPlayer_CommonInterfaces_MessageSession_System_String_" class="expander" data-toggle="collapse">IsSessionRelevantForPlayer(MessageSession, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_IsSessionRelevantForPlayer_CommonInterfaces_MessageSession_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool IsSessionRelevantForPlayer(MessageSession sess, string playerId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.MessageSession.html">MessageSession</a></span>
+        <span class="parametername">sess</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendActionLog_" data-uid="CommonInterfaces.Messenger.SendActionLog*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendActionLog_CCSPluginAPI_Log_" data-uid="CommonInterfaces.Messenger.SendActionLog(CCSPluginAPI.Log)"><a href="#collapsible-CommonInterfaces_Messenger_SendActionLog_CCSPluginAPI_Log_" class="expander" data-toggle="collapse">SendActionLog(Log)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendActionLog_CCSPluginAPI_Log_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendActionLog(Log log)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Log.html">Log</a></span>
+        <span class="parametername">log</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IMessenger.html#CCSPluginAPI_IMessenger_SendActionLog_CCSPluginAPI_Log_">IMessenger.SendActionLog(Log)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendAlert_" data-uid="CommonInterfaces.Messenger.SendAlert*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendAlert_CCSPluginAPI_Log_" data-uid="CommonInterfaces.Messenger.SendAlert(CCSPluginAPI.Log)"><a href="#collapsible-CommonInterfaces_Messenger_SendAlert_CCSPluginAPI_Log_" class="expander" data-toggle="collapse">SendAlert(Log)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendAlert_CCSPluginAPI_Log_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendAlert(Log log)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Log.html">Log</a></span>
+        <span class="parametername">log</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.IMessenger.html#CCSPluginAPI_IMessenger_SendAlert_CCSPluginAPI_Log_">IMessenger.SendAlert(Log)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendHint_" data-uid="CommonInterfaces.Messenger.SendHint*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendHint_System_String_System_String_IEnumerable_System_Object__" data-uid="CommonInterfaces.Messenger.SendHint(System.String,System.String,IEnumerable{System.Object})"><a href="#collapsible-CommonInterfaces_Messenger_SendHint_System_String_System_String_IEnumerable_System_Object__" class="expander" data-toggle="collapse">SendHint(String, String, IEnumerable&lt;Object&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendHint_System_String_System_String_IEnumerable_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendHint(string message, string recieverId, IEnumerable&lt;dynamic&gt; content = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">recieverId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">content</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendInject_" data-uid="CommonInterfaces.Messenger.SendInject*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendInject_System_String_System_String_System_String_IEnumerable_System_Object__" data-uid="CommonInterfaces.Messenger.SendInject(System.String,System.String,System.String,IEnumerable{System.Object})"><a href="#collapsible-CommonInterfaces_Messenger_SendInject_System_String_System_String_System_String_IEnumerable_System_Object__" class="expander" data-toggle="collapse">SendInject(String, String, String, IEnumerable&lt;Object&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendInject_System_String_System_String_System_String_IEnumerable_System_Object__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendInject(string message, string senderId, string recieverId, IEnumerable&lt;dynamic&gt; content = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">recieverId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">content</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendOffer_" data-uid="CommonInterfaces.Messenger.SendOffer*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendOffer_System_String_System_String_System_String_System_String_" data-uid="CommonInterfaces.Messenger.SendOffer(System.String,System.String,System.String,System.String)"><a href="#collapsible-CommonInterfaces_Messenger_SendOffer_System_String_System_String_System_String_System_String_" class="expander" data-toggle="collapse">SendOffer(String, String, String, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendOffer_System_String_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SendOffer(string message, string title, string senderId, string receiverId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">title</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">receiverId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendRequest_" data-uid="CommonInterfaces.Messenger.SendRequest*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendRequest_DynamicDictionary_System_Int32_System_String_System_String_System_String_System_String_System_String_" data-uid="CommonInterfaces.Messenger.SendRequest(DynamicDictionary,System.Int32,System.String,System.String,System.String,System.String,System.String)"><a href="#collapsible-CommonInterfaces_Messenger_SendRequest_DynamicDictionary_System_Int32_System_String_System_String_System_String_System_String_System_String_" class="expander" data-toggle="collapse">SendRequest(DynamicDictionary, Int32, String, String, String, String, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendRequest_DynamicDictionary_System_Int32_System_String_System_String_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string SendRequest(DynamicDictionary conditions, int number, string message, string title, string senderId, string senderObject, string receiverObject)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">DynamicDictionary</span></span>
+        <span class="parametername">conditions</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Int32</span></span>
+        <span class="parametername">number</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">title</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">receiverObject</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendResponse_" data-uid="CommonInterfaces.Messenger.SendResponse*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendResponse_System_String_System_Object_System_String_System_String_System_String_System_String_System_String_" data-uid="CommonInterfaces.Messenger.SendResponse(System.String,System.Object,System.String,System.String,System.String,System.String,System.String)"><a href="#collapsible-CommonInterfaces_Messenger_SendResponse_System_String_System_Object_System_String_System_String_System_String_System_String_System_String_" class="expander" data-toggle="collapse">SendResponse(String, Object, String, String, String, String, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendResponse_System_String_System_Object_System_String_System_String_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendResponse(string answer, dynamic content, string message, string title, string senderId, string senderObject, string sessionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">answer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">content</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">title</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">sessionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendTextMessage_" data-uid="CommonInterfaces.Messenger.SendTextMessage*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendTextMessage_System_String_System_String_System_String_System_String_System_String_IEnumerable_System_String__" data-uid="CommonInterfaces.Messenger.SendTextMessage(System.String,System.String,System.String,System.String,System.String,IEnumerable{System.String})"><a href="#collapsible-CommonInterfaces_Messenger_SendTextMessage_System_String_System_String_System_String_System_String_System_String_IEnumerable_System_String__" class="expander" data-toggle="collapse">SendTextMessage(String, String, String, String, String, IEnumerable&lt;String&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendTextMessage_System_String_System_String_System_String_System_String_System_String_IEnumerable_System_String__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendTextMessage(string message, string title, string fileName, string senderId, string senderObject, IEnumerable&lt;string&gt; receiverObjects)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">title</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">fileName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">receiverObjects</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Messenger_SendTextMessage_" data-uid="CommonInterfaces.Messenger.SendTextMessage*"></a>
+  
+  <h4 id="CommonInterfaces_Messenger_SendTextMessage_System_String_System_String_System_String_System_String_System_String_System_String_" data-uid="CommonInterfaces.Messenger.SendTextMessage(System.String,System.String,System.String,System.String,System.String,System.String)"><a href="#collapsible-CommonInterfaces_Messenger_SendTextMessage_System_String_System_String_System_String_System_String_System_String_System_String_" class="expander" data-toggle="collapse">SendTextMessage(String, String, String, String, String, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Messenger_SendTextMessage_System_String_System_String_System_String_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SendTextMessage(string message, string title, string fileName, string senderId, string senderObject, string sessionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">message</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">title</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">fileName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">senderObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">sessionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

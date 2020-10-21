@@ -1,0 +1,968 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class Ledger
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class Ledger
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.Ledger">
+  <h1 id="CommonInterfaces_Ledger" data-uid="CommonInterfaces.Ledger">Class Ledger
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">Ledger</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_Ledger_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class Ledger : object, ILedger, IStandaloneGameSubject, IGameSubject, ISerializable&lt;LedgerData&gt;</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Ledger__ctor_" data-uid="CommonInterfaces.Ledger.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger__ctor_CommonInterfaces_ModelData_LedgerData_" data-uid="CommonInterfaces.Ledger.#ctor(CommonInterfaces.ModelData.LedgerData)"><a href="#collapsible-CommonInterfaces_Ledger__ctor_CommonInterfaces_ModelData_LedgerData_" class="expander" data-toggle="collapse">Ledger(LedgerData)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger__ctor_CommonInterfaces_ModelData_LedgerData_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Ledger(LedgerData data)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.LedgerData.html">LedgerData</a></span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Ledger_ContinuousRecords_" data-uid="CommonInterfaces.Ledger.ContinuousRecords*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_ContinuousRecords" data-uid="CommonInterfaces.Ledger.ContinuousRecords"><a href="#collapsible-CommonInterfaces_Ledger_ContinuousRecords" class="expander" data-toggle="collapse">ContinuousRecords</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_ContinuousRecords" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;ContinuousLedgerRecord&gt; ContinuousRecords { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="CommonInterfaces.ModelData.ContinuousLedgerRecord.html">ContinuousLedgerRecord</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_DiscreteRecords_" data-uid="CommonInterfaces.Ledger.DiscreteRecords*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_DiscreteRecords" data-uid="CommonInterfaces.Ledger.DiscreteRecords"><a href="#collapsible-CommonInterfaces_Ledger_DiscreteRecords" class="expander" data-toggle="collapse">DiscreteRecords</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_DiscreteRecords" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;DiscreteLedgerRecord&gt; DiscreteRecords { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IReadOnlyList</span>&lt;<a class="xref" href="CommonInterfaces.ModelData.DiscreteLedgerRecord.html">DiscreteLedgerRecord</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_Updated_" data-uid="CommonInterfaces.Ledger.Updated*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_Updated" data-uid="CommonInterfaces.Ledger.Updated"><a href="#collapsible-CommonInterfaces_Ledger_Updated" class="expander" data-toggle="collapse">Updated</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_Updated" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool Updated { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Updated">IGameSubject.Updated</a></div>
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_Ledger_AddContinuousRecord_" data-uid="CommonInterfaces.Ledger.AddContinuousRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_AddContinuousRecord_CommonInterfaces_ModelData_ContinuousLedgerRecord_" data-uid="CommonInterfaces.Ledger.AddContinuousRecord(CommonInterfaces.ModelData.ContinuousLedgerRecord)"><a href="#collapsible-CommonInterfaces_Ledger_AddContinuousRecord_CommonInterfaces_ModelData_ContinuousLedgerRecord_" class="expander" data-toggle="collapse">AddContinuousRecord(ContinuousLedgerRecord)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_AddContinuousRecord_CommonInterfaces_ModelData_ContinuousLedgerRecord_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddContinuousRecord(ContinuousLedgerRecord record)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.ContinuousLedgerRecord.html">ContinuousLedgerRecord</a></span>
+        <span class="parametername">record</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_AddDiscreteRecord_" data-uid="CommonInterfaces.Ledger.AddDiscreteRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_AddDiscreteRecord_CommonInterfaces_ModelData_DiscreteLedgerRecord_" data-uid="CommonInterfaces.Ledger.AddDiscreteRecord(CommonInterfaces.ModelData.DiscreteLedgerRecord)"><a href="#collapsible-CommonInterfaces_Ledger_AddDiscreteRecord_CommonInterfaces_ModelData_DiscreteLedgerRecord_" class="expander" data-toggle="collapse">AddDiscreteRecord(DiscreteLedgerRecord)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_AddDiscreteRecord_CommonInterfaces_ModelData_DiscreteLedgerRecord_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void AddDiscreteRecord(DiscreteLedgerRecord record)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.ModelData.DiscreteLedgerRecord.html">DiscreteLedgerRecord</a></span>
+        <span class="parametername">record</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_Clear_" data-uid="CommonInterfaces.Ledger.Clear*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_Clear" data-uid="CommonInterfaces.Ledger.Clear"><a href="#collapsible-CommonInterfaces_Ledger_Clear" class="expander" data-toggle="collapse">Clear()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_Clear" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Clear()</code></pre>
+  </div>
+
+  
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IGameSubject.html#CommonInterfaces_IGameSubject_Clear">IGameSubject.Clear()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_CreateContinuousRecord_" data-uid="CommonInterfaces.Ledger.CreateContinuousRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_CreateContinuousRecord_System_String_System_String_System_Boolean_System_String_" data-uid="CommonInterfaces.Ledger.CreateContinuousRecord(System.String,System.String,System.Boolean,System.String)"><a href="#collapsible-CommonInterfaces_Ledger_CreateContinuousRecord_System_String_System_String_System_Boolean_System_String_" class="expander" data-toggle="collapse">CreateContinuousRecord(String, String, Boolean, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_CreateContinuousRecord_System_String_System_String_System_Boolean_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContinuousLedgerRecord CreateContinuousRecord(string name, string playerId, bool isKnown, string displayType)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isKnown</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">displayType</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.ContinuousLedgerRecord.html">ContinuousLedgerRecord</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_CreateDiscreteRecord_" data-uid="CommonInterfaces.Ledger.CreateDiscreteRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_CreateDiscreteRecord_System_String_System_String_System_String_System_String_System_String_System_Double_System_String_System_Boolean_System_Nullable_Guid__" data-uid="CommonInterfaces.Ledger.CreateDiscreteRecord(System.String,System.String,System.String,System.String,System.String,System.Double,System.String,System.Boolean,System.Nullable{Guid})"><a href="#collapsible-CommonInterfaces_Ledger_CreateDiscreteRecord_System_String_System_String_System_String_System_String_System_String_System_Double_System_String_System_Boolean_System_Nullable_Guid__" class="expander" data-toggle="collapse">CreateDiscreteRecord(String, String, String, String, String, Double, String, Boolean, Nullable&lt;Guid&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_CreateDiscreteRecord_System_String_System_String_System_String_System_String_System_String_System_Double_System_String_System_Boolean_System_Nullable_Guid__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DiscreteLedgerRecord CreateDiscreteRecord(string name, string playerId, string actorId, string organizationId, string objectId, double value, string unitOfMeasure, bool visibleToPlayer = true, Guid? id = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actorId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">organizationId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">objectId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">unitOfMeasure</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">visibleToPlayer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">Guid</span>&gt;</span>
+        <span class="parametername">id</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.DiscreteLedgerRecord.html">DiscreteLedgerRecord</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_CreateIndicatorRecord_" data-uid="CommonInterfaces.Ledger.CreateIndicatorRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_CreateIndicatorRecord_CommonInterfaces_Indicator_" data-uid="CommonInterfaces.Ledger.CreateIndicatorRecord(CommonInterfaces.Indicator)"><a href="#collapsible-CommonInterfaces_Ledger_CreateIndicatorRecord_CommonInterfaces_Indicator_" class="expander" data-toggle="collapse">CreateIndicatorRecord(Indicator)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_CreateIndicatorRecord_CommonInterfaces_Indicator_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static ContinuousLedgerRecord CreateIndicatorRecord(Indicator indicator)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CommonInterfaces.Indicator.html">Indicator</a></span>
+        <span class="parametername">indicator</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.ContinuousLedgerRecord.html">ContinuousLedgerRecord</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_Export_" data-uid="CommonInterfaces.Ledger.Export*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_Export" data-uid="CommonInterfaces.Ledger.Export"><a href="#collapsible-CommonInterfaces_Ledger_Export" class="expander" data-toggle="collapse">Export()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_Export" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public LedgerData Export()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.LedgerData.html">LedgerData</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.Serializer.ISerializable-1.html#CommonInterfaces_Serializer_ISerializable_1_Export">ISerializable&lt;T&gt;.Export()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_GetContinuousRecord_" data-uid="CommonInterfaces.Ledger.GetContinuousRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_GetContinuousRecord_Guid_" data-uid="CommonInterfaces.Ledger.GetContinuousRecord(Guid)"><a href="#collapsible-CommonInterfaces_Ledger_GetContinuousRecord_Guid_" class="expander" data-toggle="collapse">GetContinuousRecord(Guid)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_GetContinuousRecord_Guid_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ContinuousLedgerRecord GetContinuousRecord(Guid recordId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Guid</span></span>
+        <span class="parametername">recordId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.ContinuousLedgerRecord.html">ContinuousLedgerRecord</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_GetDiscreteRecord_" data-uid="CommonInterfaces.Ledger.GetDiscreteRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_GetDiscreteRecord_Guid_" data-uid="CommonInterfaces.Ledger.GetDiscreteRecord(Guid)"><a href="#collapsible-CommonInterfaces_Ledger_GetDiscreteRecord_Guid_" class="expander" data-toggle="collapse">GetDiscreteRecord(Guid)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_GetDiscreteRecord_Guid_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public DiscreteLedgerRecord GetDiscreteRecord(Guid recordId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Guid</span></span>
+        <span class="parametername">recordId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CommonInterfaces.ModelData.DiscreteLedgerRecord.html">DiscreteLedgerRecord</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_GetDiscreteRecordsLoss_" data-uid="CommonInterfaces.Ledger.GetDiscreteRecordsLoss*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_GetDiscreteRecordsLoss_CCSPluginAPI_IPlayer_" data-uid="CommonInterfaces.Ledger.GetDiscreteRecordsLoss(CCSPluginAPI.IPlayer)"><a href="#collapsible-CommonInterfaces_Ledger_GetDiscreteRecordsLoss_CCSPluginAPI_IPlayer_" class="expander" data-toggle="collapse">GetDiscreteRecordsLoss(IPlayer)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_GetDiscreteRecordsLoss_CCSPluginAPI_IPlayer_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public double GetDiscreteRecordsLoss(IPlayer player)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a></span>
+        <span class="parametername">player</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILedger.html#CCSPluginAPI_ILedger_GetDiscreteRecordsLoss_CCSPluginAPI_IPlayer_">ILedger.GetDiscreteRecordsLoss(IPlayer)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_GetPlayerMappedSubjectDelta_" data-uid="CommonInterfaces.Ledger.GetPlayerMappedSubjectDelta*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_GetPlayerMappedSubjectDelta" data-uid="CommonInterfaces.Ledger.GetPlayerMappedSubjectDelta"><a href="#collapsible-CommonInterfaces_Ledger_GetPlayerMappedSubjectDelta" class="expander" data-toggle="collapse">GetPlayerMappedSubjectDelta()</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_GetPlayerMappedSubjectDelta" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Dictionary&lt;string, SubjectData&gt; GetPlayerMappedSubjectDelta()</code></pre>
+  </div>
+
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CommonInterfaces.SubjectData.html">SubjectData</a>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CommonInterfaces.IStandaloneGameSubject.html#CommonInterfaces_IStandaloneGameSubject_GetPlayerMappedSubjectDelta">IStandaloneGameSubject.GetPlayerMappedSubjectDelta()</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_RecordToLedger_" data-uid="CommonInterfaces.Ledger.RecordToLedger*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_RecordToLedger_System_String_System_Object_System_String_System_String_System_String_System_Double_System_String_" data-uid="CommonInterfaces.Ledger.RecordToLedger(System.String,System.Object,System.String,System.String,System.String,System.Double,System.String)"><a href="#collapsible-CommonInterfaces_Ledger_RecordToLedger_System_String_System_Object_System_String_System_String_System_String_System_Double_System_String_" class="expander" data-toggle="collapse">RecordToLedger(String, Object, String, String, String, Double, String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_RecordToLedger_System_String_System_Object_System_String_System_String_System_String_System_Double_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool RecordToLedger(string playerId, dynamic actor, string objectId, string organizationId, string eventDescription, double lossAmount, string unitOfMeasure = &quot;dollars&quot;)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">objectId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">organizationId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">eventDescription</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">lossAmount</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">unitOfMeasure</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  <h5 class="implements">Implements</h5>
+      <div><a class="xref" href="CCSPluginAPI.ILedger.html#CCSPluginAPI_ILedger_RecordToLedger_System_String_System_Object_System_String_System_String_System_String_System_Double_System_String_">ILedger.RecordToLedger(String, Object, String, String, String, Double, String)</a></div>
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_Ledger_UpdateContinuousRecord_" data-uid="CommonInterfaces.Ledger.UpdateContinuousRecord*"></a>
+  
+  <h4 id="CommonInterfaces_Ledger_UpdateContinuousRecord_Guid_System_ValueTuple_System_Double_System_Double__System_Boolean_" data-uid="CommonInterfaces.Ledger.UpdateContinuousRecord(Guid,System.ValueTuple{System.Double,System.Double},System.Boolean)"><a href="#collapsible-CommonInterfaces_Ledger_UpdateContinuousRecord_Guid_System_ValueTuple_System_Double_System_Double__System_Boolean_" class="expander" data-toggle="collapse">UpdateContinuousRecord(Guid, (Double time, Double value), Boolean)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_Ledger_UpdateContinuousRecord_Guid_System_ValueTuple_System_Double_System_Double__System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateContinuousRecord(Guid recordId, (double time, double value) data, bool isKnown = false)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Guid</span></span>
+        <span class="parametername">recordId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Double</span>, <span class="xref">System.Double</span>&gt;</span>
+        <span class="parametername">data</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">isKnown</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

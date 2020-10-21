@@ -1,0 +1,826 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ControlBase
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ControlBase
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CCSPluginAPI.ControlBase">
+  <h1 id="CCSPluginAPI_ControlBase" data-uid="CCSPluginAPI.ControlBase">Class ControlBase
+  </h1>
+  <div class="markdown level0 summary"></div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ControlBase</span></div>
+  </div>
+  
+      <div class="level2"><a class="xref" href="Controls.AAAControl.html">AAAControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.AntiSpamControl.html">AntiSpamControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.AVControl.html">AVControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.BlockControl.html">BlockControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.DNSBlacklistControl.html">DNSBlacklistControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.FirewallControl.html">FirewallControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.NIPSControl.html">NIPSControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.SecurityAwarenessControl.html">SecurityAwarenessControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.WBListingControl.html">WBListingControl</a></div>
+      <div class="level2"><a class="xref" href="Controls.WebProxyControl.html">WebProxyControl</a></div>
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CCSPluginAPI.html">CCSPluginAPI</a></h6>
+  <h6><strong>Assembly</strong>: CCSPluginAPI.dll</h6>
+  
+  <h5 id="CCSPluginAPI_ControlBase_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public abstract class ControlBase : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="properties">Properties
+  </h3>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_IsActive_" data-uid="CCSPluginAPI.ControlBase.IsActive*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_IsActive" data-uid="CCSPluginAPI.ControlBase.IsActive"><a href="#collapsible-CCSPluginAPI_ControlBase_IsActive" class="expander" data-toggle="collapse">IsActive</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_IsActive" class="collapse in">
+  <div class="markdown level1 summary"><p>Indicates whether the control instance is active.
+Only active controls will be triggered.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool IsActive { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_Mode_" data-uid="CCSPluginAPI.ControlBase.Mode*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_Mode" data-uid="CCSPluginAPI.ControlBase.Mode"><a href="#collapsible-CCSPluginAPI_ControlBase_Mode" class="expander" data-toggle="collapse">Mode</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_Mode" class="collapse in">
+  <div class="markdown level1 summary"><p>Lists the modes of operation the control instance is configured to perform.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IReadOnlyList&lt;string&gt; Mode { get; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">IReadOnlyList</span>&lt;<span class="xref">System.String</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_Name_" data-uid="CCSPluginAPI.ControlBase.Name*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_Name" data-uid="CCSPluginAPI.ControlBase.Name"><a href="#collapsible-CCSPluginAPI_ControlBase_Name" class="expander" data-toggle="collapse">Name</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_Name" class="collapse in">
+  <div class="markdown level1 summary"><p>Name of the control instance.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string Name { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_ResidingObjectId_" data-uid="CCSPluginAPI.ControlBase.ResidingObjectId*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_ResidingObjectId" data-uid="CCSPluginAPI.ControlBase.ResidingObjectId"><a href="#collapsible-CCSPluginAPI_ControlBase_ResidingObjectId" class="expander" data-toggle="collapse">ResidingObjectId</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_ResidingObjectId" class="collapse in">
+  <div class="markdown level1 summary"><p>Id of the landscape object the control is located on.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string ResidingObjectId { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_TypeId_" data-uid="CCSPluginAPI.ControlBase.TypeId*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_TypeId" data-uid="CCSPluginAPI.ControlBase.TypeId"><a href="#collapsible-CCSPluginAPI_ControlBase_TypeId" class="expander" data-toggle="collapse">TypeId</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_TypeId" class="collapse in">
+  <div class="markdown level1 summary"><p>The control type id as defined by its label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TypeId { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_TypeName_" data-uid="CCSPluginAPI.ControlBase.TypeName*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_TypeName" data-uid="CCSPluginAPI.ControlBase.TypeName"><a href="#collapsible-CCSPluginAPI_ControlBase_TypeName" class="expander" data-toggle="collapse">TypeName</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_TypeName" class="collapse in">
+  <div class="markdown level1 summary"><p>The control type name as defined by its label.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public string TypeName { get; set; }</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h5 class="propertyValue">Property Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_Configure_" data-uid="CCSPluginAPI.ControlBase.Configure*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_Configure_System_Object_" data-uid="CCSPluginAPI.ControlBase.Configure(System.Object)"><a href="#collapsible-CCSPluginAPI_ControlBase_Configure_System_Object_" class="expander" data-toggle="collapse">Configure(Object)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_Configure_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Configure the control instance according to it's landscape entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Configure(dynamic controlEntity)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">controlEntity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_ConfigureAndTrigger_" data-uid="CCSPluginAPI.ControlBase.ConfigureAndTrigger*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_ConfigureAndTrigger_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_Nullable_System_Double__" data-uid="CCSPluginAPI.ControlBase.ConfigureAndTrigger(System.Object,CCSPluginAPI.Observable,CCSPluginAPI.IReadOnlyApplication,System.Nullable{System.Double})"><a href="#collapsible-CCSPluginAPI_ControlBase_ConfigureAndTrigger_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_Nullable_System_Double__" class="expander" data-toggle="collapse">ConfigureAndTrigger(Object, Observable, IReadOnlyApplication, Nullable&lt;Double&gt;)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_ConfigureAndTrigger_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_Nullable_System_Double__" class="collapse in">
+  <div class="markdown level1 summary"><p>Configures the control instance (using the corresponding control object on the given entity)
+and triggers it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ControlOutput ConfigureAndTrigger(dynamic entity, Observable observable, IReadOnlyApplication application, double? random = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Observable.html">Observable</a></span>
+        <span class="parametername">observable</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</span>
+        <span class="parametername">random</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ControlOutput.html">ControlOutput</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_GetPlayerForLogEntity_" data-uid="CCSPluginAPI.ControlBase.GetPlayerForLogEntity*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_GetPlayerForLogEntity_System_Object_CCSPluginAPI_IReadOnlyApplication_" data-uid="CCSPluginAPI.ControlBase.GetPlayerForLogEntity(System.Object,CCSPluginAPI.IReadOnlyApplication)"><a href="#collapsible-CCSPluginAPI_ControlBase_GetPlayerForLogEntity_System_Object_CCSPluginAPI_IReadOnlyApplication_" class="expander" data-toggle="collapse">GetPlayerForLogEntity(Object, IReadOnlyApplication)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_GetPlayerForLogEntity_System_Object_CCSPluginAPI_IReadOnlyApplication_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get controling player of given entity</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected IPlayer GetPlayerForLogEntity(dynamic entity, IReadOnlyApplication app)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">app</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IPlayer.html">IPlayer</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_Initialize_" data-uid="CCSPluginAPI.ControlBase.Initialize*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_Initialize_System_String_System_String_System_String_System_String_" data-uid="CCSPluginAPI.ControlBase.Initialize(System.String,System.String,System.String,System.String)"><a href="#collapsible-CCSPluginAPI_ControlBase_Initialize_System_String_System_String_System_String_System_String_" class="expander" data-toggle="collapse">Initialize(String, String, String, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_Initialize_System_String_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets the name and type for the control instance, uniquely tying it
+to a landscape control entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void Initialize(string name, string typeId, string typeName, string residingObjectId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">name</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">typeId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">typeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">residingObjectId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_Logger_" data-uid="CCSPluginAPI.ControlBase.Logger*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_Logger_CCSPluginAPI_LoggerType_" data-uid="CCSPluginAPI.ControlBase.Logger(CCSPluginAPI.LoggerType)"><a href="#collapsible-CCSPluginAPI_ControlBase_Logger_CCSPluginAPI_LoggerType_" class="expander" data-toggle="collapse">Logger(LoggerType)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_Logger_CCSPluginAPI_LoggerType_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Logger Logger(LoggerType type)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.LoggerType.html">LoggerType</a></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Logger</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_Reconfigure_" data-uid="CCSPluginAPI.ControlBase.Reconfigure*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_Reconfigure_System_Object_" data-uid="CCSPluginAPI.ControlBase.Reconfigure(System.Object)"><a href="#collapsible-CCSPluginAPI_ControlBase_Reconfigure_System_Object_" class="expander" data-toggle="collapse">Reconfigure(Object)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_Reconfigure_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Initializes (first time) and updates (every following trigger) control's configuration using
+the control entity retrieved from global landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract void Reconfigure(dynamic controlEntity)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">controlEntity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_Trigger_" data-uid="CCSPluginAPI.ControlBase.Trigger*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_Trigger_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_Nullable_System_Double__" data-uid="CCSPluginAPI.ControlBase.Trigger(System.Object,CCSPluginAPI.Observable,CCSPluginAPI.IReadOnlyApplication,System.Nullable{System.Double})"><a href="#collapsible-CCSPluginAPI_ControlBase_Trigger_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_Nullable_System_Double__" class="expander" data-toggle="collapse">Trigger(Object, Observable, IReadOnlyApplication, Nullable&lt;Double&gt;)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_Trigger_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_Nullable_System_Double__" class="collapse in">
+  <div class="markdown level1 summary"><p>Performs the control's logic using the given entity, observable and, if neccessary, random value.
+Returns a <a class="xref" href="CCSPluginAPI.ControlOutput.html">ControlOutput</a> object.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected abstract ControlOutput Trigger(dynamic entity, Observable observable, IReadOnlyApplication application, double? random = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Observable.html">Observable</a></span>
+        <span class="parametername">observable</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Double</span>&gt;</span>
+        <span class="parametername">random</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.ControlOutput.html">ControlOutput</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_ControlBase_WriteToLog_" data-uid="CCSPluginAPI.ControlBase.WriteToLog*"></a>
+  
+  <h4 id="CCSPluginAPI_ControlBase_WriteToLog_System_Boolean_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_String_System_Boolean_" data-uid="CCSPluginAPI.ControlBase.WriteToLog(System.Boolean,System.Object,CCSPluginAPI.Observable,CCSPluginAPI.IReadOnlyApplication,System.String,System.Boolean)"><a href="#collapsible-CCSPluginAPI_ControlBase_WriteToLog_System_Boolean_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_String_System_Boolean_" class="expander" data-toggle="collapse">WriteToLog(Boolean, Object, Observable, IReadOnlyApplication, String, Boolean)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_ControlBase_WriteToLog_System_Boolean_System_Object_CCSPluginAPI_Observable_CCSPluginAPI_IReadOnlyApplication_System_String_System_Boolean_" class="collapse in">
+  <div class="markdown level1 summary"><p>Write control log entry into application log and alert the
+corresponding player if the control is configured for it.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">protected void WriteToLog(bool pass, dynamic entity, Observable observable, IReadOnlyApplication app, string msgSuffix = &quot;&quot;, bool onlyDebug = false)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">pass</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.Observable.html">Observable</a></span>
+        <span class="parametername">observable</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">app</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">msgSuffix</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Boolean</span></span>
+        <span class="parametername">onlyDebug</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

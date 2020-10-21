@@ -1,0 +1,494 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActionController
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActionController
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CommonInterfaces.ActionController">
+  <h1 id="CommonInterfaces_ActionController" data-uid="CommonInterfaces.ActionController">Class ActionController
+  </h1>
+  <div class="markdown level0 summary"><p>Class used to control program flow of one instance of the action.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ActionController</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CommonInterfaces.html">CommonInterfaces</a></h6>
+  <h6><strong>Assembly</strong>: CommonInterfaces.dll</h6>
+  
+  <h5 id="CommonInterfaces_ActionController_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class ActionController : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ActionController__ctor_" data-uid="CommonInterfaces.ActionController.#ctor*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController__ctor_Func_IEnumerable_CCSPluginAPI_Parameter__Type_System_Boolean_CCSPluginAPI_ConditionCheckOutput__Dictionary_System_String_CommonInterfaces_ActionState__" data-uid="CommonInterfaces.ActionController.#ctor(Func{IEnumerable{CCSPluginAPI.Parameter},Type,System.Boolean,CCSPluginAPI.ConditionCheckOutput},Dictionary{System.String,CommonInterfaces.ActionState})"><a href="#collapsible-CommonInterfaces_ActionController__ctor_Func_IEnumerable_CCSPluginAPI_Parameter__Type_System_Boolean_CCSPluginAPI_ConditionCheckOutput__Dictionary_System_String_CommonInterfaces_ActionState__" class="expander" data-toggle="collapse">ActionController(Func&lt;IEnumerable&lt;Parameter&gt;, Type, Boolean, ConditionCheckOutput&gt;, Dictionary&lt;String, ActionState&gt;)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController__ctor_Func_IEnumerable_CCSPluginAPI_Parameter__Type_System_Boolean_CCSPluginAPI_ConditionCheckOutput__Dictionary_System_String_CommonInterfaces_ActionState__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public ActionController(Func&lt;IEnumerable&lt;Parameter&gt;, Type, bool, ConditionCheckOutput&gt; checkParameters, Dictionary&lt;string, ActionState&gt; actionStates = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Func</span>&lt;<span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;, <span class="xref">Type</span>, <span class="xref">System.Boolean</span>, <a class="xref" href="CCSPluginAPI.ConditionCheckOutput.html">ConditionCheckOutput</a>&gt;</span>
+        <span class="parametername">checkParameters</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Dictionary</span>&lt;<span class="xref">System.String</span>, <a class="xref" href="CommonInterfaces.ActionState.html">ActionState</a>&gt;</span>
+        <span class="parametername">actionStates</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CommonInterfaces_ActionController_FinishAction_" data-uid="CommonInterfaces.ActionController.FinishAction*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController_FinishAction_System_String_" data-uid="CommonInterfaces.ActionController.FinishAction(System.String)"><a href="#collapsible-CommonInterfaces_ActionController_FinishAction_System_String_" class="expander" data-toggle="collapse">FinishAction(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController_FinishAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void FinishAction(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ActionController_GetActionState_" data-uid="CommonInterfaces.ActionController.GetActionState*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController_GetActionState_System_String_" data-uid="CommonInterfaces.ActionController.GetActionState(System.String)"><a href="#collapsible-CommonInterfaces_ActionController_GetActionState_System_String_" class="expander" data-toggle="collapse">GetActionState(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController_GetActionState_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IActionState GetActionState(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.IActionState.html">IActionState</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ActionController_InitializeAction_" data-uid="CommonInterfaces.ActionController.InitializeAction*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController_InitializeAction_CCSPluginAPI_ActionBase_List_CCSPluginAPI_Parameter__System_String_CCSPluginAPI_ActionConfig_" data-uid="CommonInterfaces.ActionController.InitializeAction(CCSPluginAPI.ActionBase,List{CCSPluginAPI.Parameter},System.String,CCSPluginAPI.ActionConfig)"><a href="#collapsible-CommonInterfaces_ActionController_InitializeAction_CCSPluginAPI_ActionBase_List_CCSPluginAPI_Parameter__System_String_CCSPluginAPI_ActionConfig_" class="expander" data-toggle="collapse">InitializeAction(ActionBase, List&lt;Parameter&gt;, String, ActionConfig)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController_InitializeAction_CCSPluginAPI_ActionBase_List_CCSPluginAPI_Parameter__System_String_CCSPluginAPI_ActionConfig_" class="collapse in">
+  <div class="markdown level1 summary"><p>Handles and initializes all the neccessary properties each Action requires.</p>
+<p>Preprocesses the given parameters so the useful carried information (as defined by the <a class="xref" href="CCSPluginAPI.ParameterType.html">ParameterType</a>)
+is stored in <a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&apos;s Entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void InitializeAction(ActionBase action, List&lt;Parameter&gt; parameters, string guid, ActionConfig config)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a></span>
+        <span class="parametername">action</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">parameters</span>
+        <p><p>List of <a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a> objects, expected to be in form as given
+by <a class="xref" href="CommonInterfaces.ActionCombinationHandler.html">ActionCombinationHandler</a>'s CreateDisplayableParameters.</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">guid</span>
+        <p><p>Newly instantiated <see cref="!:Guid"></see></p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionConfig.html">ActionConfig</a></span>
+        <span class="parametername">config</span>
+        <p><p>Action's configuration, kept in <a class="xref" href="CommonInterfaces.PluginHandler.html">PluginHandler</a>'s ActionConfigDictionary
+or (after initialization) on the derived Action's class.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ActionController_KillAction_" data-uid="CommonInterfaces.ActionController.KillAction*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController_KillAction_CCSPluginAPI_ActionBase_" data-uid="CommonInterfaces.ActionController.KillAction(CCSPluginAPI.ActionBase)"><a href="#collapsible-CommonInterfaces_ActionController_KillAction_CCSPluginAPI_ActionBase_" class="expander" data-toggle="collapse">KillAction(ActionBase)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController_KillAction_CCSPluginAPI_ActionBase_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KillAction(ActionBase action)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a></span>
+        <span class="parametername">action</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ActionController_KillAction_" data-uid="CommonInterfaces.ActionController.KillAction*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController_KillAction_System_String_" data-uid="CommonInterfaces.ActionController.KillAction(System.String)"><a href="#collapsible-CommonInterfaces_ActionController_KillAction_System_String_" class="expander" data-toggle="collapse">KillAction(String)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController_KillAction_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void KillAction(string actionId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">actionId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ActionController_StopAction_" data-uid="CommonInterfaces.ActionController.StopAction*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController_StopAction_CCSPluginAPI_ActionBase_" data-uid="CommonInterfaces.ActionController.StopAction(CCSPluginAPI.ActionBase)"><a href="#collapsible-CommonInterfaces_ActionController_StopAction_CCSPluginAPI_ActionBase_" class="expander" data-toggle="collapse">StopAction(ActionBase)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController_StopAction_CCSPluginAPI_ActionBase_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void StopAction(ActionBase action)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a></span>
+        <span class="parametername">action</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CommonInterfaces_ActionController_UpdateAction_" data-uid="CommonInterfaces.ActionController.UpdateAction*"></a>
+  
+  <h4 id="CommonInterfaces_ActionController_UpdateAction_CCSPluginAPI_ActionBase_CCSPluginAPI_ActionConfig_" data-uid="CommonInterfaces.ActionController.UpdateAction(CCSPluginAPI.ActionBase,CCSPluginAPI.ActionConfig)"><a href="#collapsible-CommonInterfaces_ActionController_UpdateAction_CCSPluginAPI_ActionBase_CCSPluginAPI_ActionConfig_" class="expander" data-toggle="collapse">UpdateAction(ActionBase, ActionConfig)</a></h4>
+  
+  <div id="collapsible-CommonInterfaces_ActionController_UpdateAction_CCSPluginAPI_ActionBase_CCSPluginAPI_ActionConfig_" class="collapse in">
+  <div class="markdown level1 summary"><p>Performs one update of action lifecycle</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UpdateAction(ActionBase action, ActionConfig config)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionBase.html">ActionBase</a></span>
+        <span class="parametername">action</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ActionConfig.html">ActionConfig</a></span>
+        <span class="parametername">config</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  <h3 id="extensionmethods">Extension Methods</h3>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy__1___0_">Helpers.DeepCopy&lt;T&gt;(T)</a>
+  </div>
+  <div>
+      <a class="xref" href="Utils.Helpers.html#Utils_Helpers_DeepCopy_System_Object_Type_">Helpers.DeepCopy(Object, Type)</a>
+  </div>
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

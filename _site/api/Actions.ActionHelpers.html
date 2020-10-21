@@ -1,0 +1,977 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class ActionHelpers
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class ActionHelpers
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="Actions.ActionHelpers">
+  <h1 id="Actions_ActionHelpers" data-uid="Actions.ActionHelpers">Class ActionHelpers
+  </h1>
+  <div class="markdown level0 summary"><p>Helper functions for actions</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">ActionHelpers</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="Actions.html">Actions</a></h6>
+  <h6><strong>Assembly</strong>: Actions.dll</h6>
+  
+  <h5 id="Actions_ActionHelpers_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class ActionHelpers : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="fields">Fields
+  </h3>
+  
+  
+  
+  <h4 id="Actions_ActionHelpers_rand" data-uid="Actions.ActionHelpers.rand"><a href="#collapsible-Actions_ActionHelpers_rand" class="expander" data-toggle="collapse">rand</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_rand" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Random rand</code></pre>
+  </div>
+
+  
+  
+  
+  <h5 class="fieldValue">Field Value</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">Random</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="Actions_ActionHelpers_AdjustOrganizationReputation_" data-uid="Actions.ActionHelpers.AdjustOrganizationReputation*"></a>
+  
+  <h4 id="Actions_ActionHelpers_AdjustOrganizationReputation_CCSPluginAPI_IReadOnlyApplication_System_Object_System_Object_" data-uid="Actions.ActionHelpers.AdjustOrganizationReputation(CCSPluginAPI.IReadOnlyApplication,System.Object,System.Object)"><a href="#collapsible-Actions_ActionHelpers_AdjustOrganizationReputation_CCSPluginAPI_IReadOnlyApplication_System_Object_System_Object_" class="expander" data-toggle="collapse">AdjustOrganizationReputation(IReadOnlyApplication, Object, Object)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_AdjustOrganizationReputation_CCSPluginAPI_IReadOnlyApplication_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>This method is used to calculate effect on news story's impact on organizations reputation after publishing denials or press
+releases by the actor who represents a PR expert. To prevent multiple calls on same event, impact on actor's organization is
+removed from &quot;impacts&quot; list following method completion. To be modified in later versions.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AdjustOrganizationReputation(IReadOnlyApplication application, dynamic actor, dynamic damagingEvent)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p><p>Public relations expert</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">damagingEvent</span>
+        <p><p>Event that has negative impact on organization's reputation. Can be either a newsStory or an event</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_DiscoverNewApplication_" data-uid="Actions.ActionHelpers.DiscoverNewApplication*"></a>
+  
+  <h4 id="Actions_ActionHelpers_DiscoverNewApplication_System_Object_CCSPluginAPI_IReadOnlyApplication_CCSPluginAPI_ILandscape_" data-uid="Actions.ActionHelpers.DiscoverNewApplication(System.Object,CCSPluginAPI.IReadOnlyApplication,CCSPluginAPI.ILandscape)"><a href="#collapsible-Actions_ActionHelpers_DiscoverNewApplication_System_Object_CCSPluginAPI_IReadOnlyApplication_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">DiscoverNewApplication(Object, IReadOnlyApplication, ILandscape)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_DiscoverNewApplication_System_Object_CCSPluginAPI_IReadOnlyApplication_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Discover given software entity to player's landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DiscoverNewApplication(dynamic discoveredApplication, IReadOnlyApplication application, ILandscape playerLandscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">discoveredApplication</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">playerLandscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p><p>True if player's landscape is updated, false otherwise</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_DiscoverNewMachine_" data-uid="Actions.ActionHelpers.DiscoverNewMachine*"></a>
+  
+  <h4 id="Actions_ActionHelpers_DiscoverNewMachine_System_Object_CCSPluginAPI_ILandscape_" data-uid="Actions.ActionHelpers.DiscoverNewMachine(System.Object,CCSPluginAPI.ILandscape)"><a href="#collapsible-Actions_ActionHelpers_DiscoverNewMachine_System_Object_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">DiscoverNewMachine(Object, ILandscape)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_DiscoverNewMachine_System_Object_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Discover given machine entity to player's landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool DiscoverNewMachine(dynamic discoveredMachine, ILandscape playerLandscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">discoveredMachine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">playerLandscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_FillObject_" data-uid="Actions.ActionHelpers.FillObject*"></a>
+  
+  <h4 id="Actions_ActionHelpers_FillObject_System_Object_System_Object_System_Object_" data-uid="Actions.ActionHelpers.FillObject(System.Object,System.Object,System.Object)"><a href="#collapsible-Actions_ActionHelpers_FillObject_System_Object_System_Object_System_Object_" class="expander" data-toggle="collapse">FillObject(Object, Object, Object)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_FillObject_System_Object_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Helper for filling in objects, according to the _attributeConfig of the action</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicDictionary FillObject(dynamic originalToFill, dynamic originalFiller, dynamic config)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">originalToFill</span>
+        <p><p>Original object to be filled, will be deepcopied and known simple attributes kept</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">originalFiller</span>
+        <p><p>Original filler object, won't be tempered with</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">config</span>
+        <p><p>Dynamic Dictionary containing attribute configuration (simple-complex pairs)</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicDictionary</span>
+        <p><p>The filled object</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_GetParam_" data-uid="Actions.ActionHelpers.GetParam*"></a>
+  
+  <h4 id="Actions_ActionHelpers_GetParam_System_String_IEnumerable_CCSPluginAPI_Parameter__" data-uid="Actions.ActionHelpers.GetParam(System.String,IEnumerable{CCSPluginAPI.Parameter})"><a href="#collapsible-Actions_ActionHelpers_GetParam_System_String_IEnumerable_CCSPluginAPI_Parameter__" class="expander" data-toggle="collapse">GetParam(String, IEnumerable&lt;Parameter&gt;)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_GetParam_System_String_IEnumerable_CCSPluginAPI_Parameter__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static Parameter GetParam(string key, IEnumerable&lt;Parameter&gt; parameters)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">key</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>&gt;</span>
+        <span class="parametername">parameters</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <a class="xref" href="CCSPluginAPI.Parameter.html">Parameter</a>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_GetRandomDoubleInInterval_" data-uid="Actions.ActionHelpers.GetRandomDoubleInInterval*"></a>
+  
+  <h4 id="Actions_ActionHelpers_GetRandomDoubleInInterval_System_Double_System_Double_" data-uid="Actions.ActionHelpers.GetRandomDoubleInInterval(System.Double,System.Double)"><a href="#collapsible-Actions_ActionHelpers_GetRandomDoubleInInterval_System_Double_System_Double_" class="expander" data-toggle="collapse">GetRandomDoubleInInterval(Double, Double)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_GetRandomDoubleInInterval_System_Double_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetRandomDoubleInInterval(double min, double max)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">min</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">max</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_LoadAttributeConfig_" data-uid="Actions.ActionHelpers.LoadAttributeConfig*"></a>
+  
+  <h4 id="Actions_ActionHelpers_LoadAttributeConfig_Type_" data-uid="Actions.ActionHelpers.LoadAttributeConfig(Type)"><a href="#collapsible-Actions_ActionHelpers_LoadAttributeConfig_Type_" class="expander" data-toggle="collapse">LoadAttributeConfig(Type)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_LoadAttributeConfig_Type_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static DynamicDictionary LoadAttributeConfig(Type type)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Type</span></span>
+        <span class="parametername">type</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">DynamicDictionary</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_NumberOfUnpublished_" data-uid="Actions.ActionHelpers.NumberOfUnpublished*"></a>
+  
+  <h4 id="Actions_ActionHelpers_NumberOfUnpublished_System_Object_CCSPluginAPI_ILandscape_" data-uid="Actions.ActionHelpers.NumberOfUnpublished(System.Object,CCSPluginAPI.ILandscape)"><a href="#collapsible-Actions_ActionHelpers_NumberOfUnpublished_System_Object_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">NumberOfUnpublished(Object, ILandscape)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_NumberOfUnpublished_System_Object_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates number of unpublished data units of given data object according to the given landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int NumberOfUnpublished(dynamic dataObject, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">dataObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p><p>Size of unpublished ranges</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_Overlap_" data-uid="Actions.ActionHelpers.Overlap*"></a>
+  
+  <h4 id="Actions_ActionHelpers_Overlap_System_ValueTuple_System_Int32_System_Int32__System_ValueTuple_System_Int32_System_Int32__System_String__" data-uid="Actions.ActionHelpers.Overlap(System.ValueTuple{System.Int32,System.Int32},System.ValueTuple{System.Int32,System.Int32},System.String@)"><a href="#collapsible-Actions_ActionHelpers_Overlap_System_ValueTuple_System_Int32_System_Int32__System_ValueTuple_System_Int32_System_Int32__System_String__" class="expander" data-toggle="collapse">Overlap((Int32 lower, Int32 upper), (Int32 lower, Int32 upper), out String)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_Overlap_System_ValueTuple_System_Int32_System_Int32__System_ValueTuple_System_Int32_System_Int32__System_String__" class="collapse in">
+  <div class="markdown level1 summary"><p>Calculates the overlap between two intervals.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static int Overlap((int lower, int upper) first, (int lower, int upper) second, out string overlapCase)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">first</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">second</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">overlapCase</span>
+        <p><p>Indicates which part of first interval is overlapping the second one.</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Int32</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_RecordPublished_" data-uid="Actions.ActionHelpers.RecordPublished*"></a>
+  
+  <h4 id="Actions_ActionHelpers_RecordPublished_System_Object_CCSPluginAPI_ILandscape_" data-uid="Actions.ActionHelpers.RecordPublished(System.Object,CCSPluginAPI.ILandscape)"><a href="#collapsible-Actions_ActionHelpers_RecordPublished_System_Object_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">RecordPublished(Object, ILandscape)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_RecordPublished_System_Object_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Records the range of given dataObject into the global 'published' list for the data type.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RecordPublished(dynamic dataObject, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">dataObject</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_RoundIfNearValue_" data-uid="Actions.ActionHelpers.RoundIfNearValue*"></a>
+  
+  <h4 id="Actions_ActionHelpers_RoundIfNearValue_System_Double__System_Double_System_Double_" data-uid="Actions.ActionHelpers.RoundIfNearValue(System.Double@,System.Double,System.Double)"><a href="#collapsible-Actions_ActionHelpers_RoundIfNearValue_System_Double__System_Double_System_Double_" class="expander" data-toggle="collapse">RoundIfNearValue(ref Double, Double, Double)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_RoundIfNearValue_System_Double__System_Double_System_Double_" class="collapse in">
+  <div class="markdown level1 summary"><p>Used to round double values near integers to integers</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static bool RoundIfNearValue(ref double value, double other, double tolerance = 0.001)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">value</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">other</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Double</span></span>
+        <span class="parametername">tolerance</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Boolean</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_StoreDataDefinitions_" data-uid="Actions.ActionHelpers.StoreDataDefinitions*"></a>
+  
+  <h4 id="Actions_ActionHelpers_StoreDataDefinitions_System_Object_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_" data-uid="Actions.ActionHelpers.StoreDataDefinitions(System.Object,CCSPluginAPI.ILandscape,CCSPluginAPI.ILandscape)"><a href="#collapsible-Actions_ActionHelpers_StoreDataDefinitions_System_Object_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">StoreDataDefinitions(Object, ILandscape, ILandscape)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_StoreDataDefinitions_System_Object_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>For a given data_container object, retrieves defitions of the data it carries
+and stores them on the given player landscape, removing 'affects' in the process.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void StoreDataDefinitions(dynamic dataContainer, ILandscape globalLandscape, ILandscape playerLandscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">dataContainer</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">globalLandscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">playerLandscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_StringToTupleRange_" data-uid="Actions.ActionHelpers.StringToTupleRange*"></a>
+  
+  <h4 id="Actions_ActionHelpers_StringToTupleRange_System_String_" data-uid="Actions.ActionHelpers.StringToTupleRange(System.String)"><a href="#collapsible-Actions_ActionHelpers_StringToTupleRange_System_String_" class="expander" data-toggle="collapse">StringToTupleRange(String)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_StringToTupleRange_System_String_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static (int lower, int upper) StringToTupleRange(string range)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">range</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_TupleToStringRange_" data-uid="Actions.ActionHelpers.TupleToStringRange*"></a>
+  
+  <h4 id="Actions_ActionHelpers_TupleToStringRange_System_ValueTuple_System_Int32_System_Int32__" data-uid="Actions.ActionHelpers.TupleToStringRange(System.ValueTuple{System.Int32,System.Int32})"><a href="#collapsible-Actions_ActionHelpers_TupleToStringRange_System_ValueTuple_System_Int32_System_Int32__" class="expander" data-toggle="collapse">TupleToStringRange((Int32 lower, Int32 upper))</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_TupleToStringRange_System_ValueTuple_System_Int32_System_Int32__" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string TupleToStringRange((int lower, int upper) range)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;</span>
+        <span class="parametername">range</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="Actions_ActionHelpers_UnifyRanges_" data-uid="Actions.ActionHelpers.UnifyRanges*"></a>
+  
+  <h4 id="Actions_ActionHelpers_UnifyRanges_List_System_ValueTuple_System_Int32_System_Int32___" data-uid="Actions.ActionHelpers.UnifyRanges(List{System.ValueTuple{System.Int32,System.Int32}})"><a href="#collapsible-Actions_ActionHelpers_UnifyRanges_List_System_ValueTuple_System_Int32_System_Int32___" class="expander" data-toggle="collapse">UnifyRanges(List&lt;(Int32 lower, Int32 upper)&gt;)</a></h4>
+  
+  <div id="collapsible-Actions_ActionHelpers_UnifyRanges_List_System_ValueTuple_System_Int32_System_Int32___" class="collapse in">
+  <div class="markdown level1 summary"><p>Performs union on overlapping ranges and returns a list of non overlapping ranges.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;(int lower, int upper)&gt; UnifyRanges(List&lt;(int lower, int upper)&gt; ranges)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;&gt;</span>
+        <span class="parametername">ranges</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.ValueTuple</span>&lt;<span class="xref">System.Int32</span>, <span class="xref">System.Int32</span>&gt;&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

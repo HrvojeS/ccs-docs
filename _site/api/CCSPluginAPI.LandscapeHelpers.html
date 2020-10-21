@@ -1,0 +1,2128 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class LandscapeHelpers
+   | Cyber Conflict Simulator </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class LandscapeHelpers
+   | Cyber Conflict Simulator ">
+    <meta name="generator" content="docfx 2.51.0.0">
+    
+    <link rel="shortcut icon" href="../assets/favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list"></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="CCSPluginAPI.LandscapeHelpers">
+  <h1 id="CCSPluginAPI_LandscapeHelpers" data-uid="CCSPluginAPI.LandscapeHelpers">Class LandscapeHelpers
+  </h1>
+  <div class="markdown level0 summary"><p>Hold helper functions for querying landscape</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">LandscapeHelpers</span></div>
+  </div>
+  
+  
+  
+  <h6><strong>Namespace</strong>: <a class="xref" href="CCSPluginAPI.html">CCSPluginAPI</a></h6>
+  <h6><strong>Assembly</strong>: CCSPluginAPI.dll</h6>
+  
+  <h5 id="CCSPluginAPI_LandscapeHelpers_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static class LandscapeHelpers : object</code></pre>
+  </div>
+
+  
+  
+  
+  
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_AddToListAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.AddToListAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_AddToListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_IEnumerable_System_Object__System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.AddToListAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,System.String,IEnumerable{System.Object},System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_AddToListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_IEnumerable_System_Object__System_String_" class="expander" data-toggle="collapse">AddToListAttribute(IReadOnlyApplication, String, String, IEnumerable&lt;Object&gt;, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_AddToListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_IEnumerable_System_Object__System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Overload for adding a list of values to a list-type attribute of given entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToListAttribute(IReadOnlyApplication application, string entityId, string attributeName, IEnumerable&lt;object&gt; values, string playerId = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IEnumerable</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">values</span>
+        <p><p>List of values to be added to the list-type attribute</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_AddToListAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.AddToListAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_AddToListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.AddToListAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,System.String,System.Object,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_AddToListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_" class="expander" data-toggle="collapse">AddToListAttribute(IReadOnlyApplication, String, String, Object, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_AddToListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Adds a value to the list-type attribute of given entity and updates the global landscape.
+If a playerId is given, also updates the player's landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void AddToListAttribute(IReadOnlyApplication application, string entityId, string attributeName, object value, string playerId = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p><p>Id of the entity in question</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p><p>Name of the list-type attribute</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p><p>Value to be added to the list-type attribute</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p><p>If specified, also updates the object on the player's landscape</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_CreateLoginObject_" data-uid="CCSPluginAPI.LandscapeHelpers.CreateLoginObject*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_CreateLoginObject_System_Object_System_String_System_String_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.CreateLoginObject(System.Object,System.String,System.String,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_CreateLoginObject_System_Object_System_String_System_String_System_String_" class="expander" data-toggle="collapse">CreateLoginObject(Object, String, String, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_CreateLoginObject_System_Object_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Creates a login object with the given parameters set as attributes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic CreateLoginObject(dynamic client, string privilege, string accountID, string protocol)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">client</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">privilege</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">accountID</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">protocol</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p><p>Login object</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_FindMailServerForMail_" data-uid="CCSPluginAPI.LandscapeHelpers.FindMailServerForMail*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_FindMailServerForMail_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.FindMailServerForMail(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_FindMailServerForMail_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">FindMailServerForMail(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_FindMailServerForMail_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Find mail server for mail (get domain from mail address)</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic FindMailServerForMail(string mail, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">mail</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p><p>mail server object</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetActorsRandomWorkstation_" data-uid="CCSPluginAPI.LandscapeHelpers.GetActorsRandomWorkstation*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetActorsRandomWorkstation_System_Object_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetActorsRandomWorkstation(System.Object,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetActorsRandomWorkstation_System_Object_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetActorsRandomWorkstation(Object, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetActorsRandomWorkstation_System_Object_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns a randomly selected machine object from the landscape
+that is included in the given actor's workstations.
+If no workstations are found, returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetActorsRandomWorkstation(dynamic actor, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetActorWithMail_" data-uid="CCSPluginAPI.LandscapeHelpers.GetActorWithMail*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetActorWithMail_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetActorWithMail(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetActorWithMail_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetActorWithMail(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetActorWithMail_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves actor with given mail.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetActorWithMail(string mail, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">mail</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p><p>actor object</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetAllItemsOnMachineFileSystems_" data-uid="CCSPluginAPI.LandscapeHelpers.GetAllItemsOnMachineFileSystems*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetAllItemsOnMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.GetAllItemsOnMachineFileSystems(CCSPluginAPI.ILandscape,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetAllItemsOnMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" class="expander" data-toggle="collapse">GetAllItemsOnMachineFileSystems(ILandscape, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetAllItemsOnMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get all items and remote files on all file_systems on a given machine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetAllItemsOnMachineFileSystems(ILandscape landscape, string machineId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">machineId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetAllMachinesFromPhysicalZoneInOrganization_" data-uid="CCSPluginAPI.LandscapeHelpers.GetAllMachinesFromPhysicalZoneInOrganization*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetAllMachinesFromPhysicalZoneInOrganization_System_String_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetAllMachinesFromPhysicalZoneInOrganization(System.String,System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetAllMachinesFromPhysicalZoneInOrganization_System_String_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetAllMachinesFromPhysicalZoneInOrganization(String, String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetAllMachinesFromPhysicalZoneInOrganization_System_String_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get all machines that are present in the physicalZone</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetAllMachinesFromPhysicalZoneInOrganization(string physicalZone, string organizationId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">physicalZone</span>
+        <p><p>name of physical zone</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">organizationId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p><p>list of machines</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetBackupObjectsFromTarget_" data-uid="CCSPluginAPI.LandscapeHelpers.GetBackupObjectsFromTarget*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetBackupObjectsFromTarget_System_Object_CCSPluginAPI_IReadOnlyApplication_" data-uid="CCSPluginAPI.LandscapeHelpers.GetBackupObjectsFromTarget(System.Object,CCSPluginAPI.IReadOnlyApplication)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetBackupObjectsFromTarget_System_Object_CCSPluginAPI_IReadOnlyApplication_" class="expander" data-toggle="collapse">GetBackupObjectsFromTarget(Object, IReadOnlyApplication)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetBackupObjectsFromTarget_System_Object_CCSPluginAPI_IReadOnlyApplication_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get all objects for which backup is created based on given target.
+If target is file, then backup only file. If target is os (machine),
+backup that machine, all file systems and all files on file systems.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetBackupObjectsFromTarget(dynamic target, IReadOnlyApplication App)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">target</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">App</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p><p>List of backup objects</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetControlsOfType_" data-uid="CCSPluginAPI.LandscapeHelpers.GetControlsOfType*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetControlsOfType_System_String_System_Object_" data-uid="CCSPluginAPI.LandscapeHelpers.GetControlsOfType(System.String,System.Object)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetControlsOfType_System_String_System_Object_" class="expander" data-toggle="collapse">GetControlsOfType(String, Object)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetControlsOfType_System_String_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves controls of given type from the given object</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetControlsOfType(string controlType, dynamic entity)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">controlType</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p><p>List of controls of given type; empty if none found</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetExternalPhysicalZone_" data-uid="CCSPluginAPI.LandscapeHelpers.GetExternalPhysicalZone*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetExternalPhysicalZone_System_Object_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetExternalPhysicalZone(System.Object,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetExternalPhysicalZone_System_Object_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetExternalPhysicalZone(Object, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetExternalPhysicalZone_System_Object_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns external physical zone which contains given internal physical zone. If no external zone is found, null is returned.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetExternalPhysicalZone(dynamic internal_zone, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">internal_zone</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetFunctionality_" data-uid="CCSPluginAPI.LandscapeHelpers.GetFunctionality*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetFunctionality_System_Object_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.GetFunctionality(System.Object,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetFunctionality_System_Object_System_String_" class="expander" data-toggle="collapse">GetFunctionality(Object, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetFunctionality_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves the specified functionality object from an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetFunctionality(dynamic entity, string functionality)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">functionality</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetInstalledSoftwareOnMachine_" data-uid="CCSPluginAPI.LandscapeHelpers.GetInstalledSoftwareOnMachine*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetInstalledSoftwareOnMachine_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetInstalledSoftwareOnMachine(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetInstalledSoftwareOnMachine_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetInstalledSoftwareOnMachine(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetInstalledSoftwareOnMachine_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns list of all software objects on target machine.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetInstalledSoftwareOnMachine(string machineId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">machineId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p><p>list of software objects</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetLocalItemsInMachineFileSystems_" data-uid="CCSPluginAPI.LandscapeHelpers.GetLocalItemsInMachineFileSystems*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetLocalItemsInMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.GetLocalItemsInMachineFileSystems(CCSPluginAPI.ILandscape,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetLocalItemsInMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" class="expander" data-toggle="collapse">GetLocalItemsInMachineFileSystems(ILandscape, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetLocalItemsInMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get landscape items located on file_system located on a given machine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetLocalItemsInMachineFileSystems(ILandscape landscape, string machineId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">machineId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetMachineSoftwareList_" data-uid="CCSPluginAPI.LandscapeHelpers.GetMachineSoftwareList*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetMachineSoftwareList_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetMachineSoftwareList(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetMachineSoftwareList_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetMachineSoftwareList(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetMachineSoftwareList_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Gets all entities of label &quot;software&quot; assigned to the given entity from the global landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetMachineSoftwareList(string entityId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetMachineWithFileOrMail_" data-uid="CCSPluginAPI.LandscapeHelpers.GetMachineWithFileOrMail*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetMachineWithFileOrMail_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetMachineWithFileOrMail(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetMachineWithFileOrMail_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetMachineWithFileOrMail(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetMachineWithFileOrMail_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves the machine location of the file specified by fileId.
+If the file or its file_system are non-existent
+or have incorrect labels, returns null.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetMachineWithFileOrMail(string objectId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">objectId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetObjectGroups_" data-uid="CCSPluginAPI.LandscapeHelpers.GetObjectGroups*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetObjectGroups_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetObjectGroups(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetObjectGroups_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetObjectGroups(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetObjectGroups_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get groups in which entity is.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetObjectGroups(string entityId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetPhysicalZonesTime_" data-uid="CCSPluginAPI.LandscapeHelpers.GetPhysicalZonesTime*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetPhysicalZonesTime_System_String_System_String_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetPhysicalZonesTime(System.String,System.String,System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetPhysicalZonesTime_System_String_System_String_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetPhysicalZonesTime(String, String, String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetPhysicalZonesTime_System_String_System_String_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Returns time value in minutes needed to connect 2 physical zones. Zone defintions are undirected and from|to order doesn't matter!</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static string GetPhysicalZonesTime(string physicaZoneObjectId, string physicalZoneFromId, string physicalZoneToId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">physicaZoneObjectId</span>
+        <p><p>Main physical zone definition object</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">physicalZoneFromId</span>
+        <p><p>Physical zone id starting node</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">physicalZoneToId</span>
+        <p><p>Physical zone id ending node</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p><p>Global landscape reference that holds info about physical zones</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.String</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetRandomFileSystemForMachine_" data-uid="CCSPluginAPI.LandscapeHelpers.GetRandomFileSystemForMachine*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetRandomFileSystemForMachine_CCSPluginAPI_ILandscape_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.GetRandomFileSystemForMachine(CCSPluginAPI.ILandscape,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetRandomFileSystemForMachine_CCSPluginAPI_ILandscape_System_String_" class="expander" data-toggle="collapse">GetRandomFileSystemForMachine(ILandscape, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetRandomFileSystemForMachine_CCSPluginAPI_ILandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get file system located on the machine on random
+TEMP: usually, only 1 file system for machine</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetRandomFileSystemForMachine(ILandscape landscape, string machineId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">machineId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetRemoteFilesInMachineFileSystems_" data-uid="CCSPluginAPI.LandscapeHelpers.GetRemoteFilesInMachineFileSystems*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetRemoteFilesInMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.GetRemoteFilesInMachineFileSystems(CCSPluginAPI.ILandscape,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetRemoteFilesInMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" class="expander" data-toggle="collapse">GetRemoteFilesInMachineFileSystems(ILandscape, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetRemoteFilesInMachineFileSystems_CCSPluginAPI_ILandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get machine's remote files</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetRemoteFilesInMachineFileSystems(ILandscape landscape, string machineId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">machineId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetSkill_" data-uid="CCSPluginAPI.LandscapeHelpers.GetSkill*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetSkill_System_Object_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.GetSkill(System.Object,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetSkill_System_Object_System_String_" class="expander" data-toggle="collapse">GetSkill(Object, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetSkill_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves the specified skill object value from an entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static double GetSkill(dynamic entity, string skill)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">skill</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Double</span>
+        <p><p>Skill value if the entity contains specified skill, 0 otherwise</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetTrustZonesForMachine_" data-uid="CCSPluginAPI.LandscapeHelpers.GetTrustZonesForMachine*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetTrustZonesForMachine_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetTrustZonesForMachine(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetTrustZonesForMachine_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetTrustZonesForMachine(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetTrustZonesForMachine_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Get all existing trust zones the machine is part of, in the given landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static List&lt;dynamic&gt; GetTrustZonesForMachine(string machineId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">machineId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">List</span>&lt;<span class="xref">System.Object</span>&gt;
+        <p><p>List of TrustZone IDs</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_GetWebAppWithURL_" data-uid="CCSPluginAPI.LandscapeHelpers.GetWebAppWithURL*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_GetWebAppWithURL_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.GetWebAppWithURL(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_GetWebAppWithURL_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">GetWebAppWithURL(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_GetWebAppWithURL_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"><p>Retrieves website with given url.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static dynamic GetWebAppWithURL(string url, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">url</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  <h5 class="returns">Returns</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="xref">System.Object</span>
+        <p><p>web_application object</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_LogoutEntity_" data-uid="CCSPluginAPI.LandscapeHelpers.LogoutEntity*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_LogoutEntity_System_Object_CCSPluginAPI_IReadOnlyApplication_" data-uid="CCSPluginAPI.LandscapeHelpers.LogoutEntity(System.Object,CCSPluginAPI.IReadOnlyApplication)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_LogoutEntity_System_Object_CCSPluginAPI_IReadOnlyApplication_" class="expander" data-toggle="collapse">LogoutEntity(Object, IReadOnlyApplication)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_LogoutEntity_System_Object_CCSPluginAPI_IReadOnlyApplication_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes given entity from all logged_in entries in all landscapes</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void LogoutEntity(dynamic entity, IReadOnlyApplication App)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">entity</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">App</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfFileSystemAndMachine_" data-uid="CCSPluginAPI.LandscapeHelpers.RefreshPlayerKnowledgeOfFileSystemAndMachine*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfFileSystemAndMachine_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.RefreshPlayerKnowledgeOfFileSystemAndMachine(CCSPluginAPI.ILandscape,CCSPluginAPI.ILandscape,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfFileSystemAndMachine_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_System_String_" class="expander" data-toggle="collapse">RefreshPlayerKnowledgeOfFileSystemAndMachine(ILandscape, ILandscape, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfFileSystemAndMachine_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Add generic info about file system and machine it is on to player landscape</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RefreshPlayerKnowledgeOfFileSystemAndMachine(ILandscape playerLandscape, ILandscape globalLandscape, string fileSystemId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">playerLandscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">globalLandscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">fileSystemId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfWebApplication_" data-uid="CCSPluginAPI.LandscapeHelpers.RefreshPlayerKnowledgeOfWebApplication*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfWebApplication_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_System_Object_" data-uid="CCSPluginAPI.LandscapeHelpers.RefreshPlayerKnowledgeOfWebApplication(CCSPluginAPI.ILandscape,CCSPluginAPI.ILandscape,System.Object)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfWebApplication_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_System_Object_" class="expander" data-toggle="collapse">RefreshPlayerKnowledgeOfWebApplication(ILandscape, ILandscape, Object)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_RefreshPlayerKnowledgeOfWebApplication_CCSPluginAPI_ILandscape_CCSPluginAPI_ILandscape_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RefreshPlayerKnowledgeOfWebApplication(ILandscape playerLandscape, ILandscape globalLandscape, dynamic webAppId)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">playerLandscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">globalLandscape</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">webAppId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveFromListAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_List_System_String__System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveFromListAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,System.String,List{System.String},System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_List_System_String__System_String_" class="expander" data-toggle="collapse">RemoveFromListAttribute(IReadOnlyApplication, String, String, List&lt;String&gt;, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_List_System_String__System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Overload for adding a list of values to a list-type attribute of given entity.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromListAttribute(IReadOnlyApplication application, string entityId, string attributeName, List&lt;string&gt; values, string playerId = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">List</span>&lt;<span class="xref">System.String</span>&gt;</span>
+        <span class="parametername">values</span>
+        <p><p>List of values to be added to the list-type attribute</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveFromListAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_Predicate_System_Object__System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveFromListAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,System.String,Predicate{System.Object},System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_Predicate_System_Object__System_String_" class="expander" data-toggle="collapse">RemoveFromListAttribute(IReadOnlyApplication, String, String, Predicate&lt;Object&gt;, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_Predicate_System_Object__System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes a value from the list-type attribute of given entity that satisfies the given predicate contition.
+If a playerId is given, also updates the player's landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromListAttribute(IReadOnlyApplication application, string entityId, string attributeName, Predicate&lt;dynamic&gt; condition, string playerId = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">Predicate</span>&lt;<span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">condition</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveFromListAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_String_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveFromListAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,System.String,System.String,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_String_System_String_" class="expander" data-toggle="collapse">RemoveFromListAttribute(IReadOnlyApplication, String, String, String, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_RemoveFromListAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_String_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Removes a value from the list-type attribute of given entity and updates the global landscape.
+If a playerId is given, also updates the player's landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveFromListAttribute(IReadOnlyApplication application, string entityId, string attributeName, string value, string playerId = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p><p>Id of the entity in question</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p><p>Name of the list-type attribute</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">value</span>
+        <p><p>Value to be removed from the list-type attribute</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p><p>If specified, also updates the object on the player's landscape</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_RemoveLoginObjectFromPlayerLandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveLoginObjectFromPlayerLandscape*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_RemoveLoginObjectFromPlayerLandscape_CCSPluginAPI_ILandscape_System_Object_System_Object_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveLoginObjectFromPlayerLandscape(CCSPluginAPI.ILandscape,System.Object,System.Object)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_RemoveLoginObjectFromPlayerLandscape_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="expander" data-toggle="collapse">RemoveLoginObjectFromPlayerLandscape(ILandscape, Object, Object)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_RemoveLoginObjectFromPlayerLandscape_CCSPluginAPI_ILandscape_System_Object_System_Object_" class="collapse in">
+  <div class="markdown level1 summary"><p>Updates player landscape by removing login object from given machine where login_client matches any of actor's machines.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveLoginObjectFromPlayerLandscape(ILandscape player_ls, dynamic machine, dynamic actor)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">player_ls</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">machine</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">actor</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_RemoveReferencesToFile_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveReferencesToFile*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_RemoveReferencesToFile_System_String_CCSPluginAPI_ILandscape_" data-uid="CCSPluginAPI.LandscapeHelpers.RemoveReferencesToFile(System.String,CCSPluginAPI.ILandscape)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_RemoveReferencesToFile_System_String_CCSPluginAPI_ILandscape_" class="expander" data-toggle="collapse">RemoveReferencesToFile(String, ILandscape)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_RemoveReferencesToFile_System_String_CCSPluginAPI_ILandscape_" class="collapse in">
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void RemoveReferencesToFile(string fileId, ILandscape landscape)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">fileId</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.ILandscape.html">ILandscape</a></span>
+        <span class="parametername">landscape</span>
+        <p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_SetValueAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.SetValueAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_IDictionary_System_String_System_Object__System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.SetValueAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,IDictionary{System.String,System.Object},System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_IDictionary_System_String_System_Object__System_String_" class="expander" data-toggle="collapse">SetValueAttribute(IReadOnlyApplication, String, IDictionary&lt;String, Object&gt;, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_IDictionary_System_String_System_Object__System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets simple attribute(s) of entity to the specified value(s) and updates the global landscape.
+If a playerId is given, also updates the player's landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetValueAttribute(IReadOnlyApplication application, string entityId, IDictionary&lt;string, dynamic&gt; attriValPairs, string playerId = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p><p>Id of the entity in question</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">IDictionary</span>&lt;<span class="xref">System.String</span>, <span class="xref">System.Object</span>&gt;</span>
+        <span class="parametername">attriValPairs</span>
+        <p><p>Dictionary of key-value pairs to set to the entity</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p><p>If specified, also updates the object on the player's landscape</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_SetValueAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.SetValueAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_" data-uid="CCSPluginAPI.LandscapeHelpers.SetValueAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,System.String,System.Object,System.String)"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_" class="expander" data-toggle="collapse">SetValueAttribute(IReadOnlyApplication, String, String, Object, String)</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets a simple attribute of entity to the specified value and updates the global landscape.
+If a playerId is given, also updates the player's landscape.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetValueAttribute(IReadOnlyApplication application, string entityId, string attributeName, dynamic value, string playerId = null)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p><p>Id of the entity in question</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p><p>Name of the attribute to be set</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p><p>Value which the attribute will be set to</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p><p>If specified, also updates the object on the player's landscape</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+  <a id="CCSPluginAPI_LandscapeHelpers_SetValueAttribute_" data-uid="CCSPluginAPI.LandscapeHelpers.SetValueAttribute*"></a>
+  
+  <h4 id="CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_System_Object___" data-uid="CCSPluginAPI.LandscapeHelpers.SetValueAttribute(CCSPluginAPI.IReadOnlyApplication,System.String,System.String,System.Object,System.String,System.Object[])"><a href="#collapsible-CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_System_Object___" class="expander" data-toggle="collapse">SetValueAttribute(IReadOnlyApplication, String, String, Object, String, Object[])</a></h4>
+  
+  <div id="collapsible-CCSPluginAPI_LandscapeHelpers_SetValueAttribute_CCSPluginAPI_IReadOnlyApplication_System_String_System_String_System_Object_System_String_System_Object___" class="collapse in">
+  <div class="markdown level1 summary"><p>Sets simple attribute of entity's subobject to the specified value and updates the global landscape.
+If a playerId is given, also updates the player's landscape.
+Path to subobject whose attribute will be changed is given by operations.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="declaration">Declaration</h5>
+
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public static void SetValueAttribute(IReadOnlyApplication application, string entityId, string attributeName, object value, string playerId = null, params object[] operations)</code></pre>
+  </div>
+
+  <h5 class="parameters">Parameters</h5>
+  <table>
+    <tr>
+      <td>
+        <span class="pull-right"><a class="xref" href="CCSPluginAPI.IReadOnlyApplication.html">IReadOnlyApplication</a></span>
+        <span class="parametername">application</span>
+        <p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">entityId</span>
+        <p><p>Id of the entity in question</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">attributeName</span>
+        <p><p>Name of the attribute</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span></span>
+        <span class="parametername">value</span>
+        <p><p>Value the attribute will be set to</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.String</span></span>
+        <span class="parametername">playerId</span>
+        <p><p>If specified, also updates the object on the player's landscape</p>
+</p>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <span class="pull-right"><span class="xref">System.Object</span>[]</span>
+        <span class="parametername">operations</span>
+        <p><p>Operations that define a path to a subobject</p>
+</p>
+      </td>
+    </tr>
+  </table>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  </div>
+  
+  
+</article>
+          </div>
+          <div class="contribution-panel mobile-hide">
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Utilis
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
